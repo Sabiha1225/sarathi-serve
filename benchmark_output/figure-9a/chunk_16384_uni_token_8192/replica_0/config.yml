@@ -1,0 +1,44 @@
+model: 01-ai/Yi-34B-200K
+replica_id: 0
+replica_resource_mapping:
+- !!python/tuple
+  - node:192.168.0.44
+  - 1
+- !!python/tuple
+  - node:192.168.0.44
+  - 0
+tokenizer: 01-ai/Yi-34B-200K
+tokenizer_mode: auto
+trust_remote_code: true
+download_dir: null
+load_format: dummy
+dtype: float16
+seed: 42
+pipeline_parallel_size: 1
+tensor_parallel_size: 2
+block_size: 16
+gpu_memory_utilization: 0.85
+revision: null
+scheduler_type: sarathi
+max_model_len: 1024
+max_num_seqs: 1
+max_num_batched_tokens: 16384
+chunk_size: 16384
+enable_dynamic_chunking_schedule: false
+low_chunk_size: 128
+high_chunk_size: 2048
+chunk_schedule_max_tokens: 131072
+chunk_schedule_stages: 16
+write_metrics: true
+output_dir: /home/sabiha/sarathi-serve/benchmark_output/figure-9a//2026-02-17_00-16-51-896844/replica_0
+wandb_project: llm-simulator
+wandb_sweep_id: ''
+wandb_run_id: ''
+wandb_group: vllm_generation_stalls_experiments
+wandb_run_name: Yi-34B-200K_tp_2_arxiv-summarization_filtered_seq16384_static_num_reqs_128_vllm_chunk_size_None_batch_size_256_55e75be9
+enable_op_level_metrics: false
+enable_cpu_op_level_metrics: true
+enable_chrome_trace: true
+enable_request_outputs: false
+keep_individual_batch_metrics: true
+attention_backend: flash_attention

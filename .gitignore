@@ -187,7 +187,7 @@ datasets/**/*.svg
 old
 outputs
 wandb
-benchmark_output
+#benchmark_output
 benchmark_output_old
 benchmark_output_old_1
 offline_inference_output
