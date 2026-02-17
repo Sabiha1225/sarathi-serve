@@ -8,6 +8,9 @@ from sarathi.benchmark.utils.random import set_seeds
 
 def main():
     config = ConfigParser().get_config()
+    print("Printing Config _________________")
+    print(config)
+    print("Printing Config _________________")
 
     set_seeds(config.seed)
 

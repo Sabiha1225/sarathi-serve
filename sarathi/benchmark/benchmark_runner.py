@@ -4,6 +4,7 @@ import os
 import time
 
 import ray
+from ray._private.services import get_node_ip_address  # stable in Ray
 import wandb
 from tqdm import tqdm
 
@@ -238,13 +239,19 @@ class BenchmarkRunnerLauncher:
 
         cluster_resources_keys = list(ray.available_resources().keys())
         num_gpus = ray.available_resources()["GPU"]
+        print(f"cluster_resources_keys {cluster_resources_keys}  num_gpus {num_gpus}")
         ip_addresses = [
             x
             for x in cluster_resources_keys
             if x.startswith("node:") and x != "node:__internal_head__"
         ]
 
-        runner_ip = f"node:{get_ip()}"
+        print(f"ip_addresses {ip_addresses}")
+
+        # runner_ip = f"node:{get_ip()}"
+        runner_ip = f"node:{get_node_ip_address()}"
+
+        print(f"runner_ip {runner_ip}")
 
         ip_addresses.remove(runner_ip)
         ip_addresses.insert(0, runner_ip)
@@ -261,7 +268,7 @@ class BenchmarkRunnerLauncher:
             self._config.model_tensor_parallel_degree
             * self._config.model_pipeline_parallel_degree
         )
-
+        print(f"self._config.model_tensor_parallel_degree {self._config.model_tensor_parallel_degree} self._config.model_pipeline_parallel_degree {self._config.model_pipeline_parallel_degree} num_gpus_per_node {num_gpus_per_node} num_replicas {num_replicas} num_gpus_per_replica {num_gpus_per_replica} num_gpus {num_gpus} ")
         assert (
             num_gpus >= num_replicas * num_gpus_per_replica
         ), f"Insufficient GPUs. Required: {num_replicas * num_gpus_per_replica}, Available: {num_gpus}"

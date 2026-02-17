@@ -18,7 +18,7 @@ schedulers:
 
 traces:
   - name: chat
-    trace_file: "./data/processed_traces/sharegpt_8k_filtered_stats_llama2_tokenizer.csv"
+    trace_file: "/home/sabiha/sarathi-serve/sarathi/benchmark/data/processed_traces/sharegpt_8k_filtered_stats_llama2_tokenizer.csv"
     max_seq_len: 8192
     num_requests: 1024
     start_qps: 4 # this param is ignored in isoqps runs

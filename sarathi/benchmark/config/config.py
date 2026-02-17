@@ -38,8 +38,10 @@ class ConfigParser:
         self._args = None
         self._load_yaml(config_file)
         self._parse_args()
+        print("Printing args _________________")
+        print(self._args)
+        print("Printing args _________________")
         logger.info(f"Starting benchmark with config: {self._args}")
-
         self._add_derived_args()
         self._write_yaml_to_file()
 
