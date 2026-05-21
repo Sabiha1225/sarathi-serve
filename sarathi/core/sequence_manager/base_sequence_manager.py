@@ -16,8 +16,9 @@ from sarathi.utils.threading_utils import synchronized
 
 class BaseSequenceManager(ABC):
 
-    def __init__(self):
+    def __init__(self, block_manager=None):
         self.seq_map = {}
+        self.block_manager = block_manager
 
     @synchronized
     def add_seq(self, seq: Sequence) -> None:
@@ -32,18 +33,55 @@ class BaseSequenceManager(ABC):
         assert seq_id in self.seq_map
         seq = self.seq_map[seq_id]
         assert seq.is_executing()
+        # memory_bytes = 0
+        # num_blocks = 0
+        # if self.block_manager is not None and seq.seq_id in self.block_manager.block_tables:
+        #     block_table = self.block_manager.block_tables[seq.seq_id]
+        #     num_blocks = len(block_table)
+        #     # Calculate memory: each block has block_size tokens, 2 bytes per token (fp16)
+        #     memory_bytes = num_blocks * self.block_manager.block_size * 2
+        memory_bytes = seq.memory_bytes_allocated
+        num_blocks = seq.num_blocks_allocated
+
+        # If memory info not available, try to get from block manager
+        if memory_bytes == 0 and self.block_manager is not None:
+            if seq.seq_id in self.block_manager.block_tables:
+                block_table = self.block_manager.block_tables[seq.seq_id]
+                num_blocks = len(block_table)
+                memory_bytes = num_blocks * self.block_manager.block_size * 2
+
+        seq.state.record_preemption_start(seq.get_num_prompt_tokens_processed(), seq.get_output_len(), memory_bytes, num_blocks, "WAITING")
         seq.reset_for_recompute()
 
     def _pause_seq(self, seq_id: int) -> None:
         assert seq_id in self.seq_map
         seq = self.seq_map[seq_id]
         assert seq.is_running(), f"seq_id: {seq_id}, status: {seq.get_status()}"
+        # memory_bytes = 0
+        # num_blocks = 0
+        # if self.block_manager is not None and seq.seq_id in self.block_manager.block_tables:
+        #     block_table = self.block_manager.block_tables[seq.seq_id]
+        #     num_blocks = len(block_table)
+        #     # Calculate memory: each block has block_size tokens, 2 bytes per token (fp16)
+        #     memory_bytes = num_blocks * self.block_manager.block_size * 2
+
+        memory_bytes = seq.memory_bytes_allocated
+        num_blocks = seq.num_blocks_allocated
+
+        # If memory info not available, try to get from block manager
+        if memory_bytes == 0 and self.block_manager is not None:
+            if seq.seq_id in self.block_manager.block_tables:
+                block_table = self.block_manager.block_tables[seq.seq_id]
+                num_blocks = len(block_table)
+                memory_bytes = num_blocks * self.block_manager.block_size * 2
+        seq.state.record_preemption_start(seq.get_num_prompt_tokens_processed(), seq.get_output_len(), memory_bytes, num_blocks, "PAUSED")
         seq.set_status(SequenceStatus.PAUSED)
 
     def _resume_seq(self, seq_id: int) -> None:
         assert seq_id in self.seq_map
         seq = self.seq_map[seq_id]
         assert seq.is_waiting() or seq.is_paused()
+        seq.state.record_preemption_end()
         seq.set_status(SequenceStatus.RUNNING)
 
     def _on_seq_scheduled(self, seq_sched_metadata: SequenceScheduleMetadata) -> None:

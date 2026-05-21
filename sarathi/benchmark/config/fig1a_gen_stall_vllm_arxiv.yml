@@ -85,12 +85,11 @@ fixed_request_length_generator:
   decode_tokens: 512
 
 replica_scheduler:
-  provider: sarathi
+  provider: vllm
   max_batch_size: 256
 
 sarathi_scheduler:
-  chunk_size: 1536
-  enable_rolling_prefills: true
+  chunk_size: 512
   enable_dynamic_chunking_schedule: false
   # next four params apply only when using dynamic schedule
   low_chunk_size: 128

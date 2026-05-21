@@ -45,7 +45,7 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig9_sarathi_chunk_16384_uni_token_2048.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig9_sarathi_chunk_16384_uni_token_4096.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig9_sarathi_chunk_16384_uni_token_8192.yml"
-DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig9_sarathi_chunk_16384_uni_token_16384.yml"
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig9_sarathi_chunk_16384_uni_token_16384.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/tab2_sarathi_with_op.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/tab2_sarathi_without_op.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/tab2_vllm_with_op.yml"
@@ -60,6 +60,12 @@ DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig9_sarathi_chunk_16384_uni_token_163
 #DEFAULT_CONFIG_FILE = f"/home/sabiha/sarathi-serve/osdi-experiments/figure-5-6/mistral7b_strict.yml"
 #DEFAULT_CONFIG_FILE = f"/home/sabiha/sarathi-serve/osdi-experiments/figure-5-6/yi34_relaxed.yml"
 #DEFAULT_CONFIG_FILE = f"/home/sabiha/sarathi-serve/osdi-experiments/figure-5-6/yi34_strict.yml"
+
+
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_sarathi_varied_chunk_size.yml"
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_sarathi_varied_chunk_size_arxiv.yml"
+DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_sarathi_varied_chunk_size_arxiv_varried_req_time.yml"
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_vllm_arxiv.yml"
 
 
 LOGGER_FORMAT = (

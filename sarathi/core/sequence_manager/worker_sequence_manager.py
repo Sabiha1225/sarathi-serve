@@ -15,16 +15,24 @@ class WorkerSequenceManager(BaseSequenceManager):
         cache_config: CacheConfig,
         scheduler_config: BaseSchedulerConfig,
     ):
-        super().__init__()
+        # super().__init__()
         # we will have a clone of block manager here, it is supposed
         # to work in sync block manager in scheduler the idea is to avoid
         # sending block table every time to the worker
-        self.block_manager = BlockSpaceManagerRegistry.get(
+        # self.block_manager = BlockSpaceManagerRegistry.get(
+        #     scheduler_config.type,
+        #     cache_config.block_size,
+        #     cache_config.num_gpu_blocks,
+        #     scheduler_config.max_model_len,
+        # )
+        block_manager = BlockSpaceManagerRegistry.get(
             scheduler_config.type,
             cache_config.block_size,
             cache_config.num_gpu_blocks,
             scheduler_config.max_model_len,
         )
+        super().__init__(block_manager=block_manager)
+        self.block_manager = block_manager
 
     def _free_seq(self, seq_id: int) -> None:
         # ignored sequences might not have been allocated
@@ -46,11 +54,17 @@ class WorkerSequenceManager(BaseSequenceManager):
         if self.block_manager.is_allocated(seq):
             self.block_manager.can_append_slot()
             self.block_manager.append_slot(seq)
+            # ADD: Update sequence with block information
+            block_table = self.block_manager.get_block_table(seq)
+            seq.set_allocated_blocks(len(block_table), self.block_manager.block_size)
         else:
             # lazily allocate memory when a seq
             # is allocated for the first time
             assert self.block_manager.can_allocate(seq)
             self.block_manager.allocate(seq)
+            # ADD: Update sequence with block information
+            block_table = self.block_manager.get_block_table(seq)
+            seq.set_allocated_blocks(len(block_table), self.block_manager.block_size)
 
     def _on_append_token(self, seq: Sequence) -> None:
         # the engine performs detokenization at this point

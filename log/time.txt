@@ -1,0 +1,43 @@
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (9401 iterations), Total time taken: 526.85 seconds chunk size 128
+
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (2576 iterations), Total time taken: 262.29 seconds chunk size 1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (2479 iterations), Total time taken: 261.74 seconds chunk size 2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (2473 iterations), Total time taken: 267.87 seconds chunk size 3072
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (2458 iterations), Total time taken: 267.31 seconds chunk size 4096
+
+ 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17382 iterations), Total time taken: 1998.55 seconds chunk size 4096 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17465 iterations), Total time taken: 1997.18 seconds chunk size 3072
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17382 iterations), Total time taken: 1986.47 seconds chunk size 4096
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17465 iterations), Total time taken: 1998.99 seconds chunk size 3072
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17585 iterations), Total time taken: 1979.30 seconds chunk size 2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18323 iterations), Total time taken: 1961.47 seconds chunk size 1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (20928 iterations), Total time taken: 1915.22 seconds chunk size 512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3938.88 seconds chunk size 128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (2506 iterations), Total time taken: 260.80 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (2506 iterations), Total time taken: 264.82 seconds 
+
+# Poisson 1 request per seconds
+
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3977.36 seconds chunk size 128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (35478 iterations), Total time taken: 2342.84 seconds chunk size 256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (20928 iterations), Total time taken: 1960.63 seconds chunk size 512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18323 iterations), Total time taken: 1967.86 seconds chunk size 1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17585 iterations), Total time taken: 1987.58 seconds chunk size 2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17465 iterations), Total time taken: 2021.13 seconds chunk size 3072
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17382 iterations), Total time taken: 2019.20 seconds chunk size 4096
+
+# Poisson 25 request per seconds
+
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17382 iterations), Total time taken: 2026.52 seconds chunk size 4096
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17465 iterations), Total time taken: 2014.51 seconds chunk size 3072
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17585 iterations), Total time taken: 1989.20 seconds chunk size 2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18323 iterations), Total time taken: 1985.10 seconds chunk size 1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (20928 iterations), Total time taken: 1952.43 seconds chunk size 512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (35478 iterations), Total time taken: 2329.60 seconds chunk size 256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3983.09 seconds chunk size 128
+
+
+# Poisson 50 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3984.02 seconds chunk size 128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (35478 iterations), Total time taken: 2334.79 seconds chunk size 256

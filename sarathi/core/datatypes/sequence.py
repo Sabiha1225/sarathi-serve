@@ -54,6 +54,57 @@ class Sequence:
         self.tokens: Optional[List[str]] = None
 
         self.state = SequenceState(seq_id, arrival_time, len(prompt_token_ids))
+        
+        self.chunk_adaptive = self.set_adaptive_chunk_size()
+        # ADD: Track allocated blocks and memory
+        self._num_blocks_allocated = 0
+        self._memory_bytes_allocated = 0
+
+    def set_adaptive_chunk_size(self):
+        # Application type either latency or throughput sensitive. Adjust chunk size accordingly
+        min_chunk_size = 128
+        max_chunk_size = 2048
+        default_chunk_size = 512
+        prompt_len = len(self.prompt_token_ids)
+        if prompt_len < 512:
+            # Very short: maximize throughput
+            return max_chunk_size
+        elif prompt_len < 2048:
+            # Short: balanced (default)
+            return default_chunk_size
+        elif prompt_len < 8192:
+            # Long: reduce chunk size for lower latency
+            # Use middle value between default and minimum
+            return (default_chunk_size + min_chunk_size) // 2
+        else:
+            # Very long: minimize latency
+            return min_chunk_size
+
+    @property
+    def num_blocks_allocated(self) -> int:
+        """Get number of blocks currently allocated."""
+        return self._num_blocks_allocated
+
+    @property
+    def memory_bytes_allocated(self) -> int:
+        """Get memory bytes currently allocated."""
+        return self._memory_bytes_allocated
+
+    def set_allocated_blocks(self, num_blocks: int, block_size: int) -> None:
+        """
+        Store allocated block information.
+        
+        Called when blocks are allocated to this sequence.
+        """
+        self._num_blocks_allocated = num_blocks
+        # Memory: each block has block_size tokens, 2 bytes per token (fp16)
+        self._memory_bytes_allocated = num_blocks * block_size * 2
+        
+        # logger.debug(
+        #     f"Sequence {self.seq_id} allocated {num_blocks} blocks, "
+        #     f"memory: {self._memory_bytes_allocated / (1024 * 1024):.2f} MB"
+        # )
+        
 
     def get_status(self) -> SequenceStatus:
         return self.state._status
@@ -84,6 +135,7 @@ class Sequence:
             cursor += num_empty_slots
 
     def update_prompt_tokens_processed(self, num_tokens: int) -> None:
+        #print(f"Updating prompt tokens processed for seq {self.seq_id} by {num_tokens}")
         assert not self.prompt_processing_finished
         assert num_tokens > 0
 

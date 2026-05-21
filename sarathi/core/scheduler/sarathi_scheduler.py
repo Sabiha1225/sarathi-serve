@@ -78,13 +78,17 @@ class SarathiScheduler(BaseScheduler):
             chunk_size = self._chunk_sizes[request_stage_idx]
         else:
             chunk_size = self.chunk_size
+            #chunk_size = seq.chunk_adaptive if seq.chunk_adaptive is not None else self.chunk_size
+            #print(f"seq {seq.seq_id} has chunk size {chunk_size}")
 
-        next_num_tokens = min(
+        next_num_tokens = min(  
             seq.get_prompt_len() - seq.get_num_prompt_tokens_processed(),
             chunk_size - num_batched_tokens,
         )
+        #print(f"next_num_tokens {next_num_tokens}")
 
-        return next_num_tokens
+        # return next_num_tokens
+        return max(0, next_num_tokens)
 
     def _schedule(self) -> SchedulerOutputs:
         # Fix the current time.

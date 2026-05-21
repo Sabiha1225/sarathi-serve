@@ -21,8 +21,14 @@ def _get_run_directories():
 def _get_decode_completion_times():
     #run_directories = _get_run_directories()
     run_directories = []
-    run_directories.append("/home/sabiha/sarathi-serve/benchmark_output/figure-1/gen_stall_sarathi")
-    run_directories.append("/home/sabiha/sarathi-serve/benchmark_output/figure-1/gen_stall_vllm_1")
+    # run_directories.append("/home/sabiha/sarathi-serve/benchmark_output/figure-1/gen_stall_sarathi")
+    # run_directories.append("/home/sabiha/sarathi-serve/benchmark_output/figure-1/gen_stall_sarathi_arxiv")
+    # run_directories.append("/home/sabiha/sarathi-serve/benchmark_output/figure-1/gen_stall_sarathi_arxiv_1")
+    # run_directories.append("/home/sabiha/sarathi-serve/benchmark_output/figure-1/gen_stall_sarathi_adaptive_chunk")
+    # run_directories.append("/home/sabiha/sarathi-serve/benchmark_output/figure-1/gen_stall_sarathi_adaptive_chunk_arxiv")
+    run_directories.append("/home/sabiha/sarathi-serve/benchmark_output/figure-1/2026-04-20_22-34-14-379606")
+    # run_directories.append("/home/sabiha/sarathi-serve/benchmark_output/figure-1/gen_stall_vllm_1")
+    run_directories.append("/home/sabiha/sarathi-serve/benchmark_output/figure-1/gen_stall_vllm_arxiv")
     run_directories.sort()
 
     datapoints = []
@@ -103,8 +109,16 @@ def plot():
     mark_inset(ax, ax_sub, loc1=3, loc2=1, fc="none", ec="0.5")
 
     # Show the plot
-    plt.savefig("yi-arxiv.pdf")
-    plt.savefig("yi-arxiv.png")
+    # plt.savefig("yi-arxiv.pdf")
+    # plt.savefig("yi-arxiv.png")
+    # plt.savefig("llama-sharegpt-adaptive-chunking.pdf")
+    # plt.savefig("llama-sharegpt-adaptive-chunking.png")
+    # plt.savefig("llama-sharegpt-adaptive-chunking_arxiv.pdf")
+    # plt.savefig("llama-sharegpt-adaptive-chunking_arxiv.png")
+    plt.savefig("llama-adaptive-chunking_arxiv.pdf")
+    plt.savefig("llama-adaptive-chunking_arxiv.png")
+    # plt.savefig("llama-arxiv-sarathi.pdf")
+    # plt.savefig("llama-arxiv-sarathi.png")
     plt.show()
 
 plot()

@@ -240,6 +240,28 @@ class MetricsStore(metaclass=Singleton):
         self.chrome_trace: List[Dict[str, Any]] = []
         self.requests_outputs: List[RequestOutput] = []
 
+        # Initialize preemption details storage
+
+        self.preemption_metrics: Dict[str, DataSeries] = {
+            "REQUEST_TOTAL_PREEMPTIONS": DataSeries(REQUEST_ID_STR, "total_preemptions"),
+            "REQUEST_NUM_PAUSES": DataSeries(REQUEST_ID_STR, "num_pauses"),
+            "REQUEST_NUM_RESTARTS": DataSeries(REQUEST_ID_STR, "num_restarts"),
+            "REQUEST_PREFILL_PREEMPTIONS": DataSeries(REQUEST_ID_STR, "prefill_preemptions"),
+            "REQUEST_DECODE_PREEMPTIONS": DataSeries(REQUEST_ID_STR, "decode_preemptions"),
+            "REQUEST_TOTAL_PREEMPTION_TIME": DataSeries(REQUEST_ID_STR, "total_preemption_time_sec"),
+            "REQUEST_PREEMPTED_TIME": DataSeries(REQUEST_ID_STR, "total_preempted_time"),
+            "REQUEST_PREFILL_PREEMPTION_TIME": DataSeries(REQUEST_ID_STR, "prefill_preemption_time_sec"),
+            "REQUEST_DECODE_PREEMPTION_TIME": DataSeries(REQUEST_ID_STR, "decode_preemption_time_sec"),
+            "REQUEST_EXECUTION_TIME": DataSeries(REQUEST_ID_STR, "execution_time"),
+            "REQUEST_EXECUTION_TIME_WITH_PREEMPTIONS": DataSeries(REQUEST_ID_STR, "execution_time_with_preemptions"),
+            "REQUEST_SCHEDULING_DELAY": DataSeries(REQUEST_ID_STR, "scheduling_delay"),
+            "REQUEST_PREFILL_EXECUTION_WITH_PREEMPTION": DataSeries(REQUEST_ID_STR, "prefill_exec_with_preemption"),
+            "REQUEST_DECODE_EXECUTION_WITH_PREEMPTION": DataSeries(REQUEST_ID_STR, "decode_exec_with_preemption"),
+            "REQUEST_ETE_TIME": DataSeries(REQUEST_ID_STR, "ete_time"),
+            "REQUEST_TOTAL_PREEMPTION_MEMORY_MB": DataSeries(REQUEST_ID_STR, "total_preemption_memory_mb"),
+        }
+        self._preemption_details_list = []
+
     def _init_wandb(self):
         if (
             not self.should_write_metrics
@@ -399,6 +421,210 @@ class MetricsStore(metaclass=Singleton):
             self._get_seq_id(seq.seq_id),
             seq.state.decode_execution_plus_preemption_time_normalized,
         )
+
+        self._on_request_end_with_preemption_details(seq)
+        self._collect_sequence_preemption_details(seq)
+    
+    @check_enabled
+    @if_write_metrics
+    def _on_request_end_with_preemption_details(self, seq: Sequence) -> None:
+        """
+        Log detailed preemption information for a completed sequence.
+        
+        Called when a sequence finishes, logs all preemption metrics to DataSeries.
+        """
+        seq_id = self._get_seq_id(seq.seq_id)
+        preemption_summary = seq.state.get_preemption_summary()
+        
+        # Log preemption counts
+        self.preemption_metrics["REQUEST_TOTAL_PREEMPTIONS"].put(
+            seq_id,
+            preemption_summary["total_preemption_events"]
+        )
+        self.preemption_metrics["REQUEST_NUM_PAUSES"].put(
+            seq_id,
+            seq.state.num_pauses
+        )
+        self.preemption_metrics["REQUEST_NUM_RESTARTS"].put(
+            seq_id,
+            seq.state.num_restarts
+        )
+        self.preemption_metrics["REQUEST_PREFILL_PREEMPTIONS"].put(
+            seq_id,
+            preemption_summary["prefill_preemptions"]
+        )
+        self.preemption_metrics["REQUEST_DECODE_PREEMPTIONS"].put(
+            seq_id,
+            preemption_summary["decode_preemptions"]
+        )
+        
+        # Log preemption times
+        self.preemption_metrics["REQUEST_TOTAL_PREEMPTION_TIME"].put(
+            seq_id,
+            preemption_summary["total_preemption_time_sec"]
+        )
+        self.preemption_metrics["REQUEST_PREEMPTED_TIME"].put(
+            seq_id,
+            seq.state.preempted_time
+        )
+        self.preemption_metrics["REQUEST_PREFILL_PREEMPTION_TIME"].put(
+            seq_id,
+            preemption_summary["total_prefill_preemption_time_sec"]
+        )
+        self.preemption_metrics["REQUEST_DECODE_PREEMPTION_TIME"].put(
+            seq_id,
+            preemption_summary["total_decode_preemption_time_sec"]
+        )
+        self.preemption_metrics["REQUEST_EXECUTION_TIME"].put(
+            seq_id,
+            seq.state.execution_time
+        )
+        self.preemption_metrics["REQUEST_EXECUTION_TIME_WITH_PREEMPTIONS"].put(
+            seq_id,
+            seq.state.execution_plus_preemption_time
+        )
+        self.preemption_metrics["REQUEST_SCHEDULING_DELAY"].put(
+            seq_id,
+            seq.state.scheduling_delay
+        )
+        self.preemption_metrics["REQUEST_PREFILL_EXECUTION_WITH_PREEMPTION"].put(
+            seq_id,
+            seq.state.prefill_execution_plus_preemption_time
+        )
+        self.preemption_metrics["REQUEST_DECODE_EXECUTION_WITH_PREEMPTION"].put(
+            seq_id,
+            seq.state.decode_execution_plus_preemption_time
+        )
+        self.preemption_metrics["REQUEST_ETE_TIME"].put(
+            seq_id,
+            seq.state.e2e_time
+        )
+        
+        # Calculate average memory preempted
+        total_memory_preempted = 0
+        for record in preemption_summary["preemption_records"]:
+            total_memory_preempted += record["memory_bytes"]
+        
+        # avg_memory_mb = 0
+        # if preemption_summary["total_preemption_events"] > 0:
+        #     avg_memory_mb = total_memory_preempted / preemption_summary["total_preemption_events"] / (1024 * 1024)
+        
+        self.preemption_metrics["REQUEST_TOTAL_PREEMPTION_MEMORY_MB"].put(
+            seq_id,
+            total_memory_preempted
+        )
+
+    @check_enabled
+    @if_write_metrics
+    def _collect_sequence_preemption_details(self, seq: Sequence) -> None:
+        """
+        Collect detailed preemption information for a completed sequence.
+        
+        Called when a sequence finishes. Collects all preemption events
+        for this sequence into a list for later CSV export.
+        
+        Args:
+            seq: The completed sequence
+        """
+        if not seq.state.preemption_records:
+            return  # No preemptions for this sequence
+        
+        # Collect all preemption records for this sequence
+        for preemption_record in seq.state.preemption_records:
+            detail_record = {
+                "seq_id": seq.seq_id,
+                "preemption_id": preemption_record.preemption_id,
+                "phase": preemption_record.phase,
+                "state": preemption_record.state,
+                "preempt_time": preemption_record.preempt_time,
+                "resume_time": preemption_record.resume_time,
+                "preemption_duration_sec": preemption_record.preemption_duration,
+                "prompt_tokens_processed": preemption_record.prompt_tokens_processed,
+                "output_tokens_at_preemption": preemption_record.output_tokens_at_preemption,
+                "total_tokens_at_preemption": preemption_record.prompt_tokens_processed + preemption_record.output_tokens_at_preemption,
+                "memory_bytes": preemption_record.memory_bytes,
+                "memory_mb": preemption_record.memory_bytes / (1024 * 1024),
+                "num_blocks_allocated": preemption_record.num_blocks_allocated,
+            }
+            
+            self._preemption_details_list.append(detail_record)
+            
+            # logger.debug(
+            #     f"[PREEMPTION COLLECTED] seq_id={seq.seq_id}, "
+            #     f"preemption_id={preemption_record.preemption_id}, "
+            #     f"phase={preemption_record.phase}, "
+            #     f"duration={preemption_record.preemption_duration:.4f}s"
+            # )
+    
+    def _store_preemption_metrics(self, base_plot_path: str):
+        """Store detailed preemption metrics to CSV and JSON files."""
+        if not self.preemption_metrics:
+            return
+        
+        # Get all preemption metrics as list of DataSeries
+        preemption_dataseries_list = list(self.preemption_metrics.values())
+        
+        # Save to CSV
+        self._save_as_csv(
+            dataseries_list=preemption_dataseries_list,
+            key_to_join=REQUEST_ID_STR,
+            base_path=self._output_dir,
+            file_name="preemption_metrics",
+        )
+        
+        # # Plot CDFs for each metric
+        # for metric_name, dataseries in self.preemption_metrics.items():
+        #     dataseries.plot_histogram(
+        #         base_plot_path,
+        #         f"{dataseries.y_name}_distribution"
+        #     )
+        #     dataseries.plot_cdf(
+        #         base_plot_path,
+        #         f"{dataseries.y_name}_cdf",
+        #         "Count"
+        #     )
+
+    def _store_detailed_preemption_records(self):
+        """
+        Store all collected preemption details to CSV and JSON files.
+        
+        Called once at the end when all sequences have been processed.
+        Saves aggregated preemption records from all sequences.
+        """
+        if not self._preemption_details_list:
+            logger.info("No preemption details to save (no sequences were preempted)")
+            return
+        
+        # Save to JSON file
+        json_filepath = os.path.join(self._output_dir, "preemption_details.json")
+        with open(json_filepath, 'w') as f:
+            json.dump(self._preemption_details_list, f, indent=2)
+        
+        logger.info(
+            f"Preemption details (JSON) saved to: {json_filepath} "
+            f"({len(self._preemption_details_list)} preemption events)"
+        )
+        
+        # Save to CSV file
+        csv_filepath = os.path.join(self._output_dir, "preemption_details.csv")
+        df = pd.DataFrame(self._preemption_details_list)
+        df.to_csv(csv_filepath, index=False)
+        
+        # logger.info(
+        #     f"Preemption details (CSV) saved to: {csv_filepath} "
+        #     f"({len(self._preemption_details_list)} preemption events)"
+        # )
+        
+        # # Print summary
+        # logger.info(f"\nPreemption Details Summary:")
+        # logger.info(f"  Total preemption events: {len(self._preemption_details_list)}")
+        # logger.info(f"  Unique sequences preempted: {df['seq_id'].nunique()}")
+        # logger.info(f"  Phases: {df['phase'].value_counts().to_dict()}")
+        # if 'memory_mb' in df.columns:
+        #     logger.info(f"  Avg memory per preemption: {df['memory_mb'].mean():.2f} MB")
+        # if 'preemption_duration_sec' in df.columns:
+        #     logger.info(f"  Avg preemption duration: {df['preemption_duration_sec'].mean():.4f} seconds")
+        
 
     def _update_per_token_execution_times(
         self,
@@ -863,6 +1089,10 @@ class MetricsStore(metaclass=Singleton):
         self._store_request_outputs()
         self._store_operation_metrics(base_plot_path)
 
+        # Store preemption metrics
+        self._store_preemption_metrics(base_plot_path)
+        self._store_detailed_preemption_records()
+
     @check_enabled
     def merge(self, other: "MetricsStore"):
         for metric_name in SequenceMetricsTimeDistributions:
@@ -922,3 +1152,12 @@ class MetricsStore(metaclass=Singleton):
 
         self.chrome_trace.extend(other.chrome_trace)
         self.requests_outputs.extend(other.requests_outputs)
+
+        # Merge preemption metrics
+        for metric_name in self.preemption_metrics:
+            if metric_name in other.preemption_metrics:
+                self.preemption_metrics[metric_name].merge(
+                    other.preemption_metrics[metric_name]
+                )
+
+        self._preemption_details_list.extend(other._preemption_details_list)

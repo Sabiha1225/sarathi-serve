@@ -43,17 +43,11 @@ trace_request_generator:
 
 # Config for synthetic trace generator
 trace_request_length_generator:
-  # trace_file: ~/sarathi-serve/sarathi/benchmark/data/processed_traces/sharegpt_8k_filtered_stats_llama2_tokenizer.csv
-  # # trace_file: ./data/processed_traces/arxiv_summarization_filtered_stats_llama2_tokenizer.csv
-  # prefill_scale_factor: 1
-  # decode_scale_factor:  1
-  # max_tokens: 4096
-  trace_file: ~/sarathi-serve/sarathi/benchmark/data/processed_traces/arxiv_summarization_filtered_stats_llama2_tokenizer.csv
-  date: '2023-08-21'
+  trace_file: ~/sarathi-serve/sarathi/benchmark/data/processed_traces/sharegpt_8k_filtered_stats_llama2_tokenizer.csv
+  # trace_file: ./data/processed_traces/arxiv_summarization_filtered_stats_llama2_tokenizer.csv
   prefill_scale_factor: 1
-  decode_scale_factor: 1
-  time_scale_factor: 0.04
-  max_tokens: 16384
+  decode_scale_factor:  1
+  max_tokens: 4096
 
 trace_request_interval_generator:
   trace_file: ~/sarathi-serve/sarathi/benchmark/data/processed_traces/AzureFunctionsInvocationTraceForTwoWeeksJan2021Processed.csv

@@ -18,6 +18,10 @@ from sarathi.config import MetricsConfig
 from sarathi.metrics.metrics_store import MetricsStore
 from sarathi.utils import get_ip
 
+from pathlib import Path
+
+filename = Path.home() / "sarathi-serve" / "log" / "time.txt"
+
 logger = logging.getLogger(__name__)
 
 
@@ -174,6 +178,8 @@ class BenchmarkRunner:
         logger.info(
             f"Replica {self._replica_id} exiting after processing {len(self._requests)} ({num_steps} iterations), Total time taken: {end_time - start_time:.2f} seconds"
         )
+        with open(filename, 'a') as file:
+            file.write(f"benchmark_runner.py# inside class BenchmarkRunner def _run Replica {self._replica_id} exiting after processing {len(self._requests)} ({num_steps} iterations), Total time taken: {end_time - start_time:.2f} seconds \n")
 
         if self._config.enable_profiling:
             self._llm_engine.stop_profiling()
