@@ -1,0 +1,49 @@
+seed: 42
+output_csv: outputs/vllm_arxiv_baseline.csv
+dump_requests_jsonl: outputs/generated_requests.jsonl
+
+model:
+  name: meta-llama/Llama-2-7b-hf
+  tokenizer: meta-llama/Llama-2-7b-hf
+  dtype: float16
+  tensor_parallel_size: 2
+  pipeline_parallel_size: 1
+  max_model_len: 16384
+  gpu_memory_utilization: 0.45
+  trust_remote_code: true
+  load_format: dummy
+  enforce_eager: true
+  attention_backend: FLASH_ATTN
+  hf_overrides:
+    rope_scaling:
+      type: linear
+      factor: 4.0
+    rope_parameters:
+      rope_type: linear
+      factor: 4.0
+
+request_generator:
+  num_requests: 1
+  prompt_token_id: 1
+
+trace_request_length_generator:
+  trace_file: /home/sabiha/sarathi-serve/sarathi/benchmark/data/processed_traces/arxiv_summarization_filtered_stats_llama2_tokenizer.csv
+  prefill_scale_factor: 1
+  decode_scale_factor: 1
+  max_tokens: 16384
+
+poisson_request_interval_generator:
+  qps: 200.0
+
+vllm_scheduler:
+  max_num_seqs: 256
+  max_num_batched_tokens: 16384
+  disable_hybrid_kv_cache_manager: true
+  enable_chunked_prefill: false
+  enable_prefix_caching: false
+
+offloading:
+  swap_space: 16
+  cpu_offload_gb: 0
+  kv_offloading_size: 64
+  kv_offloading_backend: native

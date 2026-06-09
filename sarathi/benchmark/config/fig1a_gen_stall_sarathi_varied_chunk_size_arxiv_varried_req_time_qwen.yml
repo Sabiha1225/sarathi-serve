@@ -17,7 +17,7 @@ cluster:
 
 model:
   # name: meta-llama/Meta-Llama-3-8B
-  # name: meta-llama/Llama-2-7b
+  # name: Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen3-4B-Instruct-2507, Qwen2.5-1.5B-Instruct-GGUF, Qwen/Qwen2.5-3B-Instruct, Qwen/Qwen2.5-Coder-3B-Instruct, Qwen/Qwen2.5-0.5B-Instruct, Qwen/Qwen2.5-1.5B-Instruct
   name: meta-llama/Llama-2-7b-hf
   # tensor_parallel_degree: 4
   tensor_parallel_degree: 2

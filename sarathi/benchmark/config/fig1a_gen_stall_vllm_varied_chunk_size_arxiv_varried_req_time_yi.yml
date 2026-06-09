@@ -6,8 +6,7 @@ write_json_trace: true
 write_chrome_trace: true
 write_metrics: true
 enable_profiling: false
-# gpu_memory_utilization: 0.85
-gpu_memory_utilization: 0.25
+gpu_memory_utilization: 0.85
 # time_limit: 1800 # seconds
 time_limit: 7200 # seconds
 replica_resource_mapping: ""
@@ -18,7 +17,7 @@ cluster:
 model:
   # name: meta-llama/Meta-Llama-3-8B
   # name: meta-llama/Llama-2-7b
-  name: meta-llama/Llama-2-7b-hf
+  name: 01-ai/Yi-6B
   # tensor_parallel_degree: 4
   tensor_parallel_degree: 2
   # pipeline_parallel_degree: 2
@@ -89,12 +88,12 @@ fixed_request_length_generator:
   decode_tokens: 512
 
 replica_scheduler:
-  provider: sarathi
+  provider: vllm
   max_batch_size: 256
 
 sarathi_scheduler:
   # chunk_size: 1536
-  chunk_size: 1024
+  chunk_size: 4096
   enable_rolling_prefills: true
   enable_dynamic_chunking_schedule: false
   # next four params apply only when using dynamic schedule
