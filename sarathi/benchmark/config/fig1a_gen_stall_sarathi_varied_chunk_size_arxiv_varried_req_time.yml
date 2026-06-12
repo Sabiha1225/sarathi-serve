@@ -6,8 +6,8 @@ write_json_trace: true
 write_chrome_trace: true
 write_metrics: true
 enable_profiling: false
-# gpu_memory_utilization: 0.85
-gpu_memory_utilization: 0.25
+gpu_memory_utilization: 0.85
+# gpu_memory_utilization: 0.25
 # time_limit: 1800 # seconds
 time_limit: 7200 # seconds
 replica_resource_mapping: ""

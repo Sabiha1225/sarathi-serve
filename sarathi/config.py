@@ -83,6 +83,26 @@ class ModelConfig:
 
         self.hf_config = get_config(model, trust_remote_code, revision)
 
+        if (
+            self.load_format == "dummy"
+            and getattr(self.hf_config, "architectures", None) == ["MixtralForCausalLM"]
+        ):
+            self.hf_config.hidden_size = 1024
+            self.hf_config.intermediate_size = 4096
+            self.hf_config.num_hidden_layers = 16
+            self.hf_config.num_attention_heads = 16
+            self.hf_config.num_key_value_heads = 4
+
+            if hasattr(self.hf_config, "num_local_experts"):
+                self.hf_config.num_local_experts = 4
+            if hasattr(self.hf_config, "num_experts"):
+                self.hf_config.num_experts = 4
+
+            if hasattr(self.hf_config, "num_experts_per_tok"):
+                self.hf_config.num_experts_per_tok = 2
+            if hasattr(self.hf_config, "num_experts_per_token"):
+                self.hf_config.num_experts_per_token = 2
+
         # support fschat to load model which uses dynamic ntk (e.g Qwen)
         use_dynamic_ntk = getattr(self.hf_config, "use_dynamic_ntk", None)
         if use_dynamic_ntk is not None:

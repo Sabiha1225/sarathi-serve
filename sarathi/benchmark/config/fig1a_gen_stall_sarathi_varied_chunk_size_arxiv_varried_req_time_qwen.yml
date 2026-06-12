@@ -6,8 +6,8 @@ write_json_trace: true
 write_chrome_trace: true
 write_metrics: true
 enable_profiling: false
-# gpu_memory_utilization: 0.85
-gpu_memory_utilization: 0.25
+gpu_memory_utilization: 0.85
+# gpu_memory_utilization: 0.25
 # time_limit: 1800 # seconds
 time_limit: 7200 # seconds
 replica_resource_mapping: ""
@@ -17,8 +17,9 @@ cluster:
 
 model:
   # name: meta-llama/Meta-Llama-3-8B
-  # name: Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen3-4B-Instruct-2507, Qwen2.5-1.5B-Instruct-GGUF, Qwen/Qwen2.5-3B-Instruct, Qwen/Qwen2.5-Coder-3B-Instruct, Qwen/Qwen2.5-0.5B-Instruct, Qwen/Qwen2.5-1.5B-Instruct
-  name: meta-llama/Llama-2-7b-hf
+  # name: Qwen/Qwen-7B Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen3-4B-Instruct-2507, Qwen2.5-1.5B-Instruct-GGUF, Qwen/Qwen2.5-3B-Instruct, Qwen/Qwen2.5-Coder-3B-Instruct, Qwen/Qwen2.5-0.5B-Instruct, Qwen/Qwen2.5-1.5B-Instruct
+  # name: Qwen/Qwen2.5-7B-Instruct
+  name: Qwen/Qwen-7B
   # tensor_parallel_degree: 4
   tensor_parallel_degree: 2
   # pipeline_parallel_degree: 2
@@ -66,7 +67,7 @@ trace_request_interval_generator:
   time_scale_factor: 0.3
 
 poisson_request_interval_generator:
-  qps: 200.0
+  qps: 1.0
 
 gamma_request_interval_generator:
   cv: 0.5
@@ -94,7 +95,7 @@ replica_scheduler:
 
 sarathi_scheduler:
   # chunk_size: 1536
-  chunk_size: 1024
+  chunk_size: 128
   enable_rolling_prefills: true
   enable_dynamic_chunking_schedule: false
   # next four params apply only when using dynamic schedule

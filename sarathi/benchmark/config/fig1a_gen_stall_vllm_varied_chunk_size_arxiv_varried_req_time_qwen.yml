@@ -17,7 +17,7 @@ cluster:
 model:
   # name: meta-llama/Meta-Llama-3-8B
   # name: meta-llama/Llama-2-7b
-  name: meta-llama/Llama-2-7b-hf
+  name: Qwen/Qwen2.5-7B-Instruct
   # tensor_parallel_degree: 4
   tensor_parallel_degree: 2
   # pipeline_parallel_degree: 2
@@ -65,7 +65,7 @@ trace_request_interval_generator:
   time_scale_factor: 0.3
 
 poisson_request_interval_generator:
-  qps: 200.0
+  qps: 1.0
 
 gamma_request_interval_generator:
   cv: 0.5
