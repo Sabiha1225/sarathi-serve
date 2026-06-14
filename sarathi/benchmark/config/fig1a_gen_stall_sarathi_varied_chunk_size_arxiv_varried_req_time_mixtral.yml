@@ -95,7 +95,7 @@ replica_scheduler:
 
 sarathi_scheduler:
   # chunk_size: 1536
-  chunk_size: 128
+  chunk_size: 3072
   enable_rolling_prefills: true
   enable_dynamic_chunking_schedule: false
   # next four params apply only when using dynamic schedule

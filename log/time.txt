@@ -98,8 +98,14 @@ vLLM: 200 Requests - gpu = .65, 0 preemption
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (25951 iterations), Total time taken: 2361.12 seconds 
 
 vLLM: 200 Requests - gpu = .85,
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18265 iterations), Total time taken: 2146.74 seconds 
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3790.60 seconds 
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3575.42 seconds 
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 4042.63 seconds 
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3775.69 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18265 iterations), Total time taken: 2146.74 seconds  
+
+Mixtral Arxiv
+# Poisson 1 request per seconds
+
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3560.65 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (35478 iterations), Total time taken: 1766.59 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17907 iterations), Total time taken: 1016.27 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18662 iterations), Total time taken: 973.82 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (20093 iterations), Total time taken: 972.92 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (19118 iterations), Total time taken: 971.93 seconds 
