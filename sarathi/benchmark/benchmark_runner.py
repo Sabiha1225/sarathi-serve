@@ -20,7 +20,7 @@ from sarathi.utils import get_ip
 
 from pathlib import Path
 
-filename = Path.home() / "sarathi-serve" / "log" / "time.txt"
+filename = Path.home() / "sarathi-vllm-cpu-offload" / "log" / "time.txt"
 
 logger = logging.getLogger(__name__)
 
@@ -99,6 +99,7 @@ class BenchmarkRunner:
             chunk_schedule_stages=self._config.sarathi_scheduler_chunk_schedule_stages,
             # vllm scheduler config
             max_num_batched_tokens=self._config.vllm_scheduler_max_tokens_in_batch,
+            enable_kv_cache_offloading=self._config.vllm_scheduler_enable_kv_cache_offloading,
             # wandb config
             write_metrics=self._config.write_metrics,
             enable_chrome_trace=self._config.write_chrome_trace,

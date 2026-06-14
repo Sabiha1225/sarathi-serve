@@ -53,6 +53,12 @@ class BaseSequenceManager(ABC):
         seq.state.record_preemption_start(seq.get_num_prompt_tokens_processed(), seq.get_output_len(), memory_bytes, num_blocks, "WAITING")
         seq.reset_for_recompute()
 
+    def _offload_seq(self, seq_id: int) -> None:
+        assert seq_id in self.seq_map
+        seq = self.seq_map[seq_id]
+        assert seq.is_executing()
+        seq.set_status(SequenceStatus.OFFLOADED)
+
     def _pause_seq(self, seq_id: int) -> None:
         assert seq_id in self.seq_map
         seq = self.seq_map[seq_id]
@@ -80,7 +86,7 @@ class BaseSequenceManager(ABC):
     def _resume_seq(self, seq_id: int) -> None:
         assert seq_id in self.seq_map
         seq = self.seq_map[seq_id]
-        assert seq.is_waiting() or seq.is_paused()
+        assert seq.is_waiting() or seq.is_paused() or seq.is_offloaded()
         seq.state.record_preemption_end()
         seq.set_status(SequenceStatus.RUNNING)
 
@@ -103,6 +109,9 @@ class BaseSequenceManager(ABC):
             seq = self.seq_map[seq_id]
             ignored_seqs.append(seq)
             self._free_seq(seq_id)
+
+        for seq_id in scheduler_outputs.offloaded_seq_ids:
+            self._offload_seq(seq_id)
 
         for seq_id in scheduler_outputs.preempted_seq_ids:
             self._preempt_seq(seq_id)

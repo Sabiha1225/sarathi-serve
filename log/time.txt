@@ -97,9 +97,17 @@ benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting aft
 vLLM: 200 Requests - gpu = .65, 0 preemption
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (25951 iterations), Total time taken: 2361.12 seconds 
 
-vLLM: 200 Requests - gpu = .85,
+vLLM: 200 Requests - gpu = .85, 0 preemption
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18265 iterations), Total time taken: 2146.74 seconds 
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3790.60 seconds 
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3575.42 seconds 
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 4042.63 seconds 
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3775.69 seconds 
+
+vLLM CPU Offload - GPU = .45, 8 CPU Offload 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (45736 iterations), Total time taken: 2987.03 seconds 
+
+vLLM CPU Offload - GPU = .45, 5 Preemption
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (45794 iterations), Total time taken: 2977.98 seconds 
+
+vLLM CPU Offload - GPU = .65, 0 CPU Offload 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (25951 iterations), Total time taken: 2367.87 seconds 
+
+vLLM CPU Offload - GPU = .85, 0 CPU Offload 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18265 iterations), Total time taken: 2168.67 seconds 

@@ -166,7 +166,17 @@ class BaseWorker:
     ) -> Optional[SamplerOutputs]:
         batch_stage_start_time = time.monotonic()
 
-        _, seq_metadata_list = self.seq_manager.on_schedule(scheduler_outputs)
+        # _, seq_metadata_list = self.seq_manager.on_schedule(scheduler_outputs)
+        _, seq_metadata_list = self.seq_manager.on_schedule(
+            scheduler_outputs,
+            gpu_cache=self.gpu_cache,
+        )
+
+        kv_events = self.seq_manager.kv_offload_manager.drain_events()
+        self.metrics_store.on_kv_offload_events(kv_events, rank=self.rank)
+
+        if not seq_metadata_list:
+            return []
 
         sampler_outputs = self.model_runner.run(
             seq_metadata_list,

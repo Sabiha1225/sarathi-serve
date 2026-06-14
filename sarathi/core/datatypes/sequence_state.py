@@ -70,6 +70,8 @@ class SequenceState:
         self.phase = "PREFILL"
         self._preemption_counter: int = 0
 
+        self._last_offloaded_at: float = 0.0
+
     @property
     def preemption_records(self) -> List[PreemptionPhaseRecord]:
         """Get all preemption records for this sequence."""
@@ -396,6 +398,25 @@ class SequenceState:
         elif status == SequenceStatus.WAITING:
             self._num_restarts += 1
             self._last_restart_at = current_time
+        elif status == SequenceStatus.OFFLOADED:
+            self._last_offloaded_at = current_time
+        else:
+            raise ValueError(
+                f"Invalid state transition from {self._status} to {status} for request {self._id}."
+            )
+    def _handle_transitions_from_offloaded_status(
+        self, current_time: float, status: SequenceStatus
+    ) -> None:
+        if status == SequenceStatus.RUNNING:
+            self._preempted_time += current_time - self._last_offloaded_at
+            self._last_execution_start_at = current_time
+        elif (
+            status == SequenceStatus.FINISHED_STOPPED
+            or status == SequenceStatus.FINISHED_LENGTH_CAPPED
+        ):
+            self._preempted_time += current_time - self._last_offloaded_at
+            self._is_completed = True
+            self._completed_at = current_time
         else:
             raise ValueError(
                 f"Invalid state transition from {self._status} to {status} for request {self._id}."
@@ -410,6 +431,8 @@ class SequenceState:
             self._handle_transitions_from_running_status(current_time, status)
         elif self._status == SequenceStatus.PAUSED:
             self._handle_transitions_from_paused_status(current_time, status)
+        elif self._status == SequenceStatus.OFFLOADED:
+            self._handle_transitions_from_offloaded_status(current_time, status)
         else:
             raise ValueError(
                 f"Invalid state transition from {self._status} to {status} for request {self._id}."

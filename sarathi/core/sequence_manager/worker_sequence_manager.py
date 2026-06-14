@@ -7,6 +7,9 @@ from sarathi.core.block_space_manager.block_space_manager_registry import (
 from sarathi.core.datatypes.sequence import Sequence, SequenceScheduleMetadata
 from sarathi.core.sequence_manager.base_sequence_manager import BaseSequenceManager
 
+from sarathi.worker.kv_offload_manager import KVOffloadManager
+from sarathi.core.datatypes.sequence_status import SequenceStatus
+
 
 class WorkerSequenceManager(BaseSequenceManager):
 
@@ -33,6 +36,8 @@ class WorkerSequenceManager(BaseSequenceManager):
         )
         super().__init__(block_manager=block_manager)
         self.block_manager = block_manager
+        self.kv_offload_manager = KVOffloadManager()
+        self._current_gpu_cache = None
 
     def _free_seq(self, seq_id: int) -> None:
         # ignored sequences might not have been allocated
@@ -48,6 +53,18 @@ class WorkerSequenceManager(BaseSequenceManager):
         self.block_manager.free(seq)
 
     def _on_seq_scheduled(self, seq_sched_metadata: SequenceScheduleMetadata) -> None:
+
+        seq = self.seq_map[seq_sched_metadata.seq_id]
+
+        if seq.is_offloaded():
+            assert self.block_manager.can_allocate(seq)
+            self.block_manager.allocate(seq)
+            block_table = self.block_manager.get_block_table(seq)
+            self.kv_offload_manager.restore(seq.seq_id, self._current_gpu_cache, block_table)
+            seq.set_allocated_blocks(len(block_table), self.block_manager.block_size)
+            super()._on_seq_scheduled(seq_sched_metadata)
+            return
+
         super()._on_seq_scheduled(seq_sched_metadata)
         seq = self.seq_map[seq_sched_metadata.seq_id]
 
@@ -73,3 +90,17 @@ class WorkerSequenceManager(BaseSequenceManager):
 
     def _get_block_table(self, seq: Sequence) -> List[int]:
         return self.block_manager.get_block_table(seq)
+
+    def on_schedule(self, scheduler_outputs, gpu_cache=None):
+        self._current_gpu_cache = gpu_cache
+        try:
+            return super().on_schedule(scheduler_outputs)
+        finally:
+            self._current_gpu_cache = None
+
+    def _offload_seq(self, seq_id: int) -> None:
+        seq = self.seq_map[seq_id]
+        block_table = self.block_manager.get_block_table(seq)
+        self.kv_offload_manager.offload(seq_id, self._current_gpu_cache, block_table)
+        self.block_manager.free(seq)
+        seq.set_status(SequenceStatus.OFFLOADED)

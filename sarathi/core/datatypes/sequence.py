@@ -207,6 +207,9 @@ class Sequence:
     def is_running(self) -> bool:
         return SequenceStatus.is_running(self.get_status())
 
+    def is_offloaded(self) -> bool:
+        return SequenceStatus.is_offloaded(self.get_status())
+
     def reset_for_recompute(self):
         self.set_status(SequenceStatus.WAITING)
         self.prompt_tokens_processed = 0

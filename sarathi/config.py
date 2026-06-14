@@ -315,11 +315,15 @@ class VLLMSchedulerConfig(BaseSchedulerConfig):
         max_model_len: int,
         num_pipeline_stages: int,
         max_num_batched_tokens: int,
+        enable_kv_cache_offloading: bool = False,
     ) -> None:
         super().__init__(max_num_seqs, max_model_len, num_pipeline_stages)
         self._max_num_batched_tokens = (
             max_num_batched_tokens if max_num_batched_tokens else max_model_len
         )
+
+        self.enable_kv_cache_offloading = enable_kv_cache_offloading
+        
         # Requests with context length upto max_model_len must be schedulable.
         assert max_model_len <= self._max_num_batched_tokens
 
@@ -388,6 +392,7 @@ class SarathiSchedulerConfig(BaseSchedulerConfig):
         high_chunk_size: Optional[int],
         chunk_schedule_max_tokens: Optional[int],
         chunk_schedule_stages: Optional[int],
+        enable_kv_cache_offloading: bool = False,
     ) -> None:
         super().__init__(max_num_seqs, max_model_len, num_pipeline_stages)
         self.chunk_size = chunk_size
@@ -396,6 +401,7 @@ class SarathiSchedulerConfig(BaseSchedulerConfig):
         self.high_chunk_size = high_chunk_size
         self.chunk_schedule_max_tokens = chunk_schedule_max_tokens
         self.chunk_schedule_stages = chunk_schedule_stages
+        self.enable_kv_cache_offloading = enable_kv_cache_offloading
 
     @property
     def max_num_batched_tokens(self):

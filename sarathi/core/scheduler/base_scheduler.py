@@ -120,6 +120,11 @@ class BaseScheduler(ABC):
         self._free_seq(seq)
         self.waiting.insert(0, seq)
 
+    def _offload(self, seq: Sequence) -> None:
+        assert seq.is_executing()
+        self._free_seq(seq)
+        self.waiting.insert(0, seq)
+
     def _check_request_prompt_length(self, seq: Sequence) -> bool:
         if seq.get_len() > self.scheduler_config.max_model_len:
             logger.warning(

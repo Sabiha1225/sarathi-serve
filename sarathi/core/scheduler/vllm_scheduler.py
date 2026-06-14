@@ -36,6 +36,7 @@ class VLLMScheduler(BaseScheduler):
 
         ignored_seq_ids: List[int] = []
         preempted_seq_ids: List[int] = []
+        offloaded_seq_ids: List[int] = []
         scheduled_seq_metadata_list: List[SequenceScheduleMetadata] = []
 
         # The total number of sequences on the fly, including the
@@ -109,13 +110,26 @@ class VLLMScheduler(BaseScheduler):
                 if self.running:
                     # Preempt the lowest-priority sequence groups.
                     victim_seq = self.running.pop(-1)
-                    self._preempt(victim_seq)
-                    preempted_seq_ids.append(victim_seq.seq_id)
+                    # self._preempt(victim_seq)
+                    # preempted_seq_ids.append(victim_seq.seq_id)
+                    if self.scheduler_config.enable_kv_cache_offloading:
+                        self._offload(victim_seq)
+                        offloaded_seq_ids.append(victim_seq.seq_id)
+                    else:
+                        self._preempt(victim_seq)
+                        preempted_seq_ids.append(victim_seq.seq_id)
                 else:
                     # No other sequence groups can be preempted.
                     # Preempt the current sequence group.
-                    self._preempt(seq)
-                    preempted_seq_ids.append(seq.seq_id)
+                    # self._preempt(seq)
+                    # preempted_seq_ids.append(seq.seq_id)
+                    if self.scheduler_config.enable_kv_cache_offloading:
+                        self._offload(seq)
+                        offloaded_seq_ids.append(seq.seq_id)
+                    else:
+                        self._preempt(seq)
+                        preempted_seq_ids.append(seq.seq_id)
+
                     break
             else:
                 # Append new slots to the sequence group.
@@ -131,5 +145,6 @@ class VLLMScheduler(BaseScheduler):
             id=self._iteration_id,
             ignored_seq_ids=[],
             preempted_seq_ids=preempted_seq_ids,
+            offloaded_seq_ids=offloaded_seq_ids,
             scheduled_seq_metadata_list=scheduled_seq_metadata_list,
         )

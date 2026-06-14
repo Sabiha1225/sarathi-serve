@@ -261,6 +261,7 @@ class MetricsStore(metaclass=Singleton):
             "REQUEST_TOTAL_PREEMPTION_MEMORY_MB": DataSeries(REQUEST_ID_STR, "total_preemption_memory_mb"),
         }
         self._preemption_details_list = []
+        self._kv_offload_events = []
 
     def _init_wandb(self):
         if (
@@ -624,7 +625,48 @@ class MetricsStore(metaclass=Singleton):
         #     logger.info(f"  Avg memory per preemption: {df['memory_mb'].mean():.2f} MB")
         # if 'preemption_duration_sec' in df.columns:
         #     logger.info(f"  Avg preemption duration: {df['preemption_duration_sec'].mean():.4f} seconds")
-        
+
+    @check_enabled
+    @if_write_metrics
+    def on_kv_offload_events(self, events, rank: int = None) -> None:
+        for event in events:
+            event = dict(event)
+            if rank is not None:
+                event["rank"] = rank
+            self._kv_offload_events.append(event)
+
+
+    def _store_kv_offload_events(self):
+        if not self._kv_offload_events:
+            logger.info("No KV offload events to save")
+            return
+
+        json_filepath = os.path.join(self._output_dir, "kv_offload_events.json")
+        with open(json_filepath, "w") as f:
+            json.dump(self._kv_offload_events, f, indent=2)
+
+        csv_filepath = os.path.join(self._output_dir, "kv_offload_events.csv")
+        df = pd.DataFrame(self._kv_offload_events)
+        df.to_csv(csv_filepath, index=False)
+
+        summary = (
+            df.groupby("event_type")
+            .agg(
+                num_events=("event_type", "count"),
+                total_bytes=("num_bytes", "sum"),
+                total_time_sec=("elapsed_sec", "sum"),
+                avg_time_sec=("elapsed_sec", "mean"),
+                avg_bytes=("num_bytes", "mean"),
+            )
+            .reset_index()
+        )
+        summary.to_csv(
+            os.path.join(self._output_dir, "kv_offload_summary.csv"),
+            index=False,
+        )
+
+        logger.info(f"KV offload events saved to: {csv_filepath}")
+
 
     def _update_per_token_execution_times(
         self,
@@ -1092,6 +1134,7 @@ class MetricsStore(metaclass=Singleton):
         # Store preemption metrics
         self._store_preemption_metrics(base_plot_path)
         self._store_detailed_preemption_records()
+        self._store_kv_offload_events()
 
     @check_enabled
     def merge(self, other: "MetricsStore"):
@@ -1161,3 +1204,4 @@ class MetricsStore(metaclass=Singleton):
                 )
 
         self._preemption_details_list.extend(other._preemption_details_list)
+        self._kv_offload_events.extend(other._kv_offload_events)

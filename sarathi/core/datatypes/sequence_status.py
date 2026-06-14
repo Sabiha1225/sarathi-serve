@@ -8,6 +8,7 @@ class SequenceStatus(enum.Enum):
     WAITING = enum.auto()
     RUNNING = enum.auto()
     PAUSED = enum.auto()
+    OFFLOADED = enum.auto()
     FINISHED_STOPPED = enum.auto()
     FINISHED_LENGTH_CAPPED = enum.auto()
     FINISHED_IGNORED = enum.auto()
@@ -38,6 +39,10 @@ class SequenceStatus(enum.Enum):
     @staticmethod
     def is_running(status: "SequenceStatus") -> bool:
         return status == SequenceStatus.RUNNING
+
+    @staticmethod
+    def is_offloaded(status: "SequenceStatus") -> bool:
+        return status == SequenceStatus.OFFLOADED
 
     @staticmethod
     def get_finished_reason(status: "SequenceStatus") -> Union[str, None]:

@@ -69,6 +69,7 @@ class EngineArgs:
     enable_request_outputs: bool = False
     keep_individual_batch_metrics: bool = False
     attention_backend: str = "flash_attention"
+    enable_kv_cache_offloading: bool = False
 
     def __post_init__(self):
         if self.tokenizer is None:
@@ -87,6 +88,7 @@ class EngineArgs:
                 model_config.get_max_model_len(),
                 num_pipeline_stages,
                 self.max_num_batched_tokens,
+                self.enable_kv_cache_offloading,
             )
         elif self.scheduler_type == SchedulerType.ORCA.name.lower():
             scheduler_config = OrcaSchedulerConfig(
@@ -111,6 +113,7 @@ class EngineArgs:
                 self.high_chunk_size,
                 self.chunk_schedule_max_tokens,
                 self.chunk_schedule_stages,
+                self.enable_kv_cache_offloading,
             )
         elif self.scheduler_type == SchedulerType.SIMPLE_CHUNKING.name.lower():
             scheduler_config = SimpleChunkingSchedulerConfig(

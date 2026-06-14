@@ -11,10 +11,12 @@ class SchedulerOutputs:
         ignored_seq_ids: List[int],
         preempted_seq_ids: List[int],
         scheduled_seq_metadata_list: List[SequenceScheduleMetadata],
+        offloaded_seq_ids: List[int] = None,
     ) -> None:
         self.id = id
         self.ignored_seq_ids = ignored_seq_ids
         self.preempted_seq_ids = preempted_seq_ids
+        self.offloaded_seq_ids = offloaded_seq_ids or []
         self.scheduled_seq_metadata_list = scheduled_seq_metadata_list
         self.prompt_chunk_lens = [
             metadata.num_prompt_tokens for metadata in scheduled_seq_metadata_list
@@ -29,13 +31,15 @@ class SchedulerOutputs:
 
     def is_empty(self) -> bool:
         # NOTE: We do not consider the ignored sequence groups.
-        return not self.scheduled_seq_metadata_list
+        # return not self.scheduled_seq_metadata_list
+        return not self.scheduled_seq_metadata_list and not self.offloaded_seq_ids
 
     def has_no_output(self) -> bool:
         return (
             not self.scheduled_seq_metadata_list
             and not self.ignored_seq_ids
             and not self.preempted_seq_ids
+            and not self.offloaded_seq_ids
         )
 
     @property
