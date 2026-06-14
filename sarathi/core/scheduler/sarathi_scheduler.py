@@ -97,6 +97,7 @@ class SarathiScheduler(BaseScheduler):
         running: List[Sequence] = []
         ignored_seq_ids: List[int] = []
         preempted_seq_ids: List[int] = []
+        offloaded_seq_ids: List[int] = []
         scheduled_seq_metadata_list: List[SequenceScheduleMetadata] = []
 
         num_batched_tokens: int = 0
@@ -133,17 +134,26 @@ class SarathiScheduler(BaseScheduler):
                 running_prefills.append(seq)
                 continue
 
+            # Do not offload incomplete prefill requests in Sarathi’s running_prefills path at first. 
+            # Sarathi’s rolling prefill already relies on partial prompt progress and chunking, and 
+            # offloading those mid-prefill is more complicated. Start with decode-phase offloading only
+
             while not self.block_manager.can_append_slot():
                 if self.running:
-                    # Preempt the lowest-priority sequence groups.
                     victim_seq = self.running.pop(-1)
-                    self._preempt(victim_seq)
-                    preempted_seq_ids.append(victim_seq.seq_id)
+                    if self.scheduler_config.enable_kv_cache_offloading:
+                        self._offload(victim_seq)
+                        offloaded_seq_ids.append(victim_seq.seq_id)
+                    else:
+                        self._preempt(victim_seq)
+                        preempted_seq_ids.append(victim_seq.seq_id)
                 else:
-                    # No other sequence groups can be preempted.
-                    # Preempt the current sequence group.
-                    self._preempt(seq)
-                    preempted_seq_ids.append(seq.seq_id)
+                    if self.scheduler_config.enable_kv_cache_offloading:
+                        self._offload(seq)
+                        offloaded_seq_ids.append(seq.seq_id)
+                    else:
+                        self._preempt(seq)
+                        preempted_seq_ids.append(seq.seq_id)
                     break
             else:
                 # Append new slots to the sequence group.
@@ -237,5 +247,6 @@ class SarathiScheduler(BaseScheduler):
             id=self._iteration_id,
             ignored_seq_ids=ignored_seq_ids,
             preempted_seq_ids=preempted_seq_ids,
+            offloaded_seq_ids=offloaded_seq_ids,
             scheduled_seq_metadata_list=scheduled_seq_metadata_list,
         )

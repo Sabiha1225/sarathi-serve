@@ -99,7 +99,11 @@ class BenchmarkRunner:
             chunk_schedule_stages=self._config.sarathi_scheduler_chunk_schedule_stages,
             # vllm scheduler config
             max_num_batched_tokens=self._config.vllm_scheduler_max_tokens_in_batch,
-            enable_kv_cache_offloading=self._config.vllm_scheduler_enable_kv_cache_offloading,
+            enable_kv_cache_offloading=(
+                self._config.vllm_scheduler_enable_kv_cache_offloading
+                if self._config.replica_scheduler_provider == "vllm"
+                else self._config.sarathi_scheduler_enable_kv_cache_offloading
+            ),
             # wandb config
             write_metrics=self._config.write_metrics,
             enable_chrome_trace=self._config.write_chrome_trace,
