@@ -1,0 +1,2 @@
+qps,chunk_size,run_directory,total_rows,distinct_requests,distinct_preempted_requests,percent_requests_preempted,total_preemptions,prefill_preemptions,decode_preemptions,total_execution_time_sec,total_preempted_time_sec,total_scheduling_delay_sec,mean_execution_time_sec,mean_preempted_time_sec,mean_scheduling_delay_sec
+20,2048,/home/sabiha/sarathi-serve/benchmark_output/figure-1/arxiv_chunk_2048_poison_20_qps_mixtral,1000,1000,1000,100.0,223771,5394,218377,14636.70619327575,1582.7842329704436,155088.1364869679,14.63670619327575,1.5827842329704436,155.0881364869679

@@ -1,0 +1,10 @@
+Preemption Summary
+==================
+QPS: 15
+Chunk size: 2048
+Distinct requests: 1000
+Distinct preempted requests: 1000
+Percent requests preempted: 100.00%
+Total preemptions: 223771
+Prefill preemptions: 5394
+Decode preemptions: 218377

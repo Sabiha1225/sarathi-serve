@@ -100,6 +100,7 @@ benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting aft
 vLLM: 200 Requests - gpu = .85,
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18265 iterations), Total time taken: 2146.74 seconds  
 
+************************************************************************
 Mixtral Arxiv
 # Poisson 1 request per seconds
 
@@ -109,3 +110,231 @@ benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting aft
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18662 iterations), Total time taken: 973.82 seconds 
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (20093 iterations), Total time taken: 972.92 seconds 
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (19118 iterations), Total time taken: 971.93 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (19372 iterations), Total time taken: 970.95 seconds 
+
+# Poisson 5 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3402.07 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (35478 iterations), Total time taken: 1860.58 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17907 iterations), Total time taken: 988.46 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (9121 iterations), Total time taken: 576.95 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (4728 iterations), Total time taken: 358.41 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (3301 iterations), Total time taken: 323.07 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (2590 iterations), Total time taken: 284.40 seconds 
+
+# Poisson 10 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3546.17 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (35478 iterations), Total time taken: 1847.89 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17907 iterations), Total time taken: 990.70 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (9121 iterations), Total time taken: 565.28 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (4728 iterations), Total time taken: 352.80 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (3301 iterations), Total time taken: 320.29 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (2590 iterations), Total time taken: 302.99 seconds 
+
+
+# Poisson 15 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3370.26 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (35478 iterations), Total time taken: 1795.63 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17907 iterations), Total time taken: 996.69 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (9121 iterations), Total time taken: 581.15 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (4728 iterations), Total time taken: 352.22 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (3301 iterations), Total time taken: 303.73 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (2590 iterations), Total time taken: 301.85 seconds
+
+
+# Poisson 20 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 3437.33 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (35478 iterations), Total time taken: 1863.65 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17907 iterations), Total time taken: 995.65 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (9121 iterations), Total time taken: 566.05 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (4728 iterations), Total time taken: 334.50 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (3301 iterations), Total time taken: 327.96 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (2590 iterations), Total time taken: 300.27 seconds 
+ 
+
+Sarathi_serve : 200 Requests - gpu = .85 , 0 Preemption, chunk size 1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (9121 iterations), Total time taken: 565.44 seconds 
+preemption count = 0
+
+Sarathi_serve : 200 Requests - gpu = .65 , 0 Preemption, chunk size 1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (9121 iterations), Total time taken: 580.79 seconds 
+preemption count = 0
+
+Sarathi_serve : 200 Requests - gpu = .45 , 0 Preemption, chunk size 1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (9121 iterations), Total time taken: 578.47 seconds 
+preemption count = 0
+
+Sarathi_serve : 200 Requests - gpu = .25 , 0 Preemption, chunk size 1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (9121 iterations), Total time taken: 589.87 seconds 
+preemption count = 0
+
+ 
+
+# vLLM Poisson 1 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17972 iterations), Total time taken: 973.46 seconds 
+
+# vLLM Poisson 5 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (1963 iterations), Total time taken: 275.55 seconds 
+
+# vLLM Poisson 10 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (1963 iterations), Total time taken: 280.20 seconds 
+
+# vLLM Poisson 15 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (1963 iterations), Total time taken: 278.73 seconds 
+
+# vLLM Poisson 20 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (1963 iterations), Total time taken: 277.65 seconds 
+
+
+vLLM : 200 Requests - gpu = .85 , 0 Preemption
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (1963 iterations), Total time taken: 271.83 seconds 
+preemption count = 0
+
+vLLM : 200 Requests - gpu = .65 , 0 Preemption
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (1963 iterations), Total time taken: 279.30 seconds 
+preemption count = 0
+
+vLLM : 200 Requests - gpu = .45 , 0 Preemption
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (1950 iterations), Total time taken: 262.19 seconds 
+preemption count = 0
+
+vLLM : 200 Requests - gpu = .25 , 0 Preemption
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (2667 iterations), Total time taken: 323.18 seconds 
+preemption count = 0
+
+
+******************************************** QWEN ***************************************
+
+
+# Poisson 1 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 4082.11 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (35478 iterations), Total time taken: 2327.37 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (21314 iterations), Total time taken: 1974.63 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18879 iterations), Total time taken: 1992.64 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18199 iterations), Total time taken: 2009.71 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18042 iterations), Total time taken: 2043.79 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17985 iterations), Total time taken: 2056.88 seconds 
+
+# Poisson 5 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 4061.54 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (35478 iterations), Total time taken: 2374.23 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (21314 iterations), Total time taken: 1972.02 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18879 iterations), Total time taken: 1991.70 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18199 iterations), Total time taken: 2017.46 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18042 iterations), Total time taken: 2049.96 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17985 iterations), Total time taken: 2043.78 seconds 
+
+# Poisson 10 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 4039.15 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (35478 iterations), Total time taken: 2351.79 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (21314 iterations), Total time taken: 1960.81 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18879 iterations), Total time taken: 2011.58 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18199 iterations), Total time taken: 2027.46 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18042 iterations), Total time taken: 2053.90 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17985 iterations), Total time taken: 2049.92 seconds 
+
+# Poisson 15 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 4079.93 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (35478 iterations), Total time taken: 2388.86 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (21314 iterations), Total time taken: 1963.75 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18879 iterations), Total time taken: 2013.69 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18199 iterations), Total time taken: 2025.41 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18042 iterations), Total time taken: 2049.37 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17985 iterations), Total time taken: 2075.91 seconds 
+
+# Poisson 20 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (70619 iterations), Total time taken: 4132.29 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (35478 iterations), Total time taken: 2385.91 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (21314 iterations), Total time taken: 1977.16 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18879 iterations), Total time taken: 1993.46 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18199 iterations), Total time taken: 2031.66 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18042 iterations), Total time taken: 2036.76 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17985 iterations), Total time taken: 2065.05 seconds 
+
+
+
+Sarathi_serve : 200 Requests - gpu = .85 , 0 Preemption, chunk size 1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18879 iterations), Total time taken: 2017.04 seconds 
+preemption count = 0
+
+Sarathi_serve : 200 Requests - gpu = .65 , 0 Preemption, chunk size 1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (26985 iterations), Total time taken: 2183.50 seconds 
+preemption count = 0
+
+Sarathi_serve : 200 Requests - gpu = .45 , 0 Preemption, chunk size 1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (48115 iterations), Total time taken: 2851.12 seconds 
+preemption count = 1
+
+Sarathi_serve : 200 Requests - gpu = .25 , 0 Preemption, chunk size 1024
+preemption count = 0
+
+
+
+
+
+# vLLM Poisson 1 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18938 iterations), Total time taken: 2181.80 seconds 
+
+# vLLM Poisson 5 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18938 iterations), Total time taken: 2211.74 seconds 
+
+# vLLM Poisson 10 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18938 iterations), Total time taken: 2209.85 seconds 
+
+# vLLM Poisson 15 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18938 iterations), Total time taken: 2207.77 seconds 
+
+# vLLM Poisson 20 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18938 iterations), Total time taken: 2203.88 seconds 
+
+vLLM : 200 Requests - gpu = .85 , 0 Preemption
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18938 iterations), Total time taken: 2208.33 seconds 
+preemption count = 0
+
+vLLM : 200 Requests - gpu = .65 , 0 Preemption
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (27360 iterations), Total time taken: 2418.95 seconds 
+preemption count = 0
+
+vLLM : 200 Requests - gpu = .45 , 0 Preemption
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (50595 iterations), Total time taken: 3194.02 seconds 
+preemption count = 6
+
+vLLM : 200 Requests - gpu = .25 , 0 Preemption
+preemption count = 0
+
+
+*******************************************************************************
