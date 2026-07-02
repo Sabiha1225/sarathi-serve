@@ -321,6 +321,8 @@ benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting aft
 # vLLM Poisson 20 request per seconds
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18938 iterations), Total time taken: 2203.88 seconds 
 
+
+
 vLLM : 200 Requests - gpu = .85 , 0 Preemption
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (18938 iterations), Total time taken: 2208.33 seconds 
 preemption count = 0
@@ -338,3 +340,33 @@ preemption count = 0
 
 
 *******************************************************************************
+
+
+# vLLM Poisson 1 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (17834 iterations), Total time taken: 974.53 seconds 
+
+# vLLM Poisson 5 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (1963 iterations), Total time taken: 286.81 seconds 
+
+# vLLM Poisson 10 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (1963 iterations), Total time taken: 284.54 seconds 
+
+# vLLM Poisson 15 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (1963 iterations), Total time taken: 282.82 seconds 
+
+# vLLM Poisson 20 request per seconds
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1000 (1963 iterations), Total time taken: 286.01 seconds 
+
+
+
+
+
+************************************************* Custom dataset ***********************************
+
+
+
+
+Custom vllm mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (220665 iterations), Total time taken: 294.19 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=2

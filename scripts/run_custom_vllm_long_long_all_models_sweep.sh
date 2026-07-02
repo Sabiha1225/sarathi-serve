@@ -11,9 +11,9 @@ MAIN="$REPO/sarathi/benchmark/main.py"
 OUTPUT_ROOT="$REPO/benchmark_output/figure-1"
 TIME_FILE="$REPO/log/time.txt"
 LATEST_LOG="$REPO/log/sarathi_log.log"
-SUMMARY="$OUTPUT_ROOT/custom_long_long_all_models_sweep_summary.csv"
+SUMMARY="$OUTPUT_ROOT/custom_vllm_long_long_all_models_sweep_summary.csv"
 
-DATASET_LABEL="custom_sarathi_long_input_long_output"
+DATASET_LABEL="custom_vllm_long_input_long_output"
 
 MODELS=(
     "meta-llama/Llama-2-7b-hf|llama2_7b"
@@ -72,7 +72,7 @@ run_one() {
     echo "============================================================"
 
     echo "" >> "$TIME_FILE"
-    echo "Custom long-long $sweep_type: model=$model_name num_requests=$num_requests qps=$qps" >> "$TIME_FILE"
+    echo "Custom vllm long-long $sweep_type: model=$model_name num_requests=$num_requests qps=$qps" >> "$TIME_FILE"
 
     local marker
     local gpu_tmp

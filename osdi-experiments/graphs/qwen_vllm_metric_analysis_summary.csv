@@ -1,0 +1,6 @@
+qps,total_time,status,sequence_metrics_csv,output_dir
+1,2181.80,success,/home/sabiha/sarathi-serve/benchmark_output/figure-1/arxiv_vllm_poison_1_qps_qwen/replica_0/sequence_metrics.csv,/home/sabiha/sarathi-serve/benchmark_output/figure-1/arxiv_vllm_poison_1_qps_qwen
+5,2211.74,success,/home/sabiha/sarathi-serve/benchmark_output/figure-1/arxiv_vllm_poison_5_qps_qwen/replica_0/sequence_metrics.csv,/home/sabiha/sarathi-serve/benchmark_output/figure-1/arxiv_vllm_poison_5_qps_qwen
+10,2209.85,success,/home/sabiha/sarathi-serve/benchmark_output/figure-1/arxiv_vllm_poison_10_qps_qwen/replica_0/sequence_metrics.csv,/home/sabiha/sarathi-serve/benchmark_output/figure-1/arxiv_vllm_poison_10_qps_qwen
+15,2207.77,success,/home/sabiha/sarathi-serve/benchmark_output/figure-1/arxiv_vllm_poison_15_qps_qwen/replica_0/sequence_metrics.csv,/home/sabiha/sarathi-serve/benchmark_output/figure-1/arxiv_vllm_poison_15_qps_qwen
+20,2203.88,success,/home/sabiha/sarathi-serve/benchmark_output/figure-1/arxiv_vllm_poison_20_qps_qwen/replica_0/sequence_metrics.csv,/home/sabiha/sarathi-serve/benchmark_output/figure-1/arxiv_vllm_poison_20_qps_qwen
