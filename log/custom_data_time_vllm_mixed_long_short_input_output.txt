@@ -1,0 +1,299 @@
+Custom vllm mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (220665 iterations), Total time taken: 294.19 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (105818 iterations), Total time taken: 295.32 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=3
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (68838 iterations), Total time taken: 282.15 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=4
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (44783 iterations), Total time taken: 297.54 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=5
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (33275 iterations), Total time taken: 293.58 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=6
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (24980 iterations), Total time taken: 294.30 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=7
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (21038 iterations), Total time taken: 295.87 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=8
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (14112 iterations), Total time taken: 290.12 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=9
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (12437 iterations), Total time taken: 293.45 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=10
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (13008 iterations), Total time taken: 294.88 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=meta-llama/Llama-2-7b-hf num_requests=1 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (221242 iterations), Total time taken: 6.08 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=meta-llama/Llama-2-7b-hf num_requests=2 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2 (247577 iterations), Total time taken: 9.98 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=meta-llama/Llama-2-7b-hf num_requests=3 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 3 (241857 iterations), Total time taken: 291.60 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=meta-llama/Llama-2-7b-hf num_requests=4 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 4 (233118 iterations), Total time taken: 288.09 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=meta-llama/Llama-2-7b-hf num_requests=5 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 5 (239382 iterations), Total time taken: 289.11 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=meta-llama/Llama-2-7b-hf num_requests=6 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 6 (225009 iterations), Total time taken: 288.51 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=meta-llama/Llama-2-7b-hf num_requests=7 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 7 (238732 iterations), Total time taken: 295.00 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=meta-llama/Llama-2-7b-hf num_requests=8 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 8 (232939 iterations), Total time taken: 293.53 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=meta-llama/Llama-2-7b-hf num_requests=9 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 9 (230920 iterations), Total time taken: 293.24 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (239016 iterations), Total time taken: 297.14 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=10 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (222371 iterations), Total time taken: 296.27 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=10 qps=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (105652 iterations), Total time taken: 298.26 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=10 qps=3
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (67200 iterations), Total time taken: 296.22 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=10 qps=4
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (50091 iterations), Total time taken: 294.65 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=10 qps=5
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (34718 iterations), Total time taken: 291.11 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=10 qps=6
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (27060 iterations), Total time taken: 293.67 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=10 qps=7
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (23665 iterations), Total time taken: 299.57 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=10 qps=8
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (16091 iterations), Total time taken: 295.90 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=10 qps=9
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (17833 iterations), Total time taken: 290.64 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=10 qps=10
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (11532 iterations), Total time taken: 296.42 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=1 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (235818 iterations), Total time taken: 6.06 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=2 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2 (232847 iterations), Total time taken: 10.14 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=3 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 3 (237087 iterations), Total time taken: 288.97 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=4 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 4 (244542 iterations), Total time taken: 290.75 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=5 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 5 (225230 iterations), Total time taken: 287.41 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=6 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 6 (230025 iterations), Total time taken: 293.41 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=7 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 7 (220167 iterations), Total time taken: 293.11 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=8 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 8 (227769 iterations), Total time taken: 294.16 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=9 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 9 (221395 iterations), Total time taken: 293.72 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=10 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (209169 iterations), Total time taken: 297.47 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (230086 iterations), Total time taken: 292.25 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (107784 iterations), Total time taken: 287.56 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=3
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (74927 iterations), Total time taken: 290.78 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=4
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (44431 iterations), Total time taken: 283.41 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=5
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (38048 iterations), Total time taken: 282.34 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=6
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (31430 iterations), Total time taken: 283.83 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=7
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (23992 iterations), Total time taken: 292.91 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=8
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (20074 iterations), Total time taken: 286.13 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=9
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (9923 iterations), Total time taken: 289.40 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=10
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (9038 iterations), Total time taken: 293.11 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=DiscoResearch/mixtral-7b-8expert num_requests=1 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (242838 iterations), Total time taken: 6.07 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=DiscoResearch/mixtral-7b-8expert num_requests=2 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2 (245774 iterations), Total time taken: 9.82 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=DiscoResearch/mixtral-7b-8expert num_requests=3 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 3 (242425 iterations), Total time taken: 290.65 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=DiscoResearch/mixtral-7b-8expert num_requests=4 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 4 (244353 iterations), Total time taken: 288.66 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=DiscoResearch/mixtral-7b-8expert num_requests=5 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 5 (241501 iterations), Total time taken: 287.84 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=DiscoResearch/mixtral-7b-8expert num_requests=6 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 6 (238388 iterations), Total time taken: 280.78 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=DiscoResearch/mixtral-7b-8expert num_requests=7 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 7 (221889 iterations), Total time taken: 284.96 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=DiscoResearch/mixtral-7b-8expert num_requests=8 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 8 (226163 iterations), Total time taken: 292.76 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=DiscoResearch/mixtral-7b-8expert num_requests=9 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 9 (227810 iterations), Total time taken: 290.82 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (222895 iterations), Total time taken: 285.56 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=Qwen/Qwen-7B num_requests=10 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (223112 iterations), Total time taken: 290.47 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=Qwen/Qwen-7B num_requests=10 qps=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (104251 iterations), Total time taken: 292.69 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=Qwen/Qwen-7B num_requests=10 qps=3
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (70207 iterations), Total time taken: 298.74 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=Qwen/Qwen-7B num_requests=10 qps=4
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (46494 iterations), Total time taken: 292.23 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=Qwen/Qwen-7B num_requests=10 qps=5
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (33988 iterations), Total time taken: 299.02 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=Qwen/Qwen-7B num_requests=10 qps=6
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (26310 iterations), Total time taken: 289.56 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=Qwen/Qwen-7B num_requests=10 qps=7
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (29523 iterations), Total time taken: 300.26 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=Qwen/Qwen-7B num_requests=10 qps=8
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (17244 iterations), Total time taken: 297.68 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=Qwen/Qwen-7B num_requests=10 qps=9
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (11866 iterations), Total time taken: 290.99 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=Qwen/Qwen-7B num_requests=10 qps=10
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (9281 iterations), Total time taken: 288.79 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=1 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (235046 iterations), Total time taken: 6.15 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=2 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2 (209867 iterations), Total time taken: 10.51 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=3 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 3 (237998 iterations), Total time taken: 288.05 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=4 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 4 (232350 iterations), Total time taken: 287.68 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=5 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 5 (225799 iterations), Total time taken: 294.40 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=6 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 6 (229772 iterations), Total time taken: 289.64 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=7 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 7 (235509 iterations), Total time taken: 289.27 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=8 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 8 (227758 iterations), Total time taken: 298.30 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=9 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 9 (214723 iterations), Total time taken: 290.92 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=10 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (227604 iterations), Total time taken: 299.63 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=01-ai/Yi-6B num_requests=10 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (225689 iterations), Total time taken: 298.59 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=01-ai/Yi-6B num_requests=10 qps=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (100892 iterations), Total time taken: 288.44 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=01-ai/Yi-6B num_requests=10 qps=3
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (70039 iterations), Total time taken: 292.81 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=01-ai/Yi-6B num_requests=10 qps=4
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (45131 iterations), Total time taken: 296.16 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=01-ai/Yi-6B num_requests=10 qps=5
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (39114 iterations), Total time taken: 294.89 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=01-ai/Yi-6B num_requests=10 qps=6
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (19563 iterations), Total time taken: 296.65 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=01-ai/Yi-6B num_requests=10 qps=7
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (17034 iterations), Total time taken: 293.27 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=01-ai/Yi-6B num_requests=10 qps=8
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (16766 iterations), Total time taken: 296.32 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=01-ai/Yi-6B num_requests=10 qps=9
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (13724 iterations), Total time taken: 289.59 seconds 
+
+Custom vllm mixed long-short fixed_num_requests: model=01-ai/Yi-6B num_requests=10 qps=10
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (8826 iterations), Total time taken: 295.81 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=01-ai/Yi-6B num_requests=1 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (228167 iterations), Total time taken: 6.04 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=01-ai/Yi-6B num_requests=2 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2 (224648 iterations), Total time taken: 10.01 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=01-ai/Yi-6B num_requests=3 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 3 (241844 iterations), Total time taken: 281.57 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=01-ai/Yi-6B num_requests=4 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 4 (228457 iterations), Total time taken: 292.97 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=01-ai/Yi-6B num_requests=5 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 5 (229262 iterations), Total time taken: 286.88 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=01-ai/Yi-6B num_requests=6 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 6 (214065 iterations), Total time taken: 294.40 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=01-ai/Yi-6B num_requests=7 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 7 (228970 iterations), Total time taken: 296.98 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=01-ai/Yi-6B num_requests=8 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 8 (226023 iterations), Total time taken: 289.90 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=01-ai/Yi-6B num_requests=9 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 9 (228319 iterations), Total time taken: 288.03 seconds 
+
+Custom vllm mixed long-short fixed_qps: model=01-ai/Yi-6B num_requests=10 qps=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (213588 iterations), Total time taken: 300.42 seconds 
