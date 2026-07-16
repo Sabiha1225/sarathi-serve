@@ -20,16 +20,6 @@ Custom short-long fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_request
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (22315 iterations), Total time taken: 350.05 seconds 
 
 Custom short-long fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=8
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (23920 iterations), Total time taken: 329.78 seconds 
-
-
-
-******************* Re run *****************************************
-
-
-
-
-Custom short-long fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=8
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (18878 iterations), Total time taken: 334.40 seconds 
 
 Custom short-long fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=9
@@ -225,11 +215,6 @@ Custom short-long fixed_qps: model=Qwen/Qwen-7B num_requests=2 qps=1
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2 (247968 iterations), Total time taken: 304.84 seconds 
 
 Custom short-long fixed_qps: model=Qwen/Qwen-7B num_requests=3 qps=1
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 3 (242471 iterations), Total time taken: 309.33 seconds 
-
-
-*******************  Re Run *********************
-Custom short-long fixed_qps: model=Qwen/Qwen-7B num_requests=3 qps=1
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 3 (245943 iterations), Total time taken: 312.05 seconds 
 
 Custom short-long fixed_qps: model=Qwen/Qwen-7B num_requests=4 qps=1
@@ -309,12 +294,6 @@ benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting aft
 
 Custom short-long fixed_qps: model=01-ai/Yi-6B num_requests=9 qps=1
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 9 (233860 iterations), Total time taken: 352.23 seconds 
-
-Custom short-long fixed_qps: model=01-ai/Yi-6B num_requests=10 qps=1
-
-
-*******************************     Re Run ******************************************************
-
 
 Custom short-long fixed_qps: model=01-ai/Yi-6B num_requests=10 qps=1
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (237669 iterations), Total time taken: 360.24 seconds 

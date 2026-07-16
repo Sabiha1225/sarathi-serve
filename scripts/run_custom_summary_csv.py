@@ -8,16 +8,33 @@ import pandas as pd
 import yaml
 
 
-# cd /home/sabiha/sarathi-serve
-
 # python scripts/run_custom_summary_csv.py \
-#   --benchmark-root benchmark_output/figure-1 \
-#   --log-root log \
-#   --output-dir custom_data_output
+#  --benchmark-root benchmark_output/figure-1 \
+#  --log-root log \
+#  --output-dir custom_data_output
+
+REQUEST_TYPE_KEYS = [
+    "long_input_long_output",
+    "long_input_short_output",
+    "mixed_long_short_input_output",
+    "mixed_long_short_output",
+    "short_input_long_output",
+    "short_input_short_output",
+]
+
+REQUEST_TYPE_LABELS = {
+    "long_input_long_output": "long input long output",
+    "long_input_short_output": "long input short output",
+    "mixed_long_short_input_output": "mixed long short input output",
+    "mixed_long_short_output": "mixed long short input output",
+    "short_input_long_output": "short input long output",
+    "short_input_short_output": "short input short output",
+}
 
 REQUEST_TYPE_ORDER = [
     "long input long output",
     "long input short output",
+    "mixed long short input output",
     "short input long output",
     "short input short output",
 ]
@@ -48,23 +65,25 @@ def short_model_name(model_name):
     if "mistral-7b" in name:
         return "mistral_7b"
     if "mixtral" in name:
-        return "mixtral_8x7b"
+        return "mixtral_7b_8expert"
     if "qwen" in name:
         return "qwen_7b"
     if "yi" in name:
         return "yi_6b"
 
-    return str(model_name).split("/")[-1].replace("-", "_")
+    return str(model_name).split("/")[-1].replace("-", "_").lower()
 
 
 def pretty_request_type(request_type):
-    return request_type.replace("_", " ")
+    return REQUEST_TYPE_LABELS.get(request_type, request_type.replace("_", " "))
 
 
 def parse_custom_run_name(run_name):
+    request_type_pattern = "|".join(REQUEST_TYPE_KEYS)
+
     pattern = re.compile(
-        r"^custom_(?P<scheduler>sarathi|vllm)_"
-        r"(?P<request_type>long_input_long_output|long_input_short_output|short_input_long_output|short_input_short_output)_"
+        rf"^custom_(?P<scheduler>sarathi|vllm)_"
+        rf"(?P<request_type>{request_type_pattern})_"
     )
 
     match = pattern.search(run_name)
@@ -115,14 +134,18 @@ def parse_time_logs(log_root):
     if log_root is None or not log_root.exists():
         return pd.DataFrame(rows)
 
+    request_type_pattern = "|".join(REQUEST_TYPE_KEYS)
+
     filename_re = re.compile(
-        r"^custom_data_time_(?P<scheduler>sarathi|vllm)_"
-        r"(?P<request_type>long_input_long_output|long_input_short_output|short_input_long_output|short_input_short_output)\.txt$"
+        rf"^custom_data_time_(?P<scheduler>sarathi|vllm)_"
+        rf"(?P<request_type>{request_type_pattern})\.txt$"
     )
 
     meta_re = re.compile(
-        r"Custom\s+(?P<short_request_type>[\w-]+)\s+(?P<sweep>[\w_]+):\s+"
-        r"model=(?P<model>\S+)\s+num_requests=(?P<num_requests>\d+)\s+qps=(?P<qps>[\d.]+)"
+        r"^Custom\s+.*?:\s+"
+        r"model=(?P<model>\S+)\s+"
+        r"num_requests=(?P<num_requests>\d+)\s+"
+        r"qps=(?P<qps>[\d.]+)"
     )
 
     time_re = re.compile(r"Total time taken:\s*(?P<seconds>[\d.]+)\s*seconds")
@@ -175,6 +198,7 @@ def parse_time_logs(log_root):
                 "QPS",
             ],
             as_index=False,
+            dropna=False,
         )
         .agg({"Inference Time": "mean"})
     )
@@ -242,7 +266,6 @@ def load_request_level_rows(run_dir):
 
     df = df.reset_index(drop=True)
 
-    # output = pd.DataFrame()
     output = pd.DataFrame(index=df.index)
     output["Scheduler"] = scheduler
     output["Input Output data Type"] = input_output_data_type
@@ -251,15 +274,13 @@ def load_request_level_rows(run_dir):
     output["QPS"] = qps
     output["Request No"] = range(len(df))
 
-    output["Prefill Token Count"] = df["request_num_prefill_tokens"]
-    output["Decode Token Count"] = df["request_num_decode_tokens"]
-
-    output["Prefill Time"] = df["prefill_exec_with_preemption"]
-    output["Decode Time"] = df["decode_exec_with_preemption"]
-    output["Request Execution Time"] = df["execution_time_with_preemptions"]
-
-    output["Request End-to-End time"] = df["request_e2e_time"]
-    output["Scheduling Delay"] = df["request_scheduling_delay"]
+    output["Prefill Token Count"] = df.get("request_num_prefill_tokens")
+    output["Decode Token Count"] = df.get("request_num_decode_tokens")
+    output["Prefill Time"] = df.get("prefill_exec_with_preemption")
+    output["Decode Time"] = df.get("decode_exec_with_preemption")
+    output["Request Execution Time"] = df.get("execution_time_with_preemptions")
+    output["Request End-to-End time"] = df.get("request_e2e_time")
+    output["Scheduling Delay"] = df.get("request_scheduling_delay")
 
     output["Run Directory"] = str(run_dir)
     output["Max GPU Memory"] = read_gpu_max_memory(run_dir)
@@ -294,7 +315,8 @@ def build_request_level_csv(benchmark_root):
             "Number of Requests",
             "QPS",
             "Request No",
-        ]
+        ],
+        na_position="last",
     )
 
     request_level = request_level.drop(columns=["request_type_order", "scheduler_order"])
@@ -309,11 +331,8 @@ def p95(series):
 def build_summary_csv(request_level, time_logs):
     df = request_level.copy()
 
-    # TTFT is prefill time.
     df["TTFT"] = df["Prefill Time"]
 
-    # TPOT: decode time per output token after first token.
-    # If you want decode_time / decode_tokens instead, replace "- 1" with nothing.
     denominator = (df["Decode Token Count"] - 1).clip(lower=1)
     df["TPOT"] = df["Decode Time"] / denominator
 
@@ -329,6 +348,7 @@ def build_summary_csv(request_level, time_logs):
                 "QPS",
             ],
             as_index=False,
+            dropna=False,
         )
         .agg(
             **{
@@ -401,7 +421,8 @@ def build_summary_csv(request_level, time_logs):
             "Model Name",
             "Number of requests",
             "QPS",
-        ]
+        ],
+        na_position="last",
     )
 
     grouped = grouped.drop(columns=["request_type_order", "scheduler_order"])
@@ -463,6 +484,11 @@ def main():
     print(f"Wrote summary CSV: {summary_csv}")
     print(f"Request rows: {len(request_level)}")
     print(f"Summary rows: {len(summary)}")
+
+    missing_time = summary[summary["Inference Time"].isna()]
+    if len(missing_time) > 0:
+        print(f"WARN: {len(missing_time)} summary rows are missing Inference Time.")
+        print("This means request-level benchmark data exists, but no matching time-log entry was found.")
 
 
 if __name__ == "__main__":

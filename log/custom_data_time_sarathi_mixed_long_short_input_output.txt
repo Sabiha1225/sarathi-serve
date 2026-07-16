@@ -14,34 +14,10 @@ Custom mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_r
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (34308 iterations), Total time taken: 282.41 seconds 
 
 Custom mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=6
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (26033 iterations), Total time taken: 282.11 seconds 
-
-
-
-*****************************       Re Run         ***************************
-
-
-Custom mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=6
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (24197 iterations), Total time taken: 286.48 seconds 
 
 Custom mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=7
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (21218 iterations), Total time taken: 290.45 seconds 
-
-
-
-*****************************       Re Run         ***************************
-
-
-
-Custom mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=7
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (21510 iterations), Total time taken: 289.04 seconds 
-
-Custom mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=8
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (14376 iterations), Total time taken: 290.46 seconds 
-
-
-*****************************       Re Run         ***************************
-
 
 Custom mixed long-short fixed_num_requests: model=meta-llama/Llama-2-7b-hf num_requests=10 qps=8
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (17153 iterations), Total time taken: 288.20 seconds 
@@ -242,14 +218,6 @@ Custom mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=3 qps=1
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 3 (247953 iterations), Total time taken: 292.65 seconds 
 
 Custom mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=4 qps=1
-
-
-
-*****************************       Re Run         ***************************
-
-
-
-Custom mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=4 qps=1
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 4 (239573 iterations), Total time taken: 290.53 seconds 
 
 Custom mixed long-short fixed_qps: model=Qwen/Qwen-7B num_requests=5 qps=1
@@ -323,13 +291,6 @@ benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting aft
 
 Custom mixed long-short fixed_qps: model=01-ai/Yi-6B num_requests=8 qps=1
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 8 (227079 iterations), Total time taken: 294.52 seconds 
-
-Custom mixed long-short fixed_qps: model=01-ai/Yi-6B num_requests=9 qps=1
-benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 9 (229399 iterations), Total time taken: 294.69 seconds 
-
-
-*****************************       Re Run         ***************************
-
 
 Custom mixed long-short fixed_qps: model=01-ai/Yi-6B num_requests=9 qps=1
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 9 (228839 iterations), Total time taken: 299.23 seconds 

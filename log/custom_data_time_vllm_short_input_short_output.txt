@@ -116,15 +116,6 @@ Custom vllm short-short fixed_qps: model=mistralai/Mistral-7B-Instruct-v0.3 num_
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 9 (225726 iterations), Total time taken: 17.17 seconds 
 
 Custom vllm short-short fixed_qps: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=10 qps=1
-
-
-
-
-************************   Re Run **************************************************
-
-
-
-Custom vllm short-short fixed_qps: model=mistralai/Mistral-7B-Instruct-v0.3 num_requests=10 qps=1
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (232062 iterations), Total time taken: 17.25 seconds 
 
 Custom vllm short-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=1
@@ -141,13 +132,6 @@ benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting aft
 
 Custom vllm short-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=5
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (31961 iterations), Total time taken: 14.22 seconds 
-
-Custom vllm short-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=6
-
-
-**************************   Re Run ******************************
-
-
 
 Custom vllm short-short fixed_num_requests: model=DiscoResearch/mixtral-7b-8expert num_requests=10 qps=6
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 10 (31374 iterations), Total time taken: 11.90 seconds 

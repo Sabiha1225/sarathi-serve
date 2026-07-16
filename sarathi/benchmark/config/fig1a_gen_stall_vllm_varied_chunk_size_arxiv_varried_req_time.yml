@@ -65,7 +65,7 @@ trace_request_interval_generator:
   time_scale_factor: 0.3
 
 poisson_request_interval_generator:
-  qps: 200.0
+  qps: 1.0
 
 gamma_request_interval_generator:
   cv: 0.5
@@ -93,7 +93,7 @@ replica_scheduler:
 
 sarathi_scheduler:
   # chunk_size: 1536
-  chunk_size: 4096
+  chunk_size: 128
   enable_rolling_prefills: true
   enable_dynamic_chunking_schedule: false
   # next four params apply only when using dynamic schedule
