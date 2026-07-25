@@ -46,6 +46,7 @@ class EngineArgs:
     scheduler_type: str = "sarathi"
     max_model_len: Optional[int] = None
     max_num_seqs: int = 256
+    policy_name: str = "fcfs"   # NEW
     # vllm scheduler parameters
     max_num_batched_tokens: Optional[int] = None
     # sarathi scheduler parameters
@@ -111,6 +112,7 @@ class EngineArgs:
                 self.high_chunk_size,
                 self.chunk_schedule_max_tokens,
                 self.chunk_schedule_stages,
+                self.policy_name,   # NEW
             )
         elif self.scheduler_type == SchedulerType.SIMPLE_CHUNKING.name.lower():
             scheduler_config = SimpleChunkingSchedulerConfig(

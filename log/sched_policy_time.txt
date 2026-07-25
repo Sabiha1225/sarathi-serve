@@ -1,0 +1,296 @@
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_long policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (86705 iterations), Total time taken: 7170.95 seconds
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_long policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (88028 iterations), Total time taken: 7177.90 seconds
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_long policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (85820 iterations), Total time taken: 7202.92 seconds
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_long policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (88750 iterations), Total time taken: 7305.63 seconds
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_long policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (86705 iterations), Total time taken: 7201.47 seconds
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_long policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (87808 iterations), Total time taken: 7243.76 seconds
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_long policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (88329 iterations), Total time taken: 7277.83 seconds
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_long policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (87575 iterations), Total time taken: 7230.37 seconds
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_long policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (86852 iterations), Total time taken: 7142.93 seconds
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_long policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (86705 iterations), Total time taken: 7272.97 seconds
+
+
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_short policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4230 iterations), Total time taken: 394.03 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_short policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4230 iterations), Total time taken: 393.17 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_short policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4230 iterations), Total time taken: 390.55 seconds 
+
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_short policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4230 iterations), Total time taken: 392.59 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_short policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4230 iterations), Total time taken: 395.36 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_short policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4230 iterations), Total time taken: 394.55 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_short policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4230 iterations), Total time taken: 389.85 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_short policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4230 iterations), Total time taken: 395.01 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_short policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4230 iterations), Total time taken: 399.01 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=long_short policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4230 iterations), Total time taken: 396.42 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=mixed policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (31784 iterations), Total time taken: 2719.88 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=mixed policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (32171 iterations), Total time taken: 2712.48 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=mixed policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (31930 iterations), Total time taken: 2725.28 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=mixed policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (32788 iterations), Total time taken: 2774.81 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=mixed policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (31784 iterations), Total time taken: 2704.48 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=mixed policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (32214 iterations), Total time taken: 2703.17 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=mixed policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (31215 iterations), Total time taken: 2703.13 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=mixed policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (30810 iterations), Total time taken: 2639.26 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=mixed policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (31690 iterations), Total time taken: 2736.51 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=mixed policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (31784 iterations), Total time taken: 2712.53 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_long policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (33477 iterations), Total time taken: 3117.33 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_long policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (32622 iterations), Total time taken: 3069.10 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_long policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (30545 iterations), Total time taken: 2959.69 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_long policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (34537 iterations), Total time taken: 3127.09 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_long policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (33348 iterations), Total time taken: 3146.63 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_long policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (32933 iterations), Total time taken: 3071.81 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_long policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (32084 iterations), Total time taken: 3024.17 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_long policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (34590 iterations), Total time taken: 3166.59 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_long policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (31869 iterations), Total time taken: 3023.36 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_long policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (33265 iterations), Total time taken: 3011.31 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_short policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2200 iterations), Total time taken: 105.61 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_short policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2010 iterations), Total time taken: 107.76 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_short policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2008 iterations), Total time taken: 106.99 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_short policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2257 iterations), Total time taken: 105.19 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_short policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2003 iterations), Total time taken: 107.26 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_short policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2040 iterations), Total time taken: 105.06 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_short policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1952 iterations), Total time taken: 107.09 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_short policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2052 iterations), Total time taken: 107.00 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_short policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2082 iterations), Total time taken: 105.80 seconds 
+
+Policy sweep: model=meta-llama/Llama-2-7b-hf dataset=short_short policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1990 iterations), Total time taken: 107.34 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_long policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (15625 iterations), Total time taken: 1960.01 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_long policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (15631 iterations), Total time taken: 1992.33 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_long policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (15668 iterations), Total time taken: 1982.89 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_long policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (15658 iterations), Total time taken: 2000.47 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_long policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (15625 iterations), Total time taken: 1934.04 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_long policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (15640 iterations), Total time taken: 1992.45 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_long policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (15658 iterations), Total time taken: 1982.58 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_long policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (15632 iterations), Total time taken: 2012.11 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_long policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (15588 iterations), Total time taken: 1996.98 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_long policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (15625 iterations), Total time taken: 1982.02 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_short policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 253.55 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_short policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 252.07 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_short policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 253.02 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_short policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 255.42 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_short policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 247.79 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_short policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 246.92 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_short policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 252.18 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_short policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 253.11 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_short policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 250.67 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=long_short policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 251.32 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=mixed policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 946.47 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=mixed policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 928.01 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=mixed policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 953.70 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=mixed policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 892.87 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=mixed policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 951.48 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=mixed policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 931.22 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=mixed policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 926.38 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=mixed policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 929.46 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=mixed policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 956.03 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=mixed policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 858.12 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_long policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9678 iterations), Total time taken: 1115.49 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_long policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9671 iterations), Total time taken: 1098.61 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_long policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9690 iterations), Total time taken: 1104.97 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_long policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9678 iterations), Total time taken: 1098.93 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_long policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9682 iterations), Total time taken: 1084.22 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_long policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9703 iterations), Total time taken: 1080.79 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_long policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9687 iterations), Total time taken: 1112.18 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_long policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9691 iterations), Total time taken: 1083.07 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_long policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9766 iterations), Total time taken: 1084.56 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_long policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9690 iterations), Total time taken: 1092.70 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_short policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2003 iterations), Total time taken: 107.14 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_short policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1979 iterations), Total time taken: 106.95 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_short policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2016 iterations), Total time taken: 106.66 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_short policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1963 iterations), Total time taken: 106.66 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_short policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1992 iterations), Total time taken: 106.57 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_short policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1965 iterations), Total time taken: 107.11 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_short policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1995 iterations), Total time taken: 106.91 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_short policy=least_laxity_first chunk=512 qps=3 n=300

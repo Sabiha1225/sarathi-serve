@@ -41,6 +41,10 @@ class Sequence:
         self.prompt_tokens_processed = 0
         self.prompt_processing_finished = False
 
+        # Track the cumulative output length for the sequence. This is used to
+        # determine if the sequence has reached the max_tokens limit. For Preemption
+        self.cumulative_output_len = 0
+
         self.output_text = ""
 
         self.logical_token_blocks: List[LogicalTokenBlock] = []
@@ -209,6 +213,7 @@ class Sequence:
 
     def reset_for_recompute(self):
         self.set_status(SequenceStatus.WAITING)
+        self.cumulative_output_len += len(self.output_token_ids)   # NEW — preserve before clearing
         self.prompt_tokens_processed = 0
         self.prompt_processing_finished = False
         self.prompt_token_ids = self.prompt_token_ids + self.output_token_ids
@@ -225,7 +230,8 @@ class Sequence:
                 return
 
         # Check if the sequence has reached max_tokens.
-        if self.get_output_len() == self.sampling_params.max_tokens:
+        # if self.get_output_len() == self.sampling_params.max_tokens:
+        if self.cumulative_output_len + self.get_output_len() == self.sampling_params.max_tokens:
             self.set_status(SequenceStatus.FINISHED_LENGTH_CAPPED)
             return
 

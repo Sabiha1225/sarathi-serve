@@ -30,7 +30,9 @@ class BaseScheduler(ABC):
         self._iteration_id = -1
 
         # Instantiate the scheduling policy.
-        self.policy = PolicyFactory.get_policy(policy_name="fcfs")
+        #self.policy = PolicyFactory.get_policy(policy_name="fcfs")
+        self.policy = PolicyFactory.get_policy(policy_name=scheduler_config.policy_name)
+        # print(f"ACTIVE POLICY: {scheduler_config.policy_name} -> {type(self.policy).__name__}")
         # Create the block space manager.
         self.block_manager = BlockSpaceManagerRegistry.get(
             scheduler_config.type,
@@ -117,6 +119,13 @@ class BaseScheduler(ABC):
         seq: Sequence,
     ) -> None:
         assert seq.is_executing()
+        # print(
+        #     f"PREEMPT DEBUG: seq_id={seq.seq_id} "
+        #     f"prompt_processing_finished={seq.prompt_processing_finished} "
+        #     f"prompt_tokens_processed={seq.get_num_prompt_tokens_processed()} "
+        #     f"output_tokens={seq.get_output_len()} "
+        #     f"num_blocks={len(seq.logical_token_blocks)}"
+        # )
         self._free_seq(seq)
         self.waiting.insert(0, seq)
 

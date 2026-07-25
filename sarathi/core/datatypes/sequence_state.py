@@ -219,6 +219,10 @@ class SequenceState:
         return self._prompt_processing_completed_at
 
     @property
+    def last_token_generated_at(self) -> Optional[float]:
+        return self._last_token_generated_at
+    
+    @property
     def e2e_time(self) -> Optional[float]:
         return (
             self._completed_at - self._arrived_at

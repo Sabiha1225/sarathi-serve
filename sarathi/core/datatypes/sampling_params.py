@@ -2,7 +2,7 @@
 
 from enum import IntEnum
 from functools import cached_property
-from typing import List, Union
+from typing import List, Union, Optional
 
 _SAMPLING_EPS = 1e-5
 
@@ -37,6 +37,9 @@ class SamplingParams:
         stop: Union[None, str, List[str]] = None,
         ignore_eos: bool = False,
         max_tokens: int = 16,
+        priority: float = 0.0,             # NEW — tenant/user priority tier
+        ttft_slo_ms: Optional[float] = None,  # NEW — per-request deadline source
+        tpot_slo_ms: Optional[float] = None,  # NEW
     ) -> None:
         self.temperature = temperature
         self.top_p = top_p
@@ -49,6 +52,11 @@ class SamplingParams:
             self.stop = list(stop)
         self.ignore_eos = ignore_eos
         self.max_tokens = max_tokens
+        
+        self.priority = priority
+        self.ttft_slo_ms = ttft_slo_ms
+        self.tpot_slo_ms = tpot_slo_ms
+
         self._verify_args()
         if self.temperature < _SAMPLING_EPS:
             # Zero temperature means greedy sampling.

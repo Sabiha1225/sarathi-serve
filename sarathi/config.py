@@ -285,10 +285,12 @@ class BaseSchedulerConfig(ABC):
         max_num_seqs: int,
         max_model_len: int,
         num_pipeline_stages: int,
+        policy_name: str = "fcfs",   # NEW
     ) -> None:
         self.max_num_seqs = max_num_seqs
         self.max_model_len = max_model_len
         self.num_pipeline_stages = num_pipeline_stages
+        self.policy_name = policy_name   # NEW
 
     @property
     def max_num_batched_tokens(self):
@@ -388,8 +390,9 @@ class SarathiSchedulerConfig(BaseSchedulerConfig):
         high_chunk_size: Optional[int],
         chunk_schedule_max_tokens: Optional[int],
         chunk_schedule_stages: Optional[int],
+        policy_name: str = "fcfs",   # NEW
     ) -> None:
-        super().__init__(max_num_seqs, max_model_len, num_pipeline_stages)
+        super().__init__(max_num_seqs, max_model_len, num_pipeline_stages, policy_name)
         self.chunk_size = chunk_size
         self.enable_dynamic_chunking_schedule = enable_dynamic_chunking_schedule
         self.low_chunk_size = low_chunk_size

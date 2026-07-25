@@ -20,7 +20,7 @@ from sarathi.utils import get_ip
 
 from pathlib import Path
 
-filename = Path.home() / "sarathi-serve" / "log" / "time.txt"
+filename = Path.home() / "sarathi_observation2" / "log" / "sched_policy_time.txt"
 
 logger = logging.getLogger(__name__)
 
@@ -90,6 +90,7 @@ class BenchmarkRunner:
             # scheduler config
             scheduler_type=self._config.replica_scheduler_provider,
             max_num_seqs=self._config.replica_scheduler_max_batch_size,
+            policy_name=self._config.replica_scheduler_policy_name,   # NEW
             # sarathi scheduler config
             chunk_size=chunk_size,
             enable_dynamic_chunking_schedule=self._config.sarathi_scheduler_enable_dynamic_chunking_schedule,
@@ -124,7 +125,10 @@ class BenchmarkRunner:
             max_tokens=request.num_decode_tokens,
             temperature=0,
             top_p=1.0,
+            ttft_slo_ms=self._config.scheduler_policy_ttft_slo_ms,   # NEW
+            tpot_slo_ms=self._config.scheduler_policy_tpot_slo_ms,   # NEW
         )
+        # print(f"SLO CHECK: ttft_slo_ms={sampling_params.ttft_slo_ms} tpot_slo_ms={sampling_params.tpot_slo_ms}")   # TEMP
         prompt_token_ids = [1] * request.num_prefill_tokens
 
         return {
