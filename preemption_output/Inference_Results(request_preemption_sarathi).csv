@@ -1,0 +1,68 @@
+,,,,,,,,GPU Memory,,,,,,,,GPU Memory (MiB)
+Arxiv,mixtral-7b-8expert,"TP-2, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,565.44 s,gpu = .85,0 Preemption,39431,,"TP-1, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,573.18 s,gpu = .85,0 Preemption,39385
+,,,,,580.79 s,gpu = .65,0 Preemption,30343,,,,,562.09 s,gpu = .65,0 Preemption,30297
+,,,,,578.47 s,gpu = .45,0 Preemption,21255,,,,,538.74 s,gpu = .45,0 Preemption,21209
+,,,,,589.87 s,gpu = .25,0 Preemption,12167,,,,,552.90 s,gpu = .25,0 Preemption,12123
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,vLLM 200 Requests,271.83 s,gpu = .85,0 Preemption,39883,,,,vLLM 200 Requests,471.13 s,gpu = .85,0 Preemption,40757
+,,,,,279.30 s,gpu = .65,0 Preemption,30793,,,,,479.37 s,gpu = .65,0 Preemption,31667
+,,,,,262.19 s,gpu = .45,0 Preemption,21705,,,,,487.45 s,gpu = .45,0 Preemption,22515
+,,,,,323.18 s,gpu = .25,0 Preemption,12615,,,,,556.15 s,gpu = .25,0 Preemption,13427
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+Arxiv,Qwen/Qwen-7B,"TP-2, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,2017.04 s,gpu = .85,0 Preemption,39537,,"TP-1, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,5414.76 s,gpu = .85,3 Preemption,39497
+,,,,,2183.50 s,gpu = .65,0 Preemption,30509,,,,,6803.55 s,gpu = .65,7 Preemption,30409
+,,,,,2851.12 s,gpu = .45,1 Preemption,21395,,,,,memory error,gpu = .45,,15733
+,,,,,memory error,gpu = .25,,8451,,,,,memory error,gpu = .25,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,vLLM 200 Requests,2208.33 s,gpu = .85,0 Preemption,40731,,,,vLLM 200 Requests,6212.60 s,gpu = .85,0 Preemption,41253
+,,,,,2418.95 s,gpu = .65,0 Preemption,31643,,,,,7200.02 s,gpu = .65,6 Preemption,32165
+,,,,,3194.02 s,gpu = .45,6 Preemption,22263,,,,,memory error,gpu = .45,,17253
+,,,,,memory error,gpu = .25,,9537,,,,,memory error,gpu = .25,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+Arxiv,Mistral_7b,"TP-2, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,1253.83 s,gpu = .85,0 Preemption,39603,,"TP-1, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,2551.12 s,gpu = .85,0 Preemption,39513
+,,,,,1263.88 s,gpu = .65,0 Preemption,30515,,,,,2767.87 s,gpu = .65,0 Preemption,30425
+,,,,,1318.82 s,gpu = .45,0 Preemption,21511,,,,,3804.78 s,gpu = .45,5 Preemption,21209
+,,,,,2104.51 s,gpu = .25,1 Preemption,12375,,,,,memory error,gpu = .25,,14899
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,vLLM 200 Requests,1323.39 s,gpu = .85,0 Preemption,41029,,,,vLLM 200 Requests,3454.02 s,gpu = .85,0 Preemption,37547
+,,,,,1392.50 s,gpu = .65,0 Preemption,31943,,,,,3722.66 s,gpu = .65,0 Preemption,34475
+,,,,,1554.11 s,gpu = .45,0 Preemption,22853,,,,,5346.20 s,gpu = .45,5 Preemption,24561
+,,,,,3039.15 s,gpu = .25,2 Preemption,13377,,,,,memory error,gpu = .25,,16811
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+Arxiv,Yi-6B,"TP-2, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,1098 s,gpu = .85,0 Preemption,39439,,"TP-1, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,2014.37 s,gpu = .85,0 Preemption,39259
+,,,,,1097.73 s,gpu = .65,0 Preemption,30351,,,,,1984.43 s,gpu = .65,0 Preemption,30311
+,,,,,1101.15 s,gpu = .45,0 Preemption,21263,,,,,2240.39 s,gpu = .45,0 Preemption,21223
+,,,,,1257.98 s,gpu = .25,0 Preemption,12217,,,,,memory error,gpu = .25,,12379
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,vLLM 200 Requests,1079.64 s,gpu = .85,0 Preemption,40865,,,,vLLM 200 Requests,2660.15 s,gpu = .85,0 Preemption,40521
+,,,,,1125.59 s,gpu = .65,0 Preemption,31777,,,,,2720.75 s,gpu = .65,0 Preemption,32809
+,,,,,1163.69 s,gpu = .45,0 Preemption,22687,,,,,3014.85 s,gpu = .45,0 Preemption,23719
+,,,,,1679.94 s,gpu = .25,0 Preemption,13599,,,,,memory error,gpu = .25,,14083
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+Arxiv,Llama-2-7b-hf,"TP-2, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,1951.92 s,gpu = .85,0 Preemption,39441,,"TP-1, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,5174.36 s,gpu = .85,3 Preemption,39401
+,,,,,2172.26 s,gpu = .65,0 Preemption,30469,,,,,6034.35 s,gpu = .65,5 Preemption,30313
+,,,,,2622.26 s,gpu = .45,0 Preemption,21299,,,,,memory error,gpu = .45,,13689
+,,,,,7060.07,gpu = .25,11 Preemption,12257,,,,,memory error,gpu = .25,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,vLLM 200 Requests,2133.36 s,gpu = .85,0 Preemption,40839,,,,vLLM 200 Requests,6167.18 s,gpu = .85,0 Preemption,41305
+,,,,,2323.23 s,gpu = .65,0 Preemption,31751,,,,,7073.59 s,gpu = .65,8 Preemption,32841
+,,,,,2970.13,gpu = .45,5 Preemption,22663,,,,,memory error,gpu = .45,,15255
+,,,,,memory error,gpu = .25,,8403,,,,,memory error,gpu = .25,,
