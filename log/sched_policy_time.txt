@@ -293,4 +293,163 @@ benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting aft
 Policy sweep: model=01-ai/Yi-6B dataset=short_short policy=skip_join_mlfq chunk=512 qps=3 n=300
 benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1995 iterations), Total time taken: 106.91 seconds 
 
+
+
 Policy sweep: model=01-ai/Yi-6B dataset=short_short policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1944 iterations), Total time taken: 107.05 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_short policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1974 iterations), Total time taken: 106.57 seconds 
+
+Policy sweep: model=01-ai/Yi-6B dataset=short_short policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1958 iterations), Total time taken: 106.66 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_long policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (11916 iterations), Total time taken: 1344.84 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_long policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (11916 iterations), Total time taken: 1300.28 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_long policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (11916 iterations), Total time taken: 1354.61 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_long policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (11916 iterations), Total time taken: 1290.95 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_long policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (11916 iterations), Total time taken: 1312.82 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_long policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (11916 iterations), Total time taken: 1335.01 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_long policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (11916 iterations), Total time taken: 1345.69 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_long policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (11916 iterations), Total time taken: 1319.06 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_long policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (11916 iterations), Total time taken: 1326.86 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_long policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (11916 iterations), Total time taken: 1339.55 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_short policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 209.36 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_short policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 212.91 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_short policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 214.77 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_short policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 208.13 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_short policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 211.82 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_short policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 210.10 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_short policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 204.17 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_short policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 212.48 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_short policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 218.27 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=long_short policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3649 iterations), Total time taken: 215.18 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=mixed policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 819.36 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=mixed policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 808.82 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=mixed policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 805.11 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=mixed policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 770.14 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=mixed policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 824.80 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=mixed policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 768.77 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=mixed policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 805.20 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=mixed policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 812.54 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=mixed policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 775.76 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=mixed policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9587 iterations), Total time taken: 819.12 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_long policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9715 iterations), Total time taken: 974.84 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_long policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9693 iterations), Total time taken: 993.20 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_long policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9782 iterations), Total time taken: 946.65 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_long policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9703 iterations), Total time taken: 989.11 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_long policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9708 iterations), Total time taken: 973.74 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_long policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9711 iterations), Total time taken: 984.85 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_long policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9693 iterations), Total time taken: 1003.86 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_long policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9743 iterations), Total time taken: 985.28 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_long policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9703 iterations), Total time taken: 992.78 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_long policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (9711 iterations), Total time taken: 976.79 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_short policy=fcfs chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2214 iterations), Total time taken: 105.62 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_short policy=sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2166 iterations), Total time taken: 105.86 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_short policy=ljf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2256 iterations), Total time taken: 105.81 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_short policy=prompt_len_sjf chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2248 iterations), Total time taken: 105.92 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_short policy=prefill_aging_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2256 iterations), Total time taken: 106.06 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_short policy=vtc_fairness chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2253 iterations), Total time taken: 105.61 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_short policy=skip_join_mlfq chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2261 iterations), Total time taken: 106.16 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_short policy=least_laxity_first chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2244 iterations), Total time taken: 105.25 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_short policy=hybrid chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2350 iterations), Total time taken: 104.04 seconds 
+
+Policy sweep: model=DiscoResearch/mixtral-7b-8expert dataset=short_short policy=adaptive_io_aging chunk=512 qps=3 n=300
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2187 iterations), Total time taken: 106.14 seconds 
