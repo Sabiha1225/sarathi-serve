@@ -1,0 +1,59 @@
+# model=llama vLLM sharegpt sweep
+# vLLM Poisson 1 request per seconds output=sharegpt_vllm_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3897 iterations), Total time taken: 355.71 seconds 
+# vLLM Poisson 5 request per seconds output=sharegpt_vllm_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3477 iterations), Total time taken: 335.12 seconds 
+# vLLM Poisson 10 request per seconds output=sharegpt_vllm_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3477 iterations), Total time taken: 336.51 seconds 
+# vLLM Poisson 15 request per seconds output=sharegpt_vllm_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3477 iterations), Total time taken: 329.16 seconds 
+# vLLM Poisson 20 request per seconds output=sharegpt_vllm_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3477 iterations), Total time taken: 339.75 seconds 
+
+# model=mistral vLLM sharegpt sweep
+# vLLM Poisson 1 request per seconds output=sharegpt_vllm_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4534 iterations), Total time taken: 313.27 seconds 
+# vLLM Poisson 5 request per seconds output=sharegpt_vllm_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1387 iterations), Total time taken: 188.72 seconds 
+# vLLM Poisson 10 request per seconds output=sharegpt_vllm_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1386 iterations), Total time taken: 182.84 seconds 
+# vLLM Poisson 15 request per seconds output=sharegpt_vllm_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1386 iterations), Total time taken: 187.04 seconds 
+# vLLM Poisson 20 request per seconds output=sharegpt_vllm_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1386 iterations), Total time taken: 187.04 seconds 
+
+# model=mixtral vLLM sharegpt sweep
+# vLLM Poisson 1 request per seconds output=sharegpt_vllm_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6135 iterations), Total time taken: 309.18 seconds 
+# vLLM Poisson 5 request per seconds output=sharegpt_vllm_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1722 iterations), Total time taken: 116.55 seconds 
+# vLLM Poisson 10 request per seconds output=sharegpt_vllm_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1310 iterations), Total time taken: 104.05 seconds 
+# vLLM Poisson 15 request per seconds output=sharegpt_vllm_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1199 iterations), Total time taken: 99.56 seconds 
+# vLLM Poisson 20 request per seconds output=sharegpt_vllm_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1130 iterations), Total time taken: 97.01 seconds 
+
+# model=qwen vLLM sharegpt sweep
+# vLLM Poisson 1 request per seconds output=sharegpt_vllm_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3960 iterations), Total time taken: 347.78 seconds 
+# vLLM Poisson 5 request per seconds output=sharegpt_vllm_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3544 iterations), Total time taken: 338.29 seconds 
+# vLLM Poisson 10 request per seconds output=sharegpt_vllm_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3544 iterations), Total time taken: 333.89 seconds 
+# vLLM Poisson 15 request per seconds output=sharegpt_vllm_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3544 iterations), Total time taken: 332.09 seconds 
+# vLLM Poisson 20 request per seconds output=sharegpt_vllm_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3544 iterations), Total time taken: 339.23 seconds 
+
+# model=yi vLLM sharegpt sweep
+# vLLM Poisson 1 request per seconds output=sharegpt_vllm_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4721 iterations), Total time taken: 312.44 seconds 
+# vLLM Poisson 5 request per seconds output=sharegpt_vllm_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1137 iterations), Total time taken: 151.80 seconds 
+# vLLM Poisson 10 request per seconds output=sharegpt_vllm_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1106 iterations), Total time taken: 143.26 seconds 
+# vLLM Poisson 15 request per seconds output=sharegpt_vllm_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1106 iterations), Total time taken: 151.88 seconds 
+# vLLM Poisson 20 request per seconds output=sharegpt_vllm_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1106 iterations), Total time taken: 148.33 seconds 

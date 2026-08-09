@@ -1,0 +1,399 @@
+# model=llama Poisson 1 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6724 iterations), Total time taken: 431.79 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4200 iterations), Total time taken: 340.16 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3917 iterations), Total time taken: 340.48 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3768 iterations), Total time taken: 346.33 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3755 iterations), Total time taken: 345.41 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3709 iterations), Total time taken: 344.79 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3678 iterations), Total time taken: 348.33 seconds 
+
+# model=llama Poisson 5 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 458.58 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3955 iterations), Total time taken: 336.28 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3475 iterations), Total time taken: 321.62 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3369 iterations), Total time taken: 327.63 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3327 iterations), Total time taken: 335.30 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3317 iterations), Total time taken: 333.30 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3308 iterations), Total time taken: 336.90 seconds 
+
+# model=llama Poisson 10 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 454.14 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3955 iterations), Total time taken: 336.07 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3475 iterations), Total time taken: 327.16 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3369 iterations), Total time taken: 330.86 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3327 iterations), Total time taken: 333.63 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3317 iterations), Total time taken: 330.50 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3308 iterations), Total time taken: 333.13 seconds 
+
+# model=llama Poisson 15 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 445.42 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3955 iterations), Total time taken: 334.41 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3475 iterations), Total time taken: 319.53 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3369 iterations), Total time taken: 324.33 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3327 iterations), Total time taken: 333.03 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3317 iterations), Total time taken: 331.67 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3308 iterations), Total time taken: 333.44 seconds 
+
+# model=llama Poisson 20 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 450.28 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3955 iterations), Total time taken: 327.58 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3475 iterations), Total time taken: 313.38 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3369 iterations), Total time taken: 332.80 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3327 iterations), Total time taken: 327.94 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3317 iterations), Total time taken: 330.97 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3308 iterations), Total time taken: 337.91 seconds 
+
+# model=mistral Poisson 1 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6703 iterations), Total time taken: 400.52 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5410 iterations), Total time taken: 312.41 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5342 iterations), Total time taken: 310.91 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4834 iterations), Total time taken: 312.03 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4551 iterations), Total time taken: 313.11 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4551 iterations), Total time taken: 313.87 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4635 iterations), Total time taken: 315.06 seconds 
+
+# model=mistral Poisson 5 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 404.28 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3782 iterations), Total time taken: 247.39 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2363 iterations), Total time taken: 208.25 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1652 iterations), Total time taken: 189.57 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1398 iterations), Total time taken: 183.20 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1373 iterations), Total time taken: 181.60 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1346 iterations), Total time taken: 174.90 seconds 
+
+# model=mistral Poisson 10 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 374.42 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3782 iterations), Total time taken: 250.93 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2363 iterations), Total time taken: 205.97 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1652 iterations), Total time taken: 189.38 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1398 iterations), Total time taken: 183.16 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1373 iterations), Total time taken: 180.69 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1346 iterations), Total time taken: 179.86 seconds 
+
+# model=mistral Poisson 15 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 390.23 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3782 iterations), Total time taken: 246.42 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2363 iterations), Total time taken: 206.83 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1652 iterations), Total time taken: 189.60 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1398 iterations), Total time taken: 183.75 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1373 iterations), Total time taken: 182.65 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1346 iterations), Total time taken: 183.21 seconds 
+
+# model=mistral Poisson 20 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 400.40 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3782 iterations), Total time taken: 236.29 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2363 iterations), Total time taken: 202.47 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1652 iterations), Total time taken: 171.48 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1398 iterations), Total time taken: 179.99 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1373 iterations), Total time taken: 181.96 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1346 iterations), Total time taken: 172.35 seconds 
+
+# model=mixtral Poisson 1 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6710 iterations), Total time taken: 370.00 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5713 iterations), Total time taken: 308.73 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6135 iterations), Total time taken: 308.61 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6128 iterations), Total time taken: 308.63 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6096 iterations), Total time taken: 308.88 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6089 iterations), Total time taken: 309.16 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6223 iterations), Total time taken: 308.35 seconds 
+
+# model=mixtral Poisson 5 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 360.09 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3782 iterations), Total time taken: 223.95 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2363 iterations), Total time taken: 156.72 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1673 iterations), Total time taken: 120.75 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1667 iterations), Total time taken: 115.53 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1587 iterations), Total time taken: 117.41 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1580 iterations), Total time taken: 116.73 seconds 
+
+# model=mixtral Poisson 10 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 376.34 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3782 iterations), Total time taken: 227.63 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2363 iterations), Total time taken: 143.95 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1652 iterations), Total time taken: 117.08 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1308 iterations), Total time taken: 101.35 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1252 iterations), Total time taken: 100.28 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1248 iterations), Total time taken: 96.99 seconds 
+
+# model=mixtral Poisson 15 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 365.33 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3782 iterations), Total time taken: 232.04 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2363 iterations), Total time taken: 158.83 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1652 iterations), Total time taken: 119.64 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1308 iterations), Total time taken: 98.03 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1199 iterations), Total time taken: 94.44 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1147 iterations), Total time taken: 97.34 seconds 
+
+# model=mixtral Poisson 20 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 368.13 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3782 iterations), Total time taken: 223.91 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2363 iterations), Total time taken: 158.09 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1652 iterations), Total time taken: 118.74 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1308 iterations), Total time taken: 98.98 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1199 iterations), Total time taken: 97.55 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1146 iterations), Total time taken: 96.03 seconds 
+
+# model=qwen Poisson 1 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6706 iterations), Total time taken: 446.28 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4249 iterations), Total time taken: 340.99 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4011 iterations), Total time taken: 336.35 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3862 iterations), Total time taken: 338.84 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3835 iterations), Total time taken: 340.27 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3789 iterations), Total time taken: 341.71 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3762 iterations), Total time taken: 343.96 seconds 
+
+# model=qwen Poisson 5 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 429.86 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4033 iterations), Total time taken: 336.42 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3557 iterations), Total time taken: 315.92 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3434 iterations), Total time taken: 327.90 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3381 iterations), Total time taken: 326.04 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3388 iterations), Total time taken: 319.28 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3382 iterations), Total time taken: 332.60 seconds 
+
+# model=qwen Poisson 10 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 456.77 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4033 iterations), Total time taken: 333.50 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3557 iterations), Total time taken: 322.31 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3434 iterations), Total time taken: 322.50 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3381 iterations), Total time taken: 324.15 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3388 iterations), Total time taken: 330.84 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3382 iterations), Total time taken: 322.22 seconds 
+
+# model=qwen Poisson 15 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 458.22 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4033 iterations), Total time taken: 330.13 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3557 iterations), Total time taken: 324.98 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3434 iterations), Total time taken: 321.83 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3381 iterations), Total time taken: 324.23 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3388 iterations), Total time taken: 330.29 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3382 iterations), Total time taken: 325.01 seconds 
+
+# model=qwen Poisson 20 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 435.92 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4033 iterations), Total time taken: 326.58 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3557 iterations), Total time taken: 322.11 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3434 iterations), Total time taken: 326.67 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3381 iterations), Total time taken: 327.41 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3388 iterations), Total time taken: 323.84 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3382 iterations), Total time taken: 329.90 seconds 
+
+# model=yi Poisson 1 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6710 iterations), Total time taken: 404.83 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5730 iterations), Total time taken: 311.01 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5222 iterations), Total time taken: 311.84 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5160 iterations), Total time taken: 312.05 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4750 iterations), Total time taken: 312.42 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4669 iterations), Total time taken: 314.06 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (4683 iterations), Total time taken: 313.15 seconds 
+
+# model=yi Poisson 5 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 390.57 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3782 iterations), Total time taken: 234.07 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2363 iterations), Total time taken: 180.20 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1652 iterations), Total time taken: 169.21 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1308 iterations), Total time taken: 155.51 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1199 iterations), Total time taken: 153.60 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1146 iterations), Total time taken: 147.85 seconds 
+
+# model=yi Poisson 10 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 399.27 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3782 iterations), Total time taken: 238.01 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2363 iterations), Total time taken: 182.73 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1652 iterations), Total time taken: 161.61 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1308 iterations), Total time taken: 147.68 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1199 iterations), Total time taken: 154.14 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1146 iterations), Total time taken: 149.46 seconds 
+
+# model=yi Poisson 15 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 401.77 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3782 iterations), Total time taken: 235.76 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2363 iterations), Total time taken: 186.10 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1652 iterations), Total time taken: 166.88 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1308 iterations), Total time taken: 155.29 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1199 iterations), Total time taken: 148.03 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1146 iterations), Total time taken: 150.76 seconds 
+
+# model=yi Poisson 20 request per seconds
+# chunk_size=128 output=sharegpt_chunk_128_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6694 iterations), Total time taken: 405.82 seconds 
+# chunk_size=256 output=sharegpt_chunk_256_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (3782 iterations), Total time taken: 230.34 seconds 
+# chunk_size=512 output=sharegpt_chunk_512_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2363 iterations), Total time taken: 186.55 seconds 
+# chunk_size=1024 output=sharegpt_chunk_1024_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1652 iterations), Total time taken: 167.20 seconds 
+# chunk_size=2048 output=sharegpt_chunk_2048_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1308 iterations), Total time taken: 156.45 seconds 
+# chunk_size=3072 output=sharegpt_chunk_3072_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1199 iterations), Total time taken: 148.17 seconds 
+# chunk_size=4096 output=sharegpt_chunk_4096_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1146 iterations), Total time taken: 148.02 seconds 

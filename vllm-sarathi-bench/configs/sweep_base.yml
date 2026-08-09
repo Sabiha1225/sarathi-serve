@@ -1,0 +1,82 @@
+seed: 42
+output_root: /home/sabiha/sarathi-serve/benchmark_output/vllm_cpu_offloading
+
+trace_request_length_generator:
+  trace_file: /home/sabiha/sarathi-serve/sarathi/benchmark/data/processed_traces/arxiv_summarization_filtered_stats_llama2_tokenizer.csv
+  prefill_scale_factor: 1
+  decode_scale_factor: 1
+  max_tokens: 16384
+
+request_generator:
+  num_requests: 1000
+  prompt_token_id: 1
+
+poisson_request_interval_generator:
+  qps: 200.0
+
+max_model_len: 16384
+
+gpu_memory_utilization_values: [0.85, 0.65, 0.45, 0.25]
+
+chunk_size_on: 1024        # max_num_batched_tokens when chunking is "on"
+                            # when chunking is "off", max_num_batched_tokens = max_model_len
+
+kv_offloading_size_on: 64  # GiB, when offloading is "on"
+kv_offloading_backend: native
+
+vllm_scheduler_defaults:
+  max_num_seqs: 256
+  disable_hybrid_kv_cache_manager: true
+  enable_prefix_caching: false
+
+model_defaults:
+  dtype: float16
+  tensor_parallel_size: 1
+  pipeline_parallel_size: 1
+  trust_remote_code: true
+  load_format: dummy
+  enforce_eager: true
+  attention_backend: FLASH_ATTN
+
+# Only 1x48GB A40 was detected on this host -> tensor_parallel_size stays at 1
+# (from model_defaults) for every model below.
+models:
+  - key: llama2_7b
+    name: meta-llama/Llama-2-7b-hf
+    tokenizer: meta-llama/Llama-2-7b-hf
+    hf_overrides:
+      rope_scaling: {type: linear, factor: 4.0}
+      rope_parameters: {rope_type: linear, factor: 4.0}
+
+  - key: mistral_7b
+    name: mistralai/Mistral-7B-Instruct-v0.3
+    tokenizer: mistralai/Mistral-7B-Instruct-v0.3
+    # native context (32768) already covers max_model_len -> no hf_overrides needed
+
+  - key: mixtral_7b_8expert   # VERIFY: ~47B MoE (8x7B), fp16 weights alone are ~94GB.
+    name: DiscoResearch/mixtral-7b-8expert  # Will almost certainly OOM on a single
+    tokenizer: DiscoResearch/mixtral-7b-8expert  # 48GB GPU even with load_format: dummy
+    hf_overrides:
+      hidden_size: 1024
+      intermediate_size: 4096
+      num_hidden_layers: 16
+      num_attention_heads: 16
+      num_key_value_heads: 4
+      num_local_experts: 4
+      num_experts: 4
+      num_experts_per_tok: 2
+      num_experts_per_token: 2
+
+  - key: qwen_7b   # VERIFY: Qwen1 uses custom modeling_qwen.py (trust_remote_code) with
+    name: Qwen/Qwen-7B                # its own NTK rope-scaling convention, not the
+    tokenizer: Qwen/Qwen-7B           # standard HF rope_scaling dict below -- it may be
+    hf_overrides:                     # silently ignored. Verify context extension to
+      rope_scaling: {type: linear, factor: 2.0}   # 16384 actually takes effect, or
+      rope_parameters: {rope_type: linear, factor: 2.0}  # lower max_model_len to 8192.
+
+  - key: yi_6b   # VERIFY: Yi-6B (base) has native max_position_embeddings=4096. Rope
+    name: 01-ai/Yi-6B                  # scaling uses the same mechanism as Llama-2 (Yi
+    tokenizer: 01-ai/Yi-6B             # is architecturally Llama-compatible) but this
+    hf_overrides:                      # exact combination is untested here.
+      rope_scaling: {type: linear, factor: 4.0}
+      rope_parameters: {rope_type: linear, factor: 4.0}

@@ -2,6 +2,8 @@ import argparse, asyncio, csv, inspect, json, math, random, time
 import numpy as np
 import pandas as pd
 import yaml
+import dataclasses
+from vllm.v1.metrics.reader import get_metrics_snapshot
 
 
 def make_requests(cfg):
@@ -39,14 +41,28 @@ def make_requests(cfg):
     now = 0.0
     requests = []
 
+    # Safe vocab range across all 5 models in the sweep (Llama-2 and the
+    # Mixtral variant have the smallest vocab at 32000; staying well under
+    # that avoids embedding-index-out-of-range errors on any of them).
+    # 0/1 skipped since those are commonly special tokens (pad/bos) in most
+    # tokenizers, though harmless either way with dummy weights.
+    vocab_low = cfg["request_generator"].get("random_prompt_vocab_low", 2)
+    vocab_high = cfg["request_generator"].get("random_prompt_vocab_high", 30000)
+
     for i, row in df.iterrows():
         interval = -math.log(1.0 - random.random()) / qps
         now += min(interval, max_interval)
+        num_prefill = int(row["num_prefill_tokens"])
+        # Unique random content per request -> an offload-cache hit can only
+        # come from this exact request recovering its own evicted blocks,
+        # never from colliding with another request's identical content.
+        prompt_token_ids = np.random.randint(vocab_low, vocab_high, size=num_prefill).tolist()
         requests.append({
             "id": i,
             "arrived_at": now,
-            "num_prefill_tokens": int(row["num_prefill_tokens"]),
+            "num_prefill_tokens": num_prefill,
             "num_decode_tokens": int(row["num_decode_tokens"]),
+            "prompt_token_ids": prompt_token_ids,
         })
 
     return requests
@@ -91,7 +107,7 @@ def make_engine_args(cfg):
     return AsyncEngineArgs(**{k: v for k, v in kwargs.items() if k in valid and v is not None})
 
 
-async def run_one(engine, req, start_time, prompt_token_id):
+async def run_one(engine, req, start_time):
     from vllm import SamplingParams
 
     delay = start_time + req["arrived_at"] - time.monotonic()
@@ -106,9 +122,8 @@ async def run_one(engine, req, start_time, prompt_token_id):
         ignore_eos=True,
     )
 
-    prompt_token_ids = [prompt_token_id] * req["num_prefill_tokens"]
     stream = engine.generate(
-        {"prompt_token_ids": prompt_token_ids},
+        {"prompt_token_ids": req["prompt_token_ids"]},
         params,
         str(req["id"]),
     )
@@ -135,6 +150,20 @@ async def run_one(engine, req, start_time, prompt_token_id):
     }
 
 
+async def snapshot_prometheus_metrics(output_path, start_time, interval_s=5.0):
+    with open(output_path, "w") as f:
+        while True:
+            snap = {
+                "t_s": time.monotonic() - start_time,
+                "metrics": [
+                    {**dataclasses.asdict(m), "kind": type(m).__name__}
+                    for m in get_metrics_snapshot()
+                ],
+            }
+            f.write(json.dumps(snap) + "\n")
+            f.flush()
+            await asyncio.sleep(interval_s)
+
 async def main_async(cfg):
     try:
         from vllm import AsyncLLMEngine
@@ -146,20 +175,41 @@ async def main_async(cfg):
     if cfg.get("dump_requests_jsonl"):
         with open(cfg["dump_requests_jsonl"], "w") as f:
             for r in requests:
-                f.write(json.dumps(r) + "\n")
+                r_light = {k: v for k, v in r.items() if k != "prompt_token_ids"}
+                f.write(json.dumps(r_light) + "\n")
 
     engine = AsyncLLMEngine.from_engine_args(make_engine_args(cfg))
+    print(f"[TIMING] request processing started at {time.strftime('%Y-%m-%d %H:%M:%S')}")
     start = time.monotonic()
-    prompt_token_id = cfg["request_generator"].get("prompt_token_id", 1)
 
-    tasks = [asyncio.create_task(run_one(engine, r, start, prompt_token_id)) for r in requests]
+    metrics_task = None
+    if cfg.get("prometheus_metrics_jsonl"):
+        metrics_task = asyncio.create_task(
+            snapshot_prometheus_metrics(cfg["prometheus_metrics_jsonl"], start)
+        )
+
+    tasks = [asyncio.create_task(run_one(engine, r, start)) for r in requests]
     results = [await t for t in asyncio.as_completed(tasks)]
     results.sort(key=lambda x: x["arrival_s"])
+
+    end_to_end_s = time.monotonic() - start
+    print(
+        f"[TIMING] request processing finished at {time.strftime('%Y-%m-%d %H:%M:%S')} "
+        f"-- end_to_end_s={end_to_end_s:.3f}"
+    )
+
+    if metrics_task:
+        metrics_task.cancel()
+        try:
+            await metrics_task
+        except asyncio.CancelledError:
+            pass
 
     with open(cfg["output_csv"], "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=results[0].keys())
         writer.writeheader()
         writer.writerows(results)
+
 
 
 def main():

@@ -27,6 +27,10 @@ MODELS=(
     "01-ai/Yi-6B|yi"
 )
 
+# MODELS=(
+#     "01-ai/Yi-6B|yi"
+# )
+
 GPU_PID=""
 TOP_PID=""
 

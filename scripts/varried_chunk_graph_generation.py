@@ -6,7 +6,7 @@ import matplotlib.ticker as mticker
 import pandas as pd
 
 
-# python ./scripts/varried_chunk_graph_generation.py "varried_chunk/Inference_Results(Sarathi_Serve).csv" ./varried_chunk
+# python ./scripts/varried_chunk_graph_generation.py "varried_chunk/Inference_Results(Sarathi_Serve)_arxiv_tp2_pp1" ./varried_chunk
 
 ATTENTION_TYPE = {
     "mistral_7b": "GQA, 8 KV heads",

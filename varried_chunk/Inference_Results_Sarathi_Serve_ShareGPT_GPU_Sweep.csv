@@ -1,0 +1,67 @@
+ShareGPT,mixtral-7b-8expert,"TP-2, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,120.22 s,gpu = .85,0 Preemption,39495
+,,,,,116.08 s,gpu = .65,0 Preemption,30407
+,,,,,115.23 s,gpu = .45,0 Preemption,21319
+,,,,,115.60 s,gpu = .25,0 Preemption,12231
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,vLLM 200 Requests,95.95 s,gpu = .85,0 Preemption,40479
+,,,,,95.09 s,gpu = .65,0 Preemption,31391
+,,,,,97.31 s,gpu = .45,0 Preemption,22553
+,,,,,95.12 s,gpu = .25,0 Preemption,12963
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+ShareGPT,Qwen/Qwen-7B,"TP-2, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,325.29 s,gpu = .85,10 Preemption,39597
+,,,,,358.02 s,gpu = .65,10 Preemption,30645
+,,,,,480.66 s,gpu = .45,20 Preemption,21469
+,,,,,memory error,gpu = .25,,8419
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,vLLM 200 Requests,328.60 s,gpu = .85,8 Preemption,40399
+,,,,,370.88 s,gpu = .65,4 Preemption,30981
+,,,,,510.95,gpu = .45,26 Preemption,21893
+,,,,,memory error,gpu = .25,,9537
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+ShareGPT,Mistral_7b,"TP-2, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,189.48 s,gpu = .85,0 Preemption,39683
+,,,,,191.55 s,gpu = .65,0 Preemption,30597
+,,,,,217.64 s,gpu = .45,0 Preemption,3
+,,,,,375.06 s,gpu = .25,12 Preemption,12417
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,vLLM 200 Requests,185.21 s,gpu = .85,0 Preemption,42995
+,,,,,204.17 s,gpu = .65,1 Preemption,33021
+,,,,,218.72 s,gpu = .45,1 Preemption,22629
+,,,,,497.28 s,gpu = .25,19 Preemption,13111
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+ShareGPT,Yi-6B,"TP-2, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,165.27 s,gpu = .85,0 Preemption,39723
+,,,,,163.97 s,gpu = .65,0 Preemption,30635
+,,,,,165.73 s,gpu = .45,0 Preemption,21547
+,,,,,215.30 s,gpu = .25,0 Preemption,12295
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,vLLM 200 Requests,151.24 s,gpu = .85,0 Preemption,42193
+,,,,,149.09 s,gpu = .65,0 Preemption,33105
+,,,,,169.75 s,gpu = .45,0 Preemption,24017
+,,,,,246.22 s,gpu = .25,0 Preemption,13243
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+ShareGPT,Llama-2-7b-hf,"TP-2, PP-1",chunk_size: 1024,Sarathi Serve : 200 Requests,317.76 s,gpu = .85,7 Preemption,39543
+,,,,,357.42 s,gpu = .65,8 Preemption,30413
+,,,,,446.12 s,gpu = .45,15 Preemption,21333
+,,,,,954.20 s,gpu = .25,34 Preemption,12285
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,vLLM 200 Requests,336.87 s,gpu = .85,10 Preemption,40417
+,,,,,368.40 s,gpu = .65,8 Preemption,31003
+,,,,,479.17 s,gpu = .45,32 Preemption,21913
+,,,,,memory error,gpu = .25,,8403

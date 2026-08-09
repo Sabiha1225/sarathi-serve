@@ -72,7 +72,7 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_sarathi_varied_chunk_size_arxiv_varried_req_time_yi.yml"
 
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_vllm_arxiv.yml"
-DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_vllm_varied_chunk_size_arxiv_varried_req_time.yml"
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_vllm_varied_chunk_size_arxiv_varried_req_time.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_vllm_varied_chunk_size_arxiv_varried_req_time_mistral.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_vllm_varied_chunk_size_arxiv_varried_req_time_mixtral.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_vllm_varied_chunk_size_arxiv_varried_req_time_qwen.yml"
@@ -91,6 +91,12 @@ DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_vllm_varied_chunk_size
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/custom_data_short_input_long_output_llama_vllm.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/custom_data_short_input_short_output_llama_vllm.yml"
 
+
+# ********** Trying different datasets ***********
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/arxiv_sarathi_varied_chunk_size_varried_req_time.yml"
+DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/arxiv_vllm_varied_chunk_size_varried_req_time.yml"
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/sharegpt_sarathi_varied_chunk_size_varried_req_time.yml"
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/sharegpt_vllm_varied_chunk_size_varried_req_time.yml"
 
 LOGGER_FORMAT = (
     "[%(asctime)s][%(filename)s:%(lineno)d:%(funcName)s]" "[%(levelname)s] %(message)s"
