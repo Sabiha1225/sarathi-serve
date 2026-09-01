@@ -1,0 +1,400 @@
+
+# model=llama Poisson 1 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1222.12 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 709.48 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6287 iterations), Total time taken: 590.98 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5552 iterations), Total time taken: 588.79 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5363 iterations), Total time taken: 607.08 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5331 iterations), Total time taken: 601.33 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5296 iterations), Total time taken: 615.49 seconds 
+
+# model=llama Poisson 5 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1163.25 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 710.32 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6287 iterations), Total time taken: 581.68 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5552 iterations), Total time taken: 600.47 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5363 iterations), Total time taken: 597.64 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5331 iterations), Total time taken: 613.49 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5296 iterations), Total time taken: 617.87 seconds 
+
+# model=llama Poisson 10 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1170.23 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 710.78 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6287 iterations), Total time taken: 592.34 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5552 iterations), Total time taken: 604.75 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5363 iterations), Total time taken: 597.90 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5331 iterations), Total time taken: 611.33 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5296 iterations), Total time taken: 612.89 seconds 
+
+# model=llama Poisson 15 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1218.18 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 709.55 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6287 iterations), Total time taken: 587.85 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5552 iterations), Total time taken: 588.54 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5363 iterations), Total time taken: 602.94 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5331 iterations), Total time taken: 609.93 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5296 iterations), Total time taken: 618.89 seconds 
+
+# model=llama Poisson 20 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1196.46 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 709.26 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6287 iterations), Total time taken: 590.65 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5552 iterations), Total time taken: 600.49 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5363 iterations), Total time taken: 604.00 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5331 iterations), Total time taken: 614.48 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5296 iterations), Total time taken: 618.12 seconds 
+
+# model=mistral Poisson 1 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1142.89 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 597.45 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 421.48 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 379.37 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1718 iterations), Total time taken: 353.69 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1612 iterations), Total time taken: 361.53 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1575 iterations), Total time taken: 365.30 seconds 
+
+# model=mistral Poisson 5 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1139.73 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 587.08 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 424.71 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 380.22 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1718 iterations), Total time taken: 358.61 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1612 iterations), Total time taken: 357.44 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1575 iterations), Total time taken: 360.69 seconds 
+
+# model=mistral Poisson 10 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1139.70 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 602.40 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 422.10 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 381.50 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1718 iterations), Total time taken: 359.78 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1612 iterations), Total time taken: 365.64 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1575 iterations), Total time taken: 366.24 seconds 
+
+# model=mistral Poisson 15 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1151.73 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 595.99 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 422.77 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 380.78 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1718 iterations), Total time taken: 363.05 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1612 iterations), Total time taken: 364.75 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1575 iterations), Total time taken: 362.32 seconds 
+
+# model=mistral Poisson 20 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1150.05 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 590.93 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 421.99 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 374.49 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1718 iterations), Total time taken: 358.84 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1612 iterations), Total time taken: 360.79 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1575 iterations), Total time taken: 359.76 seconds 
+
+# model=mixtral Poisson 1 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1069.40 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 567.43 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 314.49 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5847 iterations), Total time taken: 293.58 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6016 iterations), Total time taken: 291.04 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5914 iterations), Total time taken: 291.60 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5771 iterations), Total time taken: 291.12 seconds 
+
+# model=mixtral Poisson 5 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1057.96 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 570.66 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 301.34 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 177.92 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1659 iterations), Total time taken: 109.74 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1239 iterations), Total time taken: 106.81 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1034 iterations), Total time taken: 102.39 seconds 
+
+# model=mixtral Poisson 10 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1041.21 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 565.73 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 290.09 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 184.04 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1659 iterations), Total time taken: 114.35 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1239 iterations), Total time taken: 102.37 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1034 iterations), Total time taken: 100.83 seconds 
+
+# model=mixtral Poisson 15 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1079.78 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 568.72 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 311.53 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 184.24 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1659 iterations), Total time taken: 117.33 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1239 iterations), Total time taken: 102.05 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1034 iterations), Total time taken: 100.36 seconds 
+
+# model=mixtral Poisson 20 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1053.96 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 564.66 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 298.19 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 184.35 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1659 iterations), Total time taken: 118.93 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1239 iterations), Total time taken: 107.32 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1034 iterations), Total time taken: 101.04 seconds 
+
+# model=qwen Poisson 1 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1240.58 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 708.02 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6399 iterations), Total time taken: 597.47 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5735 iterations), Total time taken: 599.85 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5539 iterations), Total time taken: 610.03 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5481 iterations), Total time taken: 616.93 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5460 iterations), Total time taken: 623.25 seconds 
+
+# model=qwen Poisson 5 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1236.88 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 710.22 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6399 iterations), Total time taken: 596.25 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5735 iterations), Total time taken: 604.52 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5539 iterations), Total time taken: 610.65 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5481 iterations), Total time taken: 619.13 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5460 iterations), Total time taken: 611.71 seconds 
+
+# model=qwen Poisson 10 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1192.05 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 719.79 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6399 iterations), Total time taken: 590.68 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5735 iterations), Total time taken: 605.05 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5539 iterations), Total time taken: 595.55 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5481 iterations), Total time taken: 611.19 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5460 iterations), Total time taken: 618.39 seconds 
+
+# model=qwen Poisson 15 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1223.86 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 706.56 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6399 iterations), Total time taken: 596.56 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5735 iterations), Total time taken: 603.76 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5539 iterations), Total time taken: 610.97 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5481 iterations), Total time taken: 619.98 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5460 iterations), Total time taken: 621.54 seconds 
+
+# model=qwen Poisson 20 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1215.07 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 709.70 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6399 iterations), Total time taken: 597.72 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5735 iterations), Total time taken: 606.29 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5539 iterations), Total time taken: 608.41 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5481 iterations), Total time taken: 618.34 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5460 iterations), Total time taken: 617.04 seconds 
+
+# model=yi Poisson 1 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1163.55 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 570.26 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 379.63 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 334.21 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1659 iterations), Total time taken: 317.29 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1379 iterations), Total time taken: 308.44 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1222 iterations), Total time taken: 308.28 seconds 
+
+# model=yi Poisson 5 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1107.40 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 563.47 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 381.99 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 335.03 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1659 iterations), Total time taken: 309.50 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1239 iterations), Total time taken: 306.00 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1034 iterations), Total time taken: 298.54 seconds 
+
+# model=yi Poisson 10 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1135.87 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 563.06 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 378.48 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 336.52 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1659 iterations), Total time taken: 314.52 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1239 iterations), Total time taken: 300.36 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1034 iterations), Total time taken: 302.89 seconds 
+
+# model=yi Poisson 15 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1151.72 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 566.38 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 384.21 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 334.93 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1659 iterations), Total time taken: 313.87 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1239 iterations), Total time taken: 304.94 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1034 iterations), Total time taken: 302.73 seconds 
+
+# model=yi Poisson 20 request per seconds
+# chunk_size=128 output=arxiv_chunk_128_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (21215 iterations), Total time taken: 1148.38 seconds 
+# chunk_size=256 output=arxiv_chunk_256_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (10755 iterations), Total time taken: 567.67 seconds 
+# chunk_size=512 output=arxiv_chunk_512_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 369.32 seconds 
+# chunk_size=1024 output=arxiv_chunk_1024_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (2921 iterations), Total time taken: 337.16 seconds 
+# chunk_size=2048 output=arxiv_chunk_2048_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1659 iterations), Total time taken: 308.76 seconds 
+# chunk_size=3072 output=arxiv_chunk_3072_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1239 iterations), Total time taken: 306.51 seconds 
+# chunk_size=4096 output=arxiv_chunk_4096_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1034 iterations), Total time taken: 302.25 seconds 

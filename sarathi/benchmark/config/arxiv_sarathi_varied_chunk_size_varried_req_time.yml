@@ -1,7 +1,7 @@
 seed: 42
 log_level: info
 # output_dir: ./benchmark_output/
-output_dir: /home/sabiha/sarathi-serve/benchmark_output/arxiv/
+output_dir: /home/sabiha/sarathi-serve/benchmark_output/sarathi_arxiv_300_tp2_pp1/
 write_json_trace: true
 write_chrome_trace: true
 write_metrics: true
@@ -20,9 +20,9 @@ model:
   # name: meta-llama/Llama-2-7b
   name: meta-llama/Llama-2-7b-hf
   # tensor_parallel_degree: 4
-  tensor_parallel_degree: 1
+  tensor_parallel_degree: 2
   # pipeline_parallel_degree: 2
-  pipeline_parallel_degree: 2
+  pipeline_parallel_degree: 1
   max_model_len: 16384
   load_format: dummy
   attention_backend: flash_attention

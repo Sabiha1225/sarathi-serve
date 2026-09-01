@@ -20,7 +20,7 @@ from sarathi.utils import get_ip
 
 from pathlib import Path
 
-filename = Path.home() / "sarathi-serve" / "log" / "time_arxiv.txt"
+filename = Path.home() / "sarathi-serve" / "log" / "pd_ratio_mixed_sweep_exp3.txt"
 
 logger = logging.getLogger(__name__)
 

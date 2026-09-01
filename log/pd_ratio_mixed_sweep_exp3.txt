@@ -1,0 +1,490 @@
+# model=llama N=32 P=1 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_llama_vllm_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 11.00 seconds 
+# model=llama N=32 P=128 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_llama_vllm_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (267 iterations), Total time taken: 11.33 seconds 
+# model=llama N=32 P=256 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_llama_vllm_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (272 iterations), Total time taken: 12.45 seconds 
+# model=llama N=32 P=512 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_llama_vllm_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (288 iterations), Total time taken: 14.43 seconds 
+# model=llama N=32 P=1024 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_llama_vllm_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (288 iterations), Total time taken: 19.00 seconds 
+# model=llama N=32 P=2048 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_llama_vllm_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (546 iterations), Total time taken: 34.55 seconds 
+# model=llama N=32 P=3584 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_llama_vllm_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (802 iterations), Total time taken: 55.89 seconds 
+# model=llama N=32 P=1 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_llama_sarathi_c128_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 10.56 seconds 
+# model=llama N=32 P=128 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_llama_sarathi_c128_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (293 iterations), Total time taken: 12.26 seconds 
+# model=llama N=32 P=256 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_llama_sarathi_c128_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (330 iterations), Total time taken: 14.29 seconds 
+# model=llama N=32 P=512 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_llama_sarathi_c128_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (403 iterations), Total time taken: 18.43 seconds 
+# model=llama N=32 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_llama_sarathi_c128_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (549 iterations), Total time taken: 26.89 seconds 
+# model=llama N=32 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_llama_sarathi_c128_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (817 iterations), Total time taken: 42.66 seconds 
+# model=llama N=32 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_llama_sarathi_c128_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (1207 iterations), Total time taken: 65.91 seconds 
+# model=llama N=32 P=1 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_llama_sarathi_c256_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 10.67 seconds 
+# model=llama N=32 P=128 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_llama_sarathi_c256_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (273 iterations), Total time taken: 11.38 seconds 
+# model=llama N=32 P=256 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_llama_sarathi_c256_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (291 iterations), Total time taken: 13.11 seconds 
+# model=llama N=32 P=512 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_llama_sarathi_c256_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (325 iterations), Total time taken: 16.09 seconds 
+# model=llama N=32 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_llama_sarathi_c256_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (393 iterations), Total time taken: 21.48 seconds 
+# model=llama N=32 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_llama_sarathi_c256_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (599 iterations), Total time taken: 33.78 seconds 
+# model=llama N=32 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_llama_sarathi_c256_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (887 iterations), Total time taken: 53.81 seconds 
+# model=llama N=32 P=1 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_llama_sarathi_c512_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 10.94 seconds 
+# model=llama N=32 P=128 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_llama_sarathi_c512_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (265 iterations), Total time taken: 11.65 seconds 
+# model=llama N=32 P=256 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_llama_sarathi_c512_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (273 iterations), Total time taken: 12.84 seconds 
+# model=llama N=32 P=512 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_llama_sarathi_c512_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (289 iterations), Total time taken: 15.04 seconds 
+# model=llama N=32 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_llama_sarathi_c512_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (322 iterations), Total time taken: 19.50 seconds 
+# model=llama N=32 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_llama_sarathi_c512_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (559 iterations), Total time taken: 34.63 seconds 
+# model=llama N=32 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_llama_sarathi_c512_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (827 iterations), Total time taken: 53.18 seconds 
+# model=llama N=32 P=1 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_llama_sarathi_c1024_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 10.98 seconds 
+# model=llama N=32 P=128 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_llama_sarathi_c1024_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (261 iterations), Total time taken: 11.79 seconds 
+# model=llama N=32 P=256 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_llama_sarathi_c1024_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (265 iterations), Total time taken: 12.32 seconds 
+# model=llama N=32 P=512 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_llama_sarathi_c1024_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (273 iterations), Total time taken: 14.16 seconds 
+# model=llama N=32 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_llama_sarathi_c1024_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (289 iterations), Total time taken: 18.96 seconds 
+# model=llama N=32 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_llama_sarathi_c1024_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (536 iterations), Total time taken: 33.69 seconds 
+# model=llama N=32 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_llama_sarathi_c1024_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (799 iterations), Total time taken: 53.21 seconds 
+# model=llama N=32 P=1 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_llama_sarathi_c2048_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 10.78 seconds 
+# model=llama N=32 P=128 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_llama_sarathi_c2048_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (259 iterations), Total time taken: 11.54 seconds 
+# model=llama N=32 P=256 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_llama_sarathi_c2048_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (261 iterations), Total time taken: 12.54 seconds 
+# model=llama N=32 P=512 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_llama_sarathi_c2048_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (265 iterations), Total time taken: 14.49 seconds 
+# model=llama N=32 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_llama_sarathi_c2048_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (273 iterations), Total time taken: 18.97 seconds 
+# model=llama N=32 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_llama_sarathi_c2048_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (525 iterations), Total time taken: 34.90 seconds 
+# model=llama N=32 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_llama_sarathi_c2048_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (784 iterations), Total time taken: 53.27 seconds 
+# model=llama N=32 P=1 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_llama_sarathi_c3584_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 10.91 seconds 
+# model=llama N=32 P=128 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_llama_sarathi_c3584_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (258 iterations), Total time taken: 11.51 seconds 
+# model=llama N=32 P=256 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_llama_sarathi_c3584_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (259 iterations), Total time taken: 12.22 seconds 
+# model=llama N=32 P=512 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_llama_sarathi_c3584_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (261 iterations), Total time taken: 13.90 seconds 
+# model=llama N=32 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_llama_sarathi_c3584_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (266 iterations), Total time taken: 18.92 seconds 
+# model=llama N=32 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_llama_sarathi_c3584_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (520 iterations), Total time taken: 34.90 seconds 
+# model=llama N=32 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_llama_sarathi_c3584_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (779 iterations), Total time taken: 54.80 seconds 
+# model=mistral N=128 P=1 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mistral_vllm_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (257 iterations), Total time taken: 16.70 seconds 
+# model=mistral N=128 P=128 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mistral_vllm_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (299 iterations), Total time taken: 18.97 seconds 
+# model=mistral N=128 P=256 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mistral_vllm_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (320 iterations), Total time taken: 21.42 seconds 
+# model=mistral N=128 P=512 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mistral_vllm_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (384 iterations), Total time taken: 26.50 seconds 
+# model=mistral N=128 P=1024 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mistral_vllm_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (384 iterations), Total time taken: 34.28 seconds 
+# model=mistral N=128 P=2048 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mistral_vllm_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (649 iterations), Total time taken: 60.72 seconds 
+# model=mistral N=128 P=3584 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mistral_vllm_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (902 iterations), Total time taken: 95.58 seconds 
+# model=mistral N=128 P=1 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mistral_sarathi_c128_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (257 iterations), Total time taken: 15.10 seconds 
+# model=mistral N=128 P=128 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mistral_sarathi_c128_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (573 iterations), Total time taken: 31.00 seconds 
+# model=mistral N=128 P=256 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mistral_sarathi_c128_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (704 iterations), Total time taken: 32.90 seconds 
+# model=mistral N=128 P=512 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mistral_sarathi_c128_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (981 iterations), Total time taken: 48.34 seconds 
+# model=mistral N=128 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mistral_sarathi_c128_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (1510 iterations), Total time taken: 69.56 seconds 
+# model=mistral N=128 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mistral_sarathi_c128_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (2545 iterations), Total time taken: 120.28 seconds 
+# model=mistral N=128 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mistral_sarathi_c128_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (4087 iterations), Total time taken: 189.68 seconds 
+# model=mistral N=128 P=1 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mistral_sarathi_c256_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (257 iterations), Total time taken: 15.91 seconds 
+# model=mistral N=128 P=128 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mistral_sarathi_c256_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (345 iterations), Total time taken: 21.92 seconds 
+# model=mistral N=128 P=256 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mistral_sarathi_c256_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (433 iterations), Total time taken: 26.60 seconds 
+# model=mistral N=128 P=512 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mistral_sarathi_c256_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (598 iterations), Total time taken: 29.96 seconds 
+# model=mistral N=128 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mistral_sarathi_c256_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (870 iterations), Total time taken: 48.09 seconds 
+# model=mistral N=128 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mistral_sarathi_c256_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (1394 iterations), Total time taken: 73.59 seconds 
+# model=mistral N=128 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mistral_sarathi_c256_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (2167 iterations), Total time taken: 118.93 seconds 
+# model=mistral N=128 P=1 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mistral_sarathi_c512_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (257 iterations), Total time taken: 16.97 seconds 
+# model=mistral N=128 P=128 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mistral_sarathi_c512_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (293 iterations), Total time taken: 19.75 seconds 
+# model=mistral N=128 P=256 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mistral_sarathi_c512_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (330 iterations), Total time taken: 20.76 seconds 
+# model=mistral N=128 P=512 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mistral_sarathi_c512_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (403 iterations), Total time taken: 28.86 seconds 
+# model=mistral N=128 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mistral_sarathi_c512_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (550 iterations), Total time taken: 39.95 seconds 
+# model=mistral N=128 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mistral_sarathi_c512_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (818 iterations), Total time taken: 60.13 seconds 
+# model=mistral N=128 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mistral_sarathi_c512_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (1208 iterations), Total time taken: 90.67 seconds 
+# model=mistral N=128 P=1 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mistral_sarathi_c1024_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (257 iterations), Total time taken: 17.39 seconds 
+# model=mistral N=128 P=128 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mistral_sarathi_c1024_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (274 iterations), Total time taken: 18.40 seconds 
+# model=mistral N=128 P=256 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mistral_sarathi_c1024_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (291 iterations), Total time taken: 22.23 seconds 
+# model=mistral N=128 P=512 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mistral_sarathi_c1024_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (325 iterations), Total time taken: 25.63 seconds 
+# model=mistral N=128 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mistral_sarathi_c1024_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (393 iterations), Total time taken: 36.65 seconds 
+# model=mistral N=128 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mistral_sarathi_c1024_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (605 iterations), Total time taken: 58.51 seconds 
+# model=mistral N=128 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mistral_sarathi_c1024_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (873 iterations), Total time taken: 88.15 seconds 
+# model=mistral N=128 P=1 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mistral_sarathi_c2048_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (257 iterations), Total time taken: 16.30 seconds 
+# model=mistral N=128 P=128 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mistral_sarathi_c2048_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (265 iterations), Total time taken: 18.11 seconds 
+# model=mistral N=128 P=256 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mistral_sarathi_c2048_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (273 iterations), Total time taken: 21.80 seconds 
+# model=mistral N=128 P=512 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mistral_sarathi_c2048_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (290 iterations), Total time taken: 25.99 seconds 
+# model=mistral N=128 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mistral_sarathi_c2048_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (323 iterations), Total time taken: 34.50 seconds 
+# model=mistral N=128 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mistral_sarathi_c2048_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (561 iterations), Total time taken: 58.49 seconds 
+# model=mistral N=128 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mistral_sarathi_c2048_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (824 iterations), Total time taken: 90.13 seconds 
+# model=mistral N=128 P=1 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mistral_sarathi_c3584_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (257 iterations), Total time taken: 16.30 seconds 
+# model=mistral N=128 P=128 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mistral_sarathi_c3584_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (261 iterations), Total time taken: 18.95 seconds 
+# model=mistral N=128 P=256 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mistral_sarathi_c3584_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (266 iterations), Total time taken: 20.53 seconds 
+# model=mistral N=128 P=512 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mistral_sarathi_c3584_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (275 iterations), Total time taken: 25.57 seconds 
+# model=mistral N=128 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mistral_sarathi_c3584_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (294 iterations), Total time taken: 34.79 seconds 
+# model=mistral N=128 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mistral_sarathi_c3584_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (540 iterations), Total time taken: 60.72 seconds 
+# model=mistral N=128 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mistral_sarathi_c3584_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (801 iterations), Total time taken: 90.35 seconds 
+# model=mixtral N=2048 P=1 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mixtral_vllm_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (257 iterations), Total time taken: 81.06 seconds 
+# model=mixtral N=2048 P=128 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mixtral_vllm_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (384 iterations), Total time taken: 93.30 seconds 
+# model=mixtral N=2048 P=256 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mixtral_vllm_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (512 iterations), Total time taken: 103.03 seconds 
+# model=mixtral N=2048 P=512 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mixtral_vllm_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (768 iterations), Total time taken: 121.95 seconds 
+# model=mixtral N=2048 P=1024 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mixtral_vllm_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (1636 iterations), Total time taken: 171.26 seconds 
+# model=mixtral N=2048 P=2048 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mixtral_vllm_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (2676 iterations), Total time taken: 235.92 seconds 
+# model=mixtral N=2048 P=3584 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_mixtral_vllm_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (3145 iterations), Total time taken: 298.67 seconds 
+# model=mixtral N=2048 P=1 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mixtral_sarathi_c128_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (4112 iterations), Total time taken: 254.91 seconds 
+# model=mixtral N=2048 P=128 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mixtral_sarathi_c128_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (6314 iterations), Total time taken: 374.40 seconds 
+# model=mixtral N=2048 P=256 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mixtral_sarathi_c128_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (8383 iterations), Total time taken: 469.61 seconds 
+# model=mixtral N=2048 P=512 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mixtral_sarathi_c128_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (12501 iterations), Total time taken: 635.78 seconds 
+# model=mixtral N=2048 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mixtral_sarathi_c128_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (20710 iterations), Total time taken: 957.39 seconds 
+# model=mixtral N=2048 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mixtral_sarathi_c128_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (37105 iterations), Total time taken: 1630.65 seconds 
+# model=mixtral N=2048 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_mixtral_sarathi_c128_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (61687 iterations), Total time taken: 2641.74 seconds 
+# model=mixtral N=2048 P=1 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mixtral_sarathi_c256_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (2056 iterations), Total time taken: 171.88 seconds 
+# model=mixtral N=2048 P=128 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mixtral_sarathi_c256_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (3242 iterations), Total time taken: 246.04 seconds 
+# model=mixtral N=2048 P=256 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mixtral_sarathi_c256_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (4288 iterations), Total time taken: 268.85 seconds 
+# model=mixtral N=2048 P=512 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mixtral_sarathi_c256_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (6357 iterations), Total time taken: 371.25 seconds 
+# model=mixtral N=2048 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mixtral_sarathi_c256_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (10470 iterations), Total time taken: 509.88 seconds 
+# model=mixtral N=2048 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mixtral_sarathi_c256_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (18674 iterations), Total time taken: 881.20 seconds 
+# model=mixtral N=2048 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_mixtral_sarathi_c256_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (30967 iterations), Total time taken: 1427.56 seconds 
+# model=mixtral N=2048 P=1 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mixtral_sarathi_c512_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (1028 iterations), Total time taken: 118.97 seconds 
+# model=mixtral N=2048 P=128 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mixtral_sarathi_c512_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (1706 iterations), Total time taken: 156.57 seconds 
+# model=mixtral N=2048 P=256 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mixtral_sarathi_c512_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (2240 iterations), Total time taken: 181.84 seconds 
+# model=mixtral N=2048 P=512 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mixtral_sarathi_c512_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (3285 iterations), Total time taken: 200.55 seconds 
+# model=mixtral N=2048 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mixtral_sarathi_c512_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (5351 iterations), Total time taken: 342.85 seconds 
+# model=mixtral N=2048 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mixtral_sarathi_c512_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (9458 iterations), Total time taken: 525.30 seconds 
+# model=mixtral N=2048 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_mixtral_sarathi_c512_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (15608 iterations), Total time taken: 802.42 seconds 
+# model=mixtral N=2048 P=1 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mixtral_sarathi_c1024_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (514 iterations), Total time taken: 89.09 seconds 
+# model=mixtral N=2048 P=128 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mixtral_sarathi_c1024_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (942 iterations), Total time taken: 126.38 seconds 
+# model=mixtral N=2048 P=256 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mixtral_sarathi_c1024_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (1216 iterations), Total time taken: 139.66 seconds 
+# model=mixtral N=2048 P=512 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mixtral_sarathi_c1024_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (1750 iterations), Total time taken: 151.54 seconds 
+# model=mixtral N=2048 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mixtral_sarathi_c1024_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (2791 iterations), Total time taken: 236.76 seconds 
+# model=mixtral N=2048 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mixtral_sarathi_c1024_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (4850 iterations), Total time taken: 322.93 seconds 
+# model=mixtral N=2048 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_mixtral_sarathi_c1024_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (7928 iterations), Total time taken: 496.16 seconds 
+# model=mixtral N=2048 P=1 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mixtral_sarathi_c2048_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (257 iterations), Total time taken: 84.70 seconds 
+# model=mixtral N=2048 P=128 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mixtral_sarathi_c2048_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (574 iterations), Total time taken: 105.32 seconds 
+# model=mixtral N=2048 P=256 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mixtral_sarathi_c2048_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (704 iterations), Total time taken: 115.74 seconds 
+# model=mixtral N=2048 P=512 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mixtral_sarathi_c2048_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (982 iterations), Total time taken: 141.14 seconds 
+# model=mixtral N=2048 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mixtral_sarathi_c2048_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (1511 iterations), Total time taken: 167.50 seconds 
+# model=mixtral N=2048 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mixtral_sarathi_c2048_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (2546 iterations), Total time taken: 252.03 seconds 
+# model=mixtral N=2048 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_mixtral_sarathi_c2048_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (4088 iterations), Total time taken: 366.64 seconds 
+# model=mixtral N=2048 P=1 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mixtral_sarathi_c3584_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (257 iterations), Total time taken: 85.14 seconds 
+# model=mixtral N=2048 P=128 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mixtral_sarathi_c3584_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (365 iterations), Total time taken: 90.21 seconds 
+# model=mixtral N=2048 P=256 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mixtral_sarathi_c3584_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (473 iterations), Total time taken: 105.56 seconds 
+# model=mixtral N=2048 P=512 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mixtral_sarathi_c3584_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (654 iterations), Total time taken: 126.41 seconds 
+# model=mixtral N=2048 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mixtral_sarathi_c3584_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (962 iterations), Total time taken: 160.23 seconds 
+# model=mixtral N=2048 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mixtral_sarathi_c3584_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (1559 iterations), Total time taken: 222.09 seconds 
+# model=mixtral N=2048 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_mixtral_sarathi_c3584_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (2442 iterations), Total time taken: 316.23 seconds 
+# model=qwen N=32 P=1 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_qwen_vllm_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 10.65 seconds 
+# model=qwen N=32 P=128 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_qwen_vllm_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (267 iterations), Total time taken: 11.93 seconds 
+# model=qwen N=32 P=256 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_qwen_vllm_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (272 iterations), Total time taken: 12.87 seconds 
+# model=qwen N=32 P=512 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_qwen_vllm_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (288 iterations), Total time taken: 14.27 seconds 
+# model=qwen N=32 P=1024 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_qwen_vllm_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (288 iterations), Total time taken: 18.87 seconds 
+# model=qwen N=32 P=2048 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_qwen_vllm_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (546 iterations), Total time taken: 34.70 seconds 
+# model=qwen N=32 P=3584 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_qwen_vllm_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (800 iterations), Total time taken: 55.53 seconds 
+# model=qwen N=32 P=1 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_qwen_sarathi_c128_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 10.92 seconds 
+# model=qwen N=32 P=128 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_qwen_sarathi_c128_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (293 iterations), Total time taken: 12.67 seconds 
+# model=qwen N=32 P=256 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_qwen_sarathi_c128_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (330 iterations), Total time taken: 14.17 seconds 
+# model=qwen N=32 P=512 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_qwen_sarathi_c128_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (403 iterations), Total time taken: 19.23 seconds 
+# model=qwen N=32 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_qwen_sarathi_c128_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (549 iterations), Total time taken: 27.08 seconds 
+# model=qwen N=32 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_qwen_sarathi_c128_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (817 iterations), Total time taken: 42.56 seconds 
+# model=qwen N=32 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_qwen_sarathi_c128_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (1207 iterations), Total time taken: 65.76 seconds 
+# model=qwen N=32 P=1 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_qwen_sarathi_c256_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 10.82 seconds 
+# model=qwen N=32 P=128 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_qwen_sarathi_c256_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (273 iterations), Total time taken: 11.80 seconds 
+# model=qwen N=32 P=256 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_qwen_sarathi_c256_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (291 iterations), Total time taken: 13.08 seconds 
+# model=qwen N=32 P=512 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_qwen_sarathi_c256_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (325 iterations), Total time taken: 16.28 seconds 
+# model=qwen N=32 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_qwen_sarathi_c256_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (393 iterations), Total time taken: 22.00 seconds 
+# model=qwen N=32 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_qwen_sarathi_c256_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (616 iterations), Total time taken: 35.58 seconds 
+# model=qwen N=32 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_qwen_sarathi_c256_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (915 iterations), Total time taken: 54.51 seconds 
+# model=qwen N=32 P=1 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_qwen_sarathi_c512_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 11.05 seconds 
+# model=qwen N=32 P=128 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_qwen_sarathi_c512_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (265 iterations), Total time taken: 11.14 seconds 
+# model=qwen N=32 P=256 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_qwen_sarathi_c512_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (273 iterations), Total time taken: 13.06 seconds 
+# model=qwen N=32 P=512 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_qwen_sarathi_c512_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (289 iterations), Total time taken: 14.99 seconds 
+# model=qwen N=32 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_qwen_sarathi_c512_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (322 iterations), Total time taken: 19.94 seconds 
+# model=qwen N=32 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_qwen_sarathi_c512_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (567 iterations), Total time taken: 34.99 seconds 
+# model=qwen N=32 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_qwen_sarathi_c512_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (842 iterations), Total time taken: 54.06 seconds 
+# model=qwen N=32 P=1 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_qwen_sarathi_c1024_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 11.19 seconds 
+# model=qwen N=32 P=128 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_qwen_sarathi_c1024_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (261 iterations), Total time taken: 10.65 seconds 
+# model=qwen N=32 P=256 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_qwen_sarathi_c1024_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (265 iterations), Total time taken: 12.65 seconds 
+# model=qwen N=32 P=512 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_qwen_sarathi_c1024_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (273 iterations), Total time taken: 14.76 seconds 
+# model=qwen N=32 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_qwen_sarathi_c1024_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (289 iterations), Total time taken: 18.93 seconds 
+# model=qwen N=32 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_qwen_sarathi_c1024_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (540 iterations), Total time taken: 34.19 seconds 
+# model=qwen N=32 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_qwen_sarathi_c1024_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (806 iterations), Total time taken: 53.45 seconds 
+# model=qwen N=32 P=1 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_qwen_sarathi_c2048_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 10.87 seconds 
+# model=qwen N=32 P=128 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_qwen_sarathi_c2048_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (259 iterations), Total time taken: 11.57 seconds 
+# model=qwen N=32 P=256 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_qwen_sarathi_c2048_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (261 iterations), Total time taken: 12.80 seconds 
+# model=qwen N=32 P=512 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_qwen_sarathi_c2048_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (265 iterations), Total time taken: 14.67 seconds 
+# model=qwen N=32 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_qwen_sarathi_c2048_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (273 iterations), Total time taken: 19.23 seconds 
+# model=qwen N=32 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_qwen_sarathi_c2048_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (527 iterations), Total time taken: 35.26 seconds 
+# model=qwen N=32 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_qwen_sarathi_c2048_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (788 iterations), Total time taken: 54.29 seconds 
+# model=qwen N=32 P=1 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_qwen_sarathi_c3584_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (257 iterations), Total time taken: 11.21 seconds 
+# model=qwen N=32 P=128 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_qwen_sarathi_c3584_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (258 iterations), Total time taken: 10.74 seconds 
+# model=qwen N=32 P=256 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_qwen_sarathi_c3584_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (259 iterations), Total time taken: 12.65 seconds 
+# model=qwen N=32 P=512 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_qwen_sarathi_c3584_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (261 iterations), Total time taken: 14.44 seconds 
+# model=qwen N=32 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_qwen_sarathi_c3584_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (266 iterations), Total time taken: 18.74 seconds 
+# model=qwen N=32 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_qwen_sarathi_c3584_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (521 iterations), Total time taken: 35.04 seconds 
+# model=qwen N=32 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_qwen_sarathi_c3584_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (781 iterations), Total time taken: 55.80 seconds 
+# model=yi N=256 P=1 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_yi_vllm_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (257 iterations), Total time taken: 19.56 seconds 
+# model=yi N=256 P=128 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_yi_vllm_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (342 iterations), Total time taken: 26.15 seconds 
+# model=yi N=256 P=256 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_yi_vllm_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (384 iterations), Total time taken: 27.92 seconds 
+# model=yi N=256 P=512 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_yi_vllm_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (512 iterations), Total time taken: 36.47 seconds 
+# model=yi N=256 P=1024 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_yi_vllm_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (512 iterations), Total time taken: 47.32 seconds 
+# model=yi N=256 P=2048 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_yi_vllm_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (789 iterations), Total time taken: 79.57 seconds 
+# model=yi N=256 P=3584 decode_tokens=256 scheduler=vllm chunk_size=0 output=pdmix_yi_vllm_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (1030 iterations), Total time taken: 134.76 seconds 
+# model=yi N=256 P=1 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_yi_sarathi_c128_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (514 iterations), Total time taken: 32.31 seconds 
+# model=yi N=256 P=128 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_yi_sarathi_c128_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (941 iterations), Total time taken: 52.68 seconds 
+# model=yi N=256 P=256 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_yi_sarathi_c128_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (1215 iterations), Total time taken: 60.45 seconds 
+# model=yi N=256 P=512 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_yi_sarathi_c128_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (1749 iterations), Total time taken: 86.65 seconds 
+# model=yi N=256 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_yi_sarathi_c128_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (2790 iterations), Total time taken: 126.00 seconds 
+# model=yi N=256 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_yi_sarathi_c128_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (4849 iterations), Total time taken: 202.89 seconds 
+# model=yi N=256 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=128 output=pdmix_yi_sarathi_c128_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (7927 iterations), Total time taken: 338.04 seconds 
+# model=yi N=256 P=1 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_yi_sarathi_c256_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (257 iterations), Total time taken: 22.10 seconds 
+# model=yi N=256 P=128 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_yi_sarathi_c256_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (573 iterations), Total time taken: 36.94 seconds 
+# model=yi N=256 P=256 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_yi_sarathi_c256_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (704 iterations), Total time taken: 38.94 seconds 
+# model=yi N=256 P=512 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_yi_sarathi_c256_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (981 iterations), Total time taken: 54.33 seconds 
+# model=yi N=256 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_yi_sarathi_c256_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (1510 iterations), Total time taken: 74.59 seconds 
+# model=yi N=256 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_yi_sarathi_c256_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (2546 iterations), Total time taken: 120.63 seconds 
+# model=yi N=256 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=256 output=pdmix_yi_sarathi_c256_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (4087 iterations), Total time taken: 198.00 seconds 
+# model=yi N=256 P=1 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_yi_sarathi_c512_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (257 iterations), Total time taken: 21.59 seconds 
+# model=yi N=256 P=128 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_yi_sarathi_c512_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (345 iterations), Total time taken: 25.39 seconds 
+# model=yi N=256 P=256 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_yi_sarathi_c512_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (433 iterations), Total time taken: 28.72 seconds 
+# model=yi N=256 P=512 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_yi_sarathi_c512_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (598 iterations), Total time taken: 36.92 seconds 
+# model=yi N=256 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_yi_sarathi_c512_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (871 iterations), Total time taken: 57.07 seconds 
+# model=yi N=256 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_yi_sarathi_c512_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (1394 iterations), Total time taken: 94.08 seconds 
+# model=yi N=256 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=512 output=pdmix_yi_sarathi_c512_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (2168 iterations), Total time taken: 139.18 seconds 
+# model=yi N=256 P=1 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_yi_sarathi_c1024_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (257 iterations), Total time taken: 20.81 seconds 
+# model=yi N=256 P=128 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_yi_sarathi_c1024_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (293 iterations), Total time taken: 25.24 seconds 
+# model=yi N=256 P=256 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_yi_sarathi_c1024_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (330 iterations), Total time taken: 27.11 seconds 
+# model=yi N=256 P=512 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_yi_sarathi_c1024_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (404 iterations), Total time taken: 36.60 seconds 
+# model=yi N=256 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_yi_sarathi_c1024_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (550 iterations), Total time taken: 51.84 seconds 
+# model=yi N=256 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_yi_sarathi_c1024_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (818 iterations), Total time taken: 80.38 seconds 
+# model=yi N=256 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=1024 output=pdmix_yi_sarathi_c1024_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (1208 iterations), Total time taken: 122.92 seconds 
+# model=yi N=256 P=1 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_yi_sarathi_c2048_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (257 iterations), Total time taken: 20.49 seconds 
+# model=yi N=256 P=128 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_yi_sarathi_c2048_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (274 iterations), Total time taken: 23.33 seconds 
+# model=yi N=256 P=256 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_yi_sarathi_c2048_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (291 iterations), Total time taken: 28.07 seconds 
+# model=yi N=256 P=512 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_yi_sarathi_c2048_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (325 iterations), Total time taken: 33.97 seconds 
+# model=yi N=256 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_yi_sarathi_c2048_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (393 iterations), Total time taken: 46.82 seconds 
+# model=yi N=256 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_yi_sarathi_c2048_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (585 iterations), Total time taken: 78.71 seconds 
+# model=yi N=256 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=2048 output=pdmix_yi_sarathi_c2048_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (829 iterations), Total time taken: 122.14 seconds 
+# model=yi N=256 P=1 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_yi_sarathi_c3584_p1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (257 iterations), Total time taken: 22.12 seconds 
+# model=yi N=256 P=128 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_yi_sarathi_c3584_p128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (266 iterations), Total time taken: 21.97 seconds 
+# model=yi N=256 P=256 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_yi_sarathi_c3584_p256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (275 iterations), Total time taken: 28.03 seconds 
+# model=yi N=256 P=512 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_yi_sarathi_c3584_p512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (294 iterations), Total time taken: 31.50 seconds 
+# model=yi N=256 P=1024 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_yi_sarathi_c3584_p1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (332 iterations), Total time taken: 44.06 seconds 
+# model=yi N=256 P=2048 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_yi_sarathi_c3584_p2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (555 iterations), Total time taken: 76.87 seconds 
+# model=yi N=256 P=3584 decode_tokens=256 scheduler=sarathi chunk_size=3584 output=pdmix_yi_sarathi_c3584_p3584
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (807 iterations), Total time taken: 127.94 seconds 

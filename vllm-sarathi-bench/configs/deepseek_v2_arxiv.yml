@@ -1,0 +1,52 @@
+seed: 42
+
+output_root: /home/sabiha/sarathi-serve/benchmark_output/vllm_deepseek_v2_arxiv
+
+trace_request_length_generator:
+  trace_file: /home/sabiha/sarathi-serve/sarathi/benchmark/data/processed_traces/arxiv_summarization_filtered_stats_llama2_tokenizer.csv
+  prefill_scale_factor: 1
+  decode_scale_factor: 1
+  max_tokens: 16384
+
+request_generator:
+  num_requests: 300
+
+# Sweep dimensions
+qps_values: [1, 5, 10, 15, 20]
+chunk_sizes: [128, 256, 512, 1024, 2048, 3072, 4096]
+
+model:
+  name: deepseek-ai/DeepSeek-V2-Lite
+  tokenizer: deepseek-ai/DeepSeek-V2-Lite
+
+  # Real model weights:
+  load_format: auto
+
+  dtype: bfloat16
+  tensor_parallel_size: 2
+  pipeline_parallel_size: 1
+  max_model_len: 16384
+  gpu_memory_utilization: 0.85
+  trust_remote_code: true
+
+  # More predictable benchmark execution.
+  enforce_eager: true
+
+vllm_scheduler:
+  enable_chunked_prefill: true
+
+  # Keep this <= the smallest chunk size. vLLM requires
+  # max_num_batched_tokens >= max_num_seqs.
+  max_num_seqs: 128
+
+  disable_hybrid_kv_cache_manager: true
+  enable_prefix_caching: false
+
+offloading:
+  # No model-weight CPU offloading.
+  cpu_offload_gb: 0
+
+  # No KV-cache offloading. Leaving kv_offloading_size unset/None is what
+  # disables KV offloading in vLLM 0.20.
+  kv_offloading_size: null
+  kv_offloading_backend: null

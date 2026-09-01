@@ -1,0 +1,60 @@
+
+# model=llama vLLM arxiv sweep
+# vLLM Poisson 1 request per seconds output=arxiv_vllm_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5535 iterations), Total time taken: 649.91 seconds 
+# vLLM Poisson 5 request per seconds output=arxiv_vllm_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5535 iterations), Total time taken: 636.58 seconds 
+# vLLM Poisson 10 request per seconds output=arxiv_vllm_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5535 iterations), Total time taken: 648.05 seconds 
+# vLLM Poisson 15 request per seconds output=arxiv_vllm_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5535 iterations), Total time taken: 649.72 seconds 
+# vLLM Poisson 20 request per seconds output=arxiv_vllm_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5535 iterations), Total time taken: 648.75 seconds 
+
+# model=mistral vLLM arxiv sweep
+# vLLM Poisson 1 request per seconds output=arxiv_vllm_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1745 iterations), Total time taken: 402.69 seconds 
+# vLLM Poisson 5 request per seconds output=arxiv_vllm_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1745 iterations), Total time taken: 402.54 seconds 
+# vLLM Poisson 10 request per seconds output=arxiv_vllm_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1745 iterations), Total time taken: 401.54 seconds 
+# vLLM Poisson 15 request per seconds output=arxiv_vllm_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1745 iterations), Total time taken: 399.60 seconds 
+# vLLM Poisson 20 request per seconds output=arxiv_vllm_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1745 iterations), Total time taken: 402.94 seconds 
+
+# model=mixtral vLLM arxiv sweep
+# vLLM Poisson 1 request per seconds output=arxiv_vllm_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5547 iterations), Total time taken: 294.58 seconds 
+# vLLM Poisson 5 request per seconds output=arxiv_vllm_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (825 iterations), Total time taken: 94.23 seconds 
+# vLLM Poisson 10 request per seconds output=arxiv_vllm_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (731 iterations), Total time taken: 88.86 seconds 
+# vLLM Poisson 15 request per seconds output=arxiv_vllm_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (731 iterations), Total time taken: 88.01 seconds 
+# vLLM Poisson 20 request per seconds output=arxiv_vllm_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (731 iterations), Total time taken: 90.93 seconds 
+
+# model=qwen vLLM arxiv sweep
+# vLLM Poisson 1 request per seconds output=arxiv_vllm_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5750 iterations), Total time taken: 660.80 seconds 
+# vLLM Poisson 5 request per seconds output=arxiv_vllm_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5750 iterations), Total time taken: 658.98 seconds 
+# vLLM Poisson 10 request per seconds output=arxiv_vllm_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5750 iterations), Total time taken: 659.84 seconds 
+# vLLM Poisson 15 request per seconds output=arxiv_vllm_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5750 iterations), Total time taken: 655.70 seconds 
+# vLLM Poisson 20 request per seconds output=arxiv_vllm_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5750 iterations), Total time taken: 654.88 seconds 
+
+# model=yi vLLM arxiv sweep
+# vLLM Poisson 1 request per seconds output=arxiv_vllm_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1105 iterations), Total time taken: 330.40 seconds 
+# vLLM Poisson 5 request per seconds output=arxiv_vllm_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1095 iterations), Total time taken: 330.49 seconds 
+# vLLM Poisson 10 request per seconds output=arxiv_vllm_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1095 iterations), Total time taken: 320.74 seconds 
+# vLLM Poisson 15 request per seconds output=arxiv_vllm_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1095 iterations), Total time taken: 324.27 seconds 
+# vLLM Poisson 20 request per seconds output=arxiv_vllm_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (1095 iterations), Total time taken: 326.52 seconds 

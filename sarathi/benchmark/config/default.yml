@@ -1,12 +1,13 @@
 seed: 42
 log_level: info
-output_dir: ./benchmark_output/
+output_dir: /home/sabiha/sarathi-serve/benchmark_output/pd_ratio_mixed_sweep_exp3/
+# output_dir: ./benchmark_output/
 write_json_trace: true
 write_chrome_trace: true
 write_metrics: true
 enable_profiling: false
 gpu_memory_utilization: 0.85
-time_limit: 1800 # seconds
+time_limit: 7200 # seconds
 replica_resource_mapping: ""
 
 cluster:
@@ -17,7 +18,7 @@ model:
   # name: meta-llama/Llama-2-7b
   name: meta-llama/Llama-2-7b-hf
   # tensor_parallel_degree: 4
-  tensor_parallel_degree: 2
+  tensor_parallel_degree: 1
   # pipeline_parallel_degree: 2
   pipeline_parallel_degree: 1
   max_model_len: 4096

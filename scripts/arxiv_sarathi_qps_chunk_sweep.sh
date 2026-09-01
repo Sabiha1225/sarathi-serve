@@ -7,14 +7,18 @@ set -uo pipefail
 # nohup ./scripts/arxiv_sarathi_qps_chunk_sweep.sh \
 #  > log/arxiv_sarathi_qps_chunk_sweep.log 2>&1 &
 
+# nohup ./scripts/arxiv_sarathi_qps_chunk_sweep.sh \
+#  > log/sarathi_arxiv_300_tp2_pp1.log 2>&1 &
+
 
 REPO="/home/sabiha/sarathi-serve"
 MAIN="$REPO/sarathi/benchmark/main.py"
 CONSTANTS_FILE="$REPO/sarathi/benchmark/constants.py"
-OUTPUT_ROOT="$REPO/benchmark_output/arxiv"
-TIME_FILE="$REPO/log/time_arxiv.txt"
+OUTPUT_ROOT="$REPO/benchmark_output/sarathi_arxiv_300_tp2_pp1"
+TIME_FILE="$REPO/log/sarathi_arxiv_300_tp2_pp1.txt"
 LATEST_LOG="$REPO/log/sarathi_log.log"
-SUMMARY="$OUTPUT_ROOT/arxiv_qps_chunk_sweep_summary.csv"
+# SUMMARY="$OUTPUT_ROOT/arxiv_qps_chunk_sweep_summary.csv"
+SUMMARY="$OUTPUT_ROOT/sarathi_arxiv_300_tp2_pp1.csv"
 CONFIG_YML="arxiv_sarathi_varied_chunk_size_varried_req_time.yml"
 
 QPS_VALUES=(1 5 10 15 20)

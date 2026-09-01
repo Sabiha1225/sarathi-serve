@@ -1,0 +1,41 @@
+sudo ncu \
+    --launch-skip 500 \
+    --launch-count 1000 \
+    --metrics sm__throughput.avg.pct_of_peak_sustained_elapsed,gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed,dram__bytes_read.sum,dram__bytes_write.sum,dram__sectors_read.sum,dram__sectors_write.sum,lts__t_sectors_op_read.sum,lts__t_sectors_op_write.sum \
+    --csv \
+    --log-file ncu_llama_decode_n256.csv \
+    python sarathi/benchmark/main.py \
+        --model_name meta-llama/Llama-2-7b-hf \
+        --model_tensor_parallel_degree 1 \
+        --model_pipeline_parallel_degree 1 \
+        --model_max_model_len 2112 \
+        --synthetic_request_generator_length_provider fixed \
+        --synthetic_request_generator_interval_provider static \
+        --synthetic_request_generator_num_requests 256 \
+        --fixed_request_length_generator_prefill_tokens 1 \
+        --fixed_request_length_generator_decode_tokens 2048 \
+        --replica_scheduler_provider vllm \
+        --replica_scheduler_max_batch_size 256 \
+        --vllm_scheduler_max_tokens_in_batch 2112 \
+        --metrics_store_keep_individual_batch_metrics true
+
+
+# 1. --synthetic_request_generator_num_requests / --replica_scheduler_max_batch_size 
+# (256 above): pick an N from your Experiment 3 sweep summary that's below the ceiling 
+# (where total_pauses was still 0) — you want to profile healthy steady-state decode, 
+# not a run that's already preempting.
+# 2. --launch-skip 500: skips the first 500 kernel launches, which covers the trivial 
+# 1-token prefill plus a handful of early decode iterations (warm-up, cache allocation 
+# overhead) so you land in steady-state decode rather than startup noise.
+# 3. --launch-count 1000: profiles the next 1000 kernel launches after the skip. 
+# For a 32-layer model, one decode iteration is roughly a few hundred kernels 
+# (attention + MLP + norms × 32 layers), so 1000 should comfortably span at least 
+# one full iteration — but I haven't verified this number against a real profile 
+# (the ERR_NVGPUCTRPERM permission issue blocks me from actually running ncu here), 
+# so treat it as a starting point. If the resulting CSV looks like it cut off 
+# mid-iteration, or you want to check kernel count first without paying the 
+# metrics-collection overhead, run once with just --launch-skip 500 --launch-count 
+# 1000 and no --metrics (or ncu --list-metrics-free mode won't help here — instead 
+# run with --set none or just --metrics launch__count to get a cheap per-kernel listing) 
+# to see how many kernels one iteration actually takes, then adjust.
+# 4. Same sudo caveat as before applies here too.

@@ -1,7 +1,7 @@
 import os
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/default.yml"
+DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/default.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_sarathi.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_sarathi.yml"
@@ -94,7 +94,7 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # ********** Trying different datasets ***********
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/arxiv_sarathi_varied_chunk_size_varried_req_time.yml"
-DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/arxiv_vllm_varied_chunk_size_varried_req_time.yml"
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/arxiv_vllm_varied_chunk_size_varried_req_time.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/sharegpt_sarathi_varied_chunk_size_varried_req_time.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/sharegpt_vllm_varied_chunk_size_varried_req_time.yml"
 

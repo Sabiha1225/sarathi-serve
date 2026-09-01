@@ -5,8 +5,11 @@ import csv
 
 # python3 log_processing/generate_arxiv_sarathi_csv.py
 
-SRC = "/home/sabiha/sarathi-serve/log/time_arxiv_sarathi.txt"
-OUT = "/home/sabiha/sarathi-serve/log/time_arxiv_sarathi.csv"
+# SRC = "/home/sabiha/sarathi-serve/log/time_arxiv_sarathi.txt"
+# OUT = "/home/sabiha/sarathi-serve/log/time_arxiv_sarathi.csv"
+
+SRC = "/home/sabiha/sarathi-serve/log/sarathi_arxiv_300_tp2_pp1.txt"
+OUT = "/home/sabiha/sarathi-serve/log_csv/sarathi_arxiv_300_tp2_pp1.csv"
 
 lines = open(SRC).read().splitlines()
 

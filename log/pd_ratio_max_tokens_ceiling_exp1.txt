@@ -1,0 +1,80 @@
+# model=llama P=512 output=max_tokens_llama_p_512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.13 seconds 
+# model=llama P=1024 output=max_tokens_llama_p_1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.16 seconds 
+# model=llama P=2048 output=max_tokens_llama_p_2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.24 seconds 
+# model=llama P=4096 output=max_tokens_llama_p_4096
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.40 seconds 
+# model=llama P=8192 output=max_tokens_llama_p_8192
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.87 seconds 
+# model=llama P=16384 output=max_tokens_llama_p_16384
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 2.13 seconds 
+# model=llama P=24576 output=max_tokens_llama_p_24576
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 3.93 seconds 
+# model=llama P=32768 output=max_tokens_llama_p_32768
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 6.11 seconds 
+# model=mistral P=512 output=max_tokens_mistral_p_512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.13 seconds 
+# model=mistral P=1024 output=max_tokens_mistral_p_1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.17 seconds 
+# model=mistral P=2048 output=max_tokens_mistral_p_2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.25 seconds 
+# model=mistral P=4096 output=max_tokens_mistral_p_4096
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.42 seconds 
+# model=mistral P=8192 output=max_tokens_mistral_p_8192
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.89 seconds 
+# model=mistral P=16384 output=max_tokens_mistral_p_16384
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 2.22 seconds 
+# model=mistral P=24576 output=max_tokens_mistral_p_24576
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 3.95 seconds 
+# model=mistral P=32768 output=max_tokens_mistral_p_32768
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 6.23 seconds 
+# model=mixtral P=512 output=max_tokens_mixtral_p_512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.12 seconds 
+# model=mixtral P=1024 output=max_tokens_mixtral_p_1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.11 seconds 
+# model=mixtral P=2048 output=max_tokens_mixtral_p_2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.12 seconds 
+# model=mixtral P=4096 output=max_tokens_mixtral_p_4096
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.13 seconds 
+# model=mixtral P=8192 output=max_tokens_mixtral_p_8192
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.20 seconds 
+# model=mixtral P=16384 output=max_tokens_mixtral_p_16384
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.38 seconds 
+# model=mixtral P=24576 output=max_tokens_mixtral_p_24576
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.60 seconds 
+# model=mixtral P=32768 output=max_tokens_mixtral_p_32768
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.89 seconds 
+# model=qwen P=512 output=max_tokens_qwen_p_512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.14 seconds 
+# model=qwen P=1024 output=max_tokens_qwen_p_1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.16 seconds 
+# model=qwen P=2048 output=max_tokens_qwen_p_2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.23 seconds 
+# model=qwen P=4096 output=max_tokens_qwen_p_4096
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.41 seconds 
+# model=qwen P=8192 output=max_tokens_qwen_p_8192
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.87 seconds 
+# model=qwen P=16384 output=max_tokens_qwen_p_16384
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 2.17 seconds 
+# model=qwen P=24576 output=max_tokens_qwen_p_24576
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 3.93 seconds 
+# model=qwen P=32768 output=max_tokens_qwen_p_32768
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 6.16 seconds 
+# model=yi P=512 output=max_tokens_yi_p_512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.13 seconds 
+# model=yi P=1024 output=max_tokens_yi_p_1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.15 seconds 
+# model=yi P=2048 output=max_tokens_yi_p_2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.21 seconds 
+# model=yi P=4096 output=max_tokens_yi_p_4096
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.36 seconds 
+# model=yi P=8192 output=max_tokens_yi_p_8192
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 0.78 seconds 
+# model=yi P=16384 output=max_tokens_yi_p_16384
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 1.98 seconds 
+# model=yi P=24576 output=max_tokens_yi_p_24576
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 3.64 seconds 
+# model=yi P=32768 output=max_tokens_yi_p_32768
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (2 iterations), Total time taken: 5.75 seconds 

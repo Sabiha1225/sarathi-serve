@@ -1,0 +1,6 @@
+model_name,configured_num_requests,num_requests,qps,chunked_prefill,max_num_batched_tokens,tensor_parallel_size,pipeline_parallel_size,kv_offloading,end_to_end_s,p99_ttft_s,p99_tpot_s,p99_request_latency_s,num_preemptions,max_gpu_memory_mib,status
+deepseek-ai/DeepSeek-V2-Lite,300,300,1.0,False,16384,2,1,False,300.787,1.5146628784388296,0.08590345906853765,30.86689915589988,0,40923.0,success
+deepseek-ai/DeepSeek-V2-Lite,300,300,5.0,False,16384,2,1,False,157.891,81.28156890381825,0.2910050982548747,108.83343065293738,1,40931.0,success
+deepseek-ai/DeepSeek-V2-Lite,300,300,10.0,False,16384,2,1,False,159.387,110.01761754652019,0.29161464559740785,131.65125057506143,1,40927.0,success
+deepseek-ai/DeepSeek-V2-Lite,300,300,15.0,False,16384,2,1,False,159.252,119.59306119712302,0.29154105757420873,139.75248120744246,1,40925.0,success
+deepseek-ai/DeepSeek-V2-Lite,300,300,20.0,False,16384,2,1,False,158.115,123.92719570055604,0.29058636326080695,143.5142385694245,1,40927.0,success

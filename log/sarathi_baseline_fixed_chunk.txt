@@ -1,0 +1,100 @@
+
+# model=llama Poisson 1 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_1_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6287 iterations), Total time taken: 584.76 seconds 
+
+# model=llama Poisson 5 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_5_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6287 iterations), Total time taken: 584.87 seconds 
+
+# model=llama Poisson 10 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_10_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6287 iterations), Total time taken: 591.79 seconds 
+
+# model=llama Poisson 15 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_15_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6287 iterations), Total time taken: 577.80 seconds 
+
+# model=llama Poisson 20 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_20_qps_llama
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6287 iterations), Total time taken: 589.80 seconds 
+
+# model=mistral Poisson 1 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_1_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 426.55 seconds 
+
+# model=mistral Poisson 5 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_5_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 424.05 seconds 
+
+# model=mistral Poisson 10 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_10_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 425.42 seconds 
+
+# model=mistral Poisson 15 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_15_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 423.08 seconds 
+
+# model=mistral Poisson 20 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_20_qps_mistral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 422.30 seconds 
+
+# model=mixtral Poisson 1 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_1_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 311.16 seconds 
+
+# model=mixtral Poisson 5 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_5_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 317.49 seconds 
+
+# model=mixtral Poisson 10 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_10_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 312.52 seconds 
+
+# model=mixtral Poisson 15 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_15_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 311.94 seconds 
+
+# model=mixtral Poisson 20 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_20_qps_mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 316.53 seconds 
+
+# model=qwen Poisson 1 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_1_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6399 iterations), Total time taken: 596.40 seconds 
+
+# model=qwen Poisson 5 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_5_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6399 iterations), Total time taken: 597.58 seconds 
+
+# model=qwen Poisson 10 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_10_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6399 iterations), Total time taken: 599.44 seconds 
+
+# model=qwen Poisson 15 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_15_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6399 iterations), Total time taken: 598.18 seconds 
+
+# model=qwen Poisson 20 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_20_qps_qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (6399 iterations), Total time taken: 595.62 seconds 
+
+# model=yi Poisson 1 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_1_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 382.15 seconds 
+
+# model=yi Poisson 5 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_5_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 382.39 seconds 
+
+# model=yi Poisson 10 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_10_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 378.56 seconds 
+
+# model=yi Poisson 15 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_15_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 380.97 seconds 
+
+# model=yi Poisson 20 request per seconds (chunk_size=512, dynamic=false)
+# chunk_size=512 dynamic=false output=arxiv_chunk_512_dyn_false_poison_20_qps_yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 300 (5526 iterations), Total time taken: 372.33 seconds 

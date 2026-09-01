@@ -24,6 +24,7 @@ from sarathi.metrics.cpu_timer import CpuTimer
 from sarathi.metrics.metrics_store import MetricsStore
 from sarathi.transformers_utils.tokenizer import get_tokenizer
 from sarathi.utils import Counter, get_ip, get_random_port, unset_cuda_visible_devices
+# from sarathi.worker.cache_engine import CacheEngine
 
 logger = init_logger(__name__)
 
@@ -220,6 +221,8 @@ class BaseLLMEngine:
 
     def _init_cache(self) -> None:
         """Profiles the memory usage and initializes the KV cache."""
+        
+        from sarathi.worker.cache_engine import CacheEngine
         # Get the maximum number of blocks that can be allocated on GPU.
         num_gpu_blocks_across_workers = self._run_workers(
             "profile_num_available_blocks",
@@ -251,6 +254,10 @@ class BaseLLMEngine:
                 f"Try decreasing `max_batch_size`, `max_model_len`."
             )
         self.cache_config.num_gpu_blocks = num_gpu_blocks
+
+        self.cache_config.block_size_bytes = CacheEngine.get_cache_block_size(
+            self.cache_config.block_size, self.model_config, self.parallel_config
+        )
 
         # Initialize the cache.
         self._run_workers(

@@ -262,6 +262,17 @@ class MetricsStore(metaclass=Singleton):
         }
         self._preemption_details_list = []
 
+        # Sarathi chunk-scheduling records: one row per call to
+        # _get_seq_next_num_prefill_tokens() (per sequence, per iteration).
+        self._chunk_schedule_records = []
+
+        # Sarathi per-iteration scheduling records: one row per call to
+        # SarathiScheduler._schedule().
+        self._schedule_iteration_records = []
+
+        self._kv_block_usage_records = []
+        self._kv_block_usage_per_sequence_records = []
+
     def _init_wandb(self):
         if (
             not self.should_write_metrics
@@ -626,6 +637,89 @@ class MetricsStore(metaclass=Singleton):
         #     logger.info(f"  Avg preemption duration: {df['preemption_duration_sec'].mean():.4f} seconds")
         
 
+    def _store_chunk_schedule_records(self):
+        """
+        Store per-sequence chunk-scheduling decisions to CSV.
+
+        One row per call to _get_seq_next_num_prefill_tokens(): which chunk
+        size a given sequence got assigned in a given scheduling iteration.
+        """
+        if not self._chunk_schedule_records:
+            logger.info("No chunk schedule records to save")
+            return
+
+        csv_filepath = os.path.join(self._output_dir, "chunk_schedule.csv")
+        df = pd.DataFrame(self._chunk_schedule_records)
+        df.to_csv(csv_filepath, index=False)
+
+        logger.info(
+            f"Chunk schedule records (CSV) saved to: {csv_filepath} "
+            f"({len(self._chunk_schedule_records)} rows)"
+        )
+
+    def _store_schedule_iteration_records(self):
+        """
+        Store per-iteration scheduling summaries to CSV.
+
+        One row per call to SarathiScheduler._schedule(): total batched
+        tokens and number of running sequences for that iteration.
+        """
+        if not self._schedule_iteration_records:
+            logger.info("No schedule iteration records to save")
+            return
+
+        csv_filepath = os.path.join(self._output_dir, "schedule_iterations.csv")
+        df = pd.DataFrame(self._schedule_iteration_records)
+        df.to_csv(csv_filepath, index=False)
+
+        logger.info(
+            f"Schedule iteration records (CSV) saved to: {csv_filepath} "
+            f"({len(self._schedule_iteration_records)} rows)"
+        )
+
+
+    def _store_kv_block_usage_records(self):
+        """
+        Store per-iteration KV-cache block occupancy to CSV.
+
+        One row per scheduling iteration: total/used/free GPU blocks (and
+        their MB equivalents) and utilization percentage at the end of
+        that iteration.
+        """
+        if not self._kv_block_usage_records:
+            logger.info("No KV block usage records to save")
+            return
+
+        csv_filepath = os.path.join(self._output_dir, "kv_block_usage.csv")
+        df = pd.DataFrame(self._kv_block_usage_records)
+        df.to_csv(csv_filepath, index=False)
+
+        logger.info(
+            f"KV block usage records (CSV) saved to: {csv_filepath} "
+            f"({len(self._kv_block_usage_records)} rows)"
+        )
+
+    def _store_kv_block_usage_per_sequence_records(self):
+        """
+        Store per-sequence KV-cache block allocation to CSV.
+
+        One row per (iteration, currently-allocated sequence): how many
+        blocks — and equivalent MB — that sequence is holding.
+        """
+        if not self._kv_block_usage_per_sequence_records:
+            logger.info("No per-sequence KV block usage records to save")
+            return
+
+        csv_filepath = os.path.join(self._output_dir, "kv_block_usage_per_sequence.csv")
+        df = pd.DataFrame(self._kv_block_usage_per_sequence_records)
+        df.to_csv(csv_filepath, index=False)
+
+        logger.info(
+            f"Per-sequence KV block usage records (CSV) saved to: {csv_filepath} "
+            f"({len(self._kv_block_usage_per_sequence_records)} rows)"
+        )
+
+
     def _update_per_token_execution_times(
         self,
         batch_end_time: float,
@@ -758,6 +852,82 @@ class MetricsStore(metaclass=Singleton):
         self.batch_metrics_time_distribution[
             BatchMetricsTimeDistribution.BATCH_EXECUTION_TIME
         ].put_pair(scheduler_outputs.id, execution_time)
+
+
+    @check_enabled
+    @if_write_metrics
+    def on_chunk_schedule(
+        self,
+        iteration_id: int,
+        seq_id: str,
+        chunk_size: int,
+        next_num_tokens: int,
+        num_batched_tokens: int,
+    ) -> None:
+        self._chunk_schedule_records.append({
+            "iteration_id": iteration_id,
+            "seq_id": seq_id,
+            "chunk_size": chunk_size,
+            "next_num_tokens": next_num_tokens,
+            "num_batched_tokens": num_batched_tokens,
+        })
+
+    @check_enabled
+    @if_write_metrics
+    def on_schedule_iteration(
+        self,
+        iteration_id: int,
+        num_batched_tokens: int,
+        num_running_sequences: int,
+    ) -> None:
+        self._schedule_iteration_records.append({
+            "iteration_id": iteration_id,
+            "num_batched_tokens": num_batched_tokens,
+            "num_running_sequences": num_running_sequences,
+        })
+
+    
+    @check_enabled
+    @if_write_metrics
+    def on_kv_block_usage(
+        self,
+        iteration_id: int,
+        total_blocks: int,
+        used_blocks: int,
+        free_blocks: int,
+        block_size_bytes: int,
+    ) -> None:
+        utilization_pct = 100.0 * used_blocks / total_blocks if total_blocks else 0.0
+        bytes_to_mb = 1024 * 1024
+        self._kv_block_usage_records.append({
+            "iteration_id": iteration_id,
+            "total_blocks": total_blocks,
+            "used_blocks": used_blocks,
+            "free_blocks": free_blocks,
+            "utilization_pct": utilization_pct,
+            "total_mb": total_blocks * block_size_bytes / bytes_to_mb,
+            "used_mb": used_blocks * block_size_bytes / bytes_to_mb,
+            "free_mb": free_blocks * block_size_bytes / bytes_to_mb,
+        })
+
+    @check_enabled
+    @if_write_metrics
+    def on_kv_block_usage_per_sequence(
+        self,
+        iteration_id: int,
+        seq_id: str,
+        num_blocks: int,
+        block_size: int,
+        block_size_bytes: int,
+    ) -> None:
+        self._kv_block_usage_per_sequence_records.append({
+            "iteration_id": iteration_id,
+            "seq_id": seq_id,
+            "num_blocks_allocated": num_blocks,
+            "num_tokens_capacity": num_blocks * block_size,
+            "memory_mb": num_blocks * block_size_bytes / (1024 * 1024),
+        })
+
 
     def _to_chrome_trace_dict(
         self,
@@ -1082,16 +1252,24 @@ class MetricsStore(metaclass=Singleton):
         base_plot_path = f"{self._output_dir}/plots/"
         os.makedirs(base_plot_path, exist_ok=True)
 
+        # Store preemption metrics
+        self._store_preemption_metrics(base_plot_path)
+        self._store_detailed_preemption_records()
+
+        # Store chunk-scheduling metrics
+        self._store_chunk_schedule_records()
+        self._store_schedule_iteration_records()
+
+        # Store KV-cache block usage metrics
+        self._store_kv_block_usage_records()
+        self._store_kv_block_usage_per_sequence_records()
+
         self._store_seq_metrics(base_plot_path)
         self._store_batch_metrics(base_plot_path)
         self._store_completion_metrics(base_plot_path)
         self._store_chrome_trace()
         self._store_request_outputs()
         self._store_operation_metrics(base_plot_path)
-
-        # Store preemption metrics
-        self._store_preemption_metrics(base_plot_path)
-        self._store_detailed_preemption_records()
 
     @check_enabled
     def merge(self, other: "MetricsStore"):
@@ -1161,3 +1339,9 @@ class MetricsStore(metaclass=Singleton):
                 )
 
         self._preemption_details_list.extend(other._preemption_details_list)
+
+        self._chunk_schedule_records.extend(other._chunk_schedule_records)
+        self._schedule_iteration_records.extend(other._schedule_iteration_records)
+
+        self._kv_block_usage_records.extend(other._kv_block_usage_records)
+        self._kv_block_usage_per_sequence_records.extend(other._kv_block_usage_per_sequence_records)

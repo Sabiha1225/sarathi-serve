@@ -79,6 +79,15 @@ class VLLMScheduler(BaseScheduler):
             self.running.append(seq)
 
         if scheduled_seq_metadata_list or ignored_seq_ids:
+
+            self.metrics_store.on_schedule_iteration(
+                self._iteration_id,
+                num_batched_tokens,
+                len(self.running),
+            )
+
+            self._log_kv_block_usage()
+
             return SchedulerOutputs(
                 id=self._iteration_id,
                 ignored_seq_ids=ignored_seq_ids,
@@ -126,6 +135,18 @@ class VLLMScheduler(BaseScheduler):
                 )
 
         self.running = running
+
+        # Each continuing sequence generates exactly one decode token this
+        # iteration — num_batched_tokens from the prefill-admission loop
+        # above is always 0 here (this branch only runs when that loop
+        # admitted nothing), so it isn't the right count to reuse.
+        self.metrics_store.on_schedule_iteration(
+            self._iteration_id,
+            len(running),
+            len(running),
+        )
+
+        self._log_kv_block_usage()
 
         return SchedulerOutputs(
             id=self._iteration_id,

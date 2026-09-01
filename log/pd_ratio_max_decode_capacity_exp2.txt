@@ -1,0 +1,90 @@
+# model=llama N=16 decode_tokens=2048 output=max_decode_llama_n_16
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 16 (2049 iterations), Total time taken: 91.82 seconds 
+# model=llama N=32 decode_tokens=2048 output=max_decode_llama_n_32
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (2521 iterations), Total time taken: 143.60 seconds 
+# model=llama N=64 decode_tokens=2048 output=max_decode_llama_n_64
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 64 (3494 iterations), Total time taken: 244.80 seconds 
+# model=llama N=128 decode_tokens=2048 output=max_decode_llama_n_128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (6242 iterations), Total time taken: 467.95 seconds 
+# model=llama N=256 decode_tokens=2048 output=max_decode_llama_n_256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (11748 iterations), Total time taken: 943.50 seconds 
+# model=llama N=512 decode_tokens=2048 output=max_decode_llama_n_512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 512 (22565 iterations), Total time taken: 1855.31 seconds 
+# model=llama N=1024 decode_tokens=2048 output=max_decode_llama_n_1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1024 (44221 iterations), Total time taken: 3667.43 seconds 
+# model=llama N=2048 decode_tokens=2048 output=max_decode_llama_n_2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (84941 iterations), Total time taken: 7200.04 seconds 
+# model=llama N=4096 decode_tokens=2048 output=max_decode_llama_n_4096
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 4096 (85746 iterations), Total time taken: 7200.03 seconds 
+# model=mistral N=16 decode_tokens=2048 output=max_decode_mistral_n_16
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 16 (2049 iterations), Total time taken: 82.43 seconds 
+# model=mistral N=32 decode_tokens=2048 output=max_decode_mistral_n_32
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (2049 iterations), Total time taken: 79.62 seconds 
+# model=mistral N=64 decode_tokens=2048 output=max_decode_mistral_n_64
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 64 (2049 iterations), Total time taken: 134.14 seconds 
+# model=mistral N=128 decode_tokens=2048 output=max_decode_mistral_n_128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (2627 iterations), Total time taken: 199.40 seconds 
+# model=mistral N=256 decode_tokens=2048 output=max_decode_mistral_n_256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (4088 iterations), Total time taken: 383.83 seconds 
+# model=mistral N=512 decode_tokens=2048 output=max_decode_mistral_n_512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 512 (6492 iterations), Total time taken: 758.43 seconds 
+# model=mistral N=1024 decode_tokens=2048 output=max_decode_mistral_n_1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1024 (12920 iterations), Total time taken: 1483.76 seconds 
+# model=mistral N=2048 decode_tokens=2048 output=max_decode_mistral_n_2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (24714 iterations), Total time taken: 3084.20 seconds 
+# model=mistral N=4096 decode_tokens=2048 output=max_decode_mistral_n_4096
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 4096 (48554 iterations), Total time taken: 6268.96 seconds 
+# model=mixtral N=16 decode_tokens=2048 output=max_decode_mixtral_n_16
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 16 (2049 iterations), Total time taken: 89.06 seconds 
+# model=mixtral N=32 decode_tokens=2048 output=max_decode_mixtral_n_32
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (2049 iterations), Total time taken: 96.68 seconds 
+# model=mixtral N=64 decode_tokens=2048 output=max_decode_mixtral_n_64
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 64 (2049 iterations), Total time taken: 117.52 seconds 
+# model=mixtral N=128 decode_tokens=2048 output=max_decode_mixtral_n_128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (2049 iterations), Total time taken: 139.89 seconds 
+# model=mixtral N=256 decode_tokens=2048 output=max_decode_mixtral_n_256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (2049 iterations), Total time taken: 193.47 seconds 
+# model=mixtral N=512 decode_tokens=2048 output=max_decode_mixtral_n_512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 512 (2049 iterations), Total time taken: 311.31 seconds 
+# model=mixtral N=1024 decode_tokens=2048 output=max_decode_mixtral_n_1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1024 (2049 iterations), Total time taken: 507.12 seconds 
+# model=mixtral N=2048 decode_tokens=2048 output=max_decode_mixtral_n_2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (3863 iterations), Total time taken: 1026.03 seconds 
+# model=mixtral N=4096 decode_tokens=2048 output=max_decode_mixtral_n_4096
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 4096 (5464 iterations), Total time taken: 2202.70 seconds 
+# model=qwen N=16 decode_tokens=2048 output=max_decode_qwen_n_16
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 16 (2049 iterations), Total time taken: 88.77 seconds 
+# model=qwen N=32 decode_tokens=2048 output=max_decode_qwen_n_32
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (2651 iterations), Total time taken: 147.94 seconds 
+# model=qwen N=64 decode_tokens=2048 output=max_decode_qwen_n_64
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 64 (4125 iterations), Total time taken: 261.17 seconds 
+# model=qwen N=128 decode_tokens=2048 output=max_decode_qwen_n_128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (6519 iterations), Total time taken: 481.16 seconds 
+# model=qwen N=256 decode_tokens=2048 output=max_decode_qwen_n_256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (12638 iterations), Total time taken: 960.88 seconds 
+# model=qwen N=512 decode_tokens=2048 output=max_decode_qwen_n_512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 512 (24416 iterations), Total time taken: 1870.52 seconds 
+# model=qwen N=1024 decode_tokens=2048 output=max_decode_qwen_n_1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1024 (48513 iterations), Total time taken: 3782.61 seconds 
+# model=qwen N=2048 decode_tokens=2048 output=max_decode_qwen_n_2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (91514 iterations), Total time taken: 7200.05 seconds 
+# model=qwen N=4096 decode_tokens=2048 output=max_decode_qwen_n_4096
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 4096 (90451 iterations), Total time taken: 7200.04 seconds 
+# model=yi N=16 decode_tokens=2048 output=max_decode_yi_n_16
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 16 (2049 iterations), Total time taken: 76.95 seconds 
+# model=yi N=32 decode_tokens=2048 output=max_decode_yi_n_32
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (2049 iterations), Total time taken: 91.25 seconds 
+# model=yi N=64 decode_tokens=2048 output=max_decode_yi_n_64
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 64 (2049 iterations), Total time taken: 103.71 seconds 
+# model=yi N=128 decode_tokens=2048 output=max_decode_yi_n_128
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 128 (2049 iterations), Total time taken: 167.49 seconds 
+# model=yi N=256 decode_tokens=2048 output=max_decode_yi_n_256
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 256 (2480 iterations), Total time taken: 275.39 seconds 
+# model=yi N=512 decode_tokens=2048 output=max_decode_yi_n_512
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 512 (3515 iterations), Total time taken: 426.31 seconds 
+# model=yi N=1024 decode_tokens=2048 output=max_decode_yi_n_1024
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1024 (6577 iterations), Total time taken: 1038.71 seconds 
+# model=yi N=2048 decode_tokens=2048 output=max_decode_yi_n_2048
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 2048 (12197 iterations), Total time taken: 2070.55 seconds 
+# model=yi N=4096 decode_tokens=2048 output=max_decode_yi_n_4096
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 4096 (22413 iterations), Total time taken: 4117.44 seconds 

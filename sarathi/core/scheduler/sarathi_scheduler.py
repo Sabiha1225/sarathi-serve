@@ -87,6 +87,14 @@ class SarathiScheduler(BaseScheduler):
         )
         #print(f"next_num_tokens {next_num_tokens}")
 
+        self.metrics_store.on_chunk_schedule(
+            self._iteration_id,
+            seq.seq_id,
+            chunk_size,
+            next_num_tokens,
+            num_batched_tokens,
+        )
+
         # return next_num_tokens
         return max(0, next_num_tokens)
 
@@ -232,6 +240,14 @@ class SarathiScheduler(BaseScheduler):
         # make sure that prefills are at the start of the batch, so that we don't violate assumptions
         # made in the original vllm codebase
         self.running = running
+
+        self.metrics_store.on_schedule_iteration(
+            self._iteration_id,
+            num_batched_tokens,
+            len(running),
+        )
+
+        self._log_kv_block_usage()
 
         return SchedulerOutputs(
             id=self._iteration_id,

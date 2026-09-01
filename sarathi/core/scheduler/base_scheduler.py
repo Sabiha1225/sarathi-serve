@@ -120,6 +120,29 @@ class BaseScheduler(ABC):
         self._free_seq(seq)
         self.waiting.insert(0, seq)
 
+    def _log_kv_block_usage(self) -> None:
+        total_blocks = self.block_manager.num_total_gpu_blocks
+        free_blocks = self.block_manager.get_num_free_gpu_blocks()
+        used_blocks = total_blocks - free_blocks
+        block_size_bytes = self.cache_config.block_size_bytes
+
+        self.metrics_store.on_kv_block_usage(
+            self._iteration_id,
+            total_blocks,
+            used_blocks,
+            free_blocks,
+            block_size_bytes,
+        )
+
+        for seq_id, block_table in self.block_manager.block_tables.items():
+            self.metrics_store.on_kv_block_usage_per_sequence(
+                self._iteration_id,
+                seq_id,
+                len(block_table),
+                self.block_manager.block_size,
+                block_size_bytes,
+            )
+
     def _check_request_prompt_length(self, seq: Sequence) -> bool:
         if seq.get_len() > self.scheduler_config.max_model_len:
             logger.warning(
