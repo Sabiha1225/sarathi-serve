@@ -20,7 +20,7 @@ from sarathi.utils import get_ip
 
 from pathlib import Path
 
-filename = Path.home() / "sarathi-serve" / "log" / "pd_ratio_mixed_sweep_exp3.txt"
+filename = Path.home() / "sarathi-serve" / "log" / "ncu_log.txt"
 
 logger = logging.getLogger(__name__)
 
@@ -209,7 +209,8 @@ class BenchmarkRunnerLauncher:
         self._config = config
         self._is_multi_replica = self._config.cluster_num_replicas > 1
 
-        ray.init(ignore_reinit_error=True)
+        # ray.init(ignore_reinit_error=True)
+        ray.init(ignore_reinit_error=True, num_cpus=2)
 
         if self._is_multi_replica:
             self._validate_cluster_resources()

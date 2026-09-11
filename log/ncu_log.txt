@@ -1,0 +1,29 @@
+llama-7b
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (65 iterations), Total time taken: 3.01 seconds 
+
+Mistral-7B
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (65 iterations), Total time taken: 3.12 seconds 
+
+Qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (65 iterations), Total time taken: 3.17 seconds 
+
+Yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (65 iterations), Total time taken: 3.54 seconds 
+
+Mixtral
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (1 iterations), Total time taken: 14642.01 seconds 
+
+
+****************************  Prefil + Decode *******************************
+Llama-7b
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (130 iterations), Total time taken: 10.26 seconds 
+
+Mistral-7B
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (130 iterations), Total time taken: 8.00 seconds 
+
+Qwen
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (130 iterations), Total time taken: 8.78 seconds 
+
+Yi
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (130 iterations), Total time taken: 7.38 seconds 
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 32 (1 iterations), Total time taken: 13820.47 seconds 

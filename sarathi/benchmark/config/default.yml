@@ -1,6 +1,6 @@
 seed: 42
 log_level: info
-output_dir: /home/sabiha/sarathi-serve/benchmark_output/pd_ratio_mixed_sweep_exp3/
+output_dir: /home/sabiha/sarathi-serve/benchmark_output/ncu_log/
 # output_dir: ./benchmark_output/
 write_json_trace: true
 write_chrome_trace: true

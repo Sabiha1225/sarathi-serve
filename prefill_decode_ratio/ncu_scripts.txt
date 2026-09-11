@@ -1,5 +1,6 @@
 # Condition A — decode-only
 ncu \
+    --target-processes all \
     --launch-skip 200 --launch-count 800 \
     --metrics sm__throughput.avg.pct_of_peak_sustained_elapsed,gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed,dram__bytes_read.sum,dram__bytes_write.sum \
     --csv --log-file ncu_decode_only.csv \
@@ -16,13 +17,225 @@ ncu \
         --replica_scheduler_max_batch_size 32 \
         --vllm_scheduler_max_tokens_in_batch 192
 
+****************** Decode Only Llama-7b ********************************************
+
+sudo env "PATH=$PATH" "HOME=$HOME" ncu \
+    --target-processes all \
+    --launch-skip 200 --launch-count 800 \
+    --metrics sm__throughput.avg.pct_of_peak_sustained_elapsed,gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed,dram__bytes_read.sum,dram__bytes_write.sum \
+    --csv --log-file prefill_decode_ratio/ncu_decode_only_llama.csv \
+    python sarathi/benchmark/main.py \
+        --model_name meta-llama/Llama-2-7b-hf \
+        --model_tensor_parallel_degree 1 --model_pipeline_parallel_degree 1 \
+        --model_max_model_len 192 \
+        --synthetic_request_generator_length_provider fixed \
+        --synthetic_request_generator_interval_provider static \
+        --synthetic_request_generator_num_requests 32 \
+        --fixed_request_length_generator_prefill_tokens 1 \
+        --fixed_request_length_generator_decode_tokens 64 \
+        --replica_scheduler_provider vllm \
+        --replica_scheduler_max_batch_size 32 \
+        --vllm_scheduler_max_tokens_in_batch 192
+
+****************** Decode Only Mistral-7b ********************************************
+
+sudo env "PATH=$PATH" "HOME=$HOME" ncu \
+    --target-processes all \
+    --launch-skip 200 --launch-count 800 \
+    --metrics sm__throughput.avg.pct_of_peak_sustained_elapsed,gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed,dram__bytes_read.sum,dram__bytes_write.sum \
+    --csv --log-file prefill_decode_ratio/ncu_decode_only_mistral.csv \
+    python sarathi/benchmark/main.py \
+        --model_name mistralai/Mistral-7B-Instruct-v0.3 \
+        --model_tensor_parallel_degree 1 --model_pipeline_parallel_degree 1 \
+        --model_max_model_len 192 \
+        --synthetic_request_generator_length_provider fixed \
+        --synthetic_request_generator_interval_provider static \
+        --synthetic_request_generator_num_requests 32 \
+        --fixed_request_length_generator_prefill_tokens 1 \
+        --fixed_request_length_generator_decode_tokens 64 \
+        --replica_scheduler_provider vllm \
+        --replica_scheduler_max_batch_size 32 \
+        --vllm_scheduler_max_tokens_in_batch 192
+
+
+****************** Decode Only Mixtral-7b ********************************************
+
+sudo env "PATH=$PATH" "HOME=$HOME" ncu \
+    --target-processes all \
+    --launch-skip 200 --launch-count 800 \
+    --metrics sm__throughput.avg.pct_of_peak_sustained_elapsed,gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed,dram__bytes_read.sum,dram__bytes_write.sum \
+    --csv --log-file prefill_decode_ratio/ncu_decode_only_mixtral.csv \
+    python sarathi/benchmark/main.py \
+        --model_name DiscoResearch/mixtral-7b-8expert \
+        --model_tensor_parallel_degree 1 --model_pipeline_parallel_degree 1 \
+        --model_max_model_len 192 \
+        --synthetic_request_generator_length_provider fixed \
+        --synthetic_request_generator_interval_provider static \
+        --synthetic_request_generator_num_requests 32 \
+        --fixed_request_length_generator_prefill_tokens 1 \
+        --fixed_request_length_generator_decode_tokens 64 \
+        --replica_scheduler_provider vllm \
+        --replica_scheduler_max_batch_size 32 \
+        --vllm_scheduler_max_tokens_in_batch 192
+
+****************** Decode Only Qwen-7b ********************************************
+
+sudo env "PATH=$PATH" "HOME=$HOME" ncu \
+    --target-processes all \
+    --launch-skip 200 --launch-count 800 \
+    --metrics sm__throughput.avg.pct_of_peak_sustained_elapsed,gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed,dram__bytes_read.sum,dram__bytes_write.sum \
+    --csv --log-file prefill_decode_ratio/ncu_decode_only_qwen.csv \
+    python sarathi/benchmark/main.py \
+        --model_name Qwen/Qwen-7B \
+        --model_tensor_parallel_degree 1 --model_pipeline_parallel_degree 1 \
+        --model_max_model_len 192 \
+        --synthetic_request_generator_length_provider fixed \
+        --synthetic_request_generator_interval_provider static \
+        --synthetic_request_generator_num_requests 32 \
+        --fixed_request_length_generator_prefill_tokens 1 \
+        --fixed_request_length_generator_decode_tokens 64 \
+        --replica_scheduler_provider vllm \
+        --replica_scheduler_max_batch_size 32 \
+        --vllm_scheduler_max_tokens_in_batch 192
+
+****************** Decode Only Yi-7b ********************************************
+
+sudo env "PATH=$PATH" "HOME=$HOME" ncu \
+    --target-processes all \
+    --launch-skip 200 --launch-count 800 \
+    --metrics sm__throughput.avg.pct_of_peak_sustained_elapsed,gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed,dram__bytes_read.sum,dram__bytes_write.sum \
+    --csv --log-file prefill_decode_ratio/ncu_decode_only_yi.csv \
+    python sarathi/benchmark/main.py \
+        --model_name 01-ai/Yi-6B \
+        --model_tensor_parallel_degree 1 --model_pipeline_parallel_degree 1 \
+        --model_max_model_len 192 \
+        --synthetic_request_generator_length_provider fixed \
+        --synthetic_request_generator_interval_provider static \
+        --synthetic_request_generator_num_requests 32 \
+        --fixed_request_length_generator_prefill_tokens 1 \
+        --fixed_request_length_generator_decode_tokens 64 \
+        --replica_scheduler_provider vllm \
+        --replica_scheduler_max_batch_size 32 \
+        --vllm_scheduler_max_tokens_in_batch 192
+
+
+*********************************  Mixed Prefill + Decode under Chunking  ******************
+
 # Condition B — mixed prefill+decode under chunking
 ncu \
+    --target-processes all \
     --launch-skip 200 --launch-count 800 \
     --metrics sm__throughput.avg.pct_of_peak_sustained_elapsed,gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed,dram__bytes_read.sum,dram__bytes_write.sum \
     --csv --log-file ncu_mixed_chunked.csv \
     python sarathi/benchmark/main.py \
         --model_name meta-llama/Llama-2-7b-hf \
+        --model_tensor_parallel_degree 1 --model_pipeline_parallel_degree 1 \
+        --model_max_model_len 1152 \
+        --synthetic_request_generator_length_provider fixed \
+        --synthetic_request_generator_interval_provider static \
+        --synthetic_request_generator_num_requests 32 \
+        --fixed_request_length_generator_prefill_tokens 1024 \
+        --fixed_request_length_generator_decode_tokens 64 \
+        --replica_scheduler_provider sarathi \
+        --replica_scheduler_max_batch_size 32 \
+        --sarathi_scheduler_chunk_size 512 \
+        --sarathi_scheduler_enable_dynamic_chunking_schedule false
+
+********************* Prefil + Decode Llama-7b **********************************
+
+sudo env "PATH=$PATH" "HOME=$HOME" ncu \
+    --target-processes all \
+    --launch-skip 200 --launch-count 800 \
+    --metrics sm__throughput.avg.pct_of_peak_sustained_elapsed,gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed,dram__bytes_read.sum,dram__bytes_write.sum \
+    --csv --log-file prefill_decode_ratio/ncu_mixed_chunked_llama.csv \
+    python sarathi/benchmark/main.py \
+        --model_name meta-llama/Llama-2-7b-hf \
+        --model_tensor_parallel_degree 1 --model_pipeline_parallel_degree 1 \
+        --model_max_model_len 1152 \
+        --synthetic_request_generator_length_provider fixed \
+        --synthetic_request_generator_interval_provider static \
+        --synthetic_request_generator_num_requests 32 \
+        --fixed_request_length_generator_prefill_tokens 1024 \
+        --fixed_request_length_generator_decode_tokens 64 \
+        --replica_scheduler_provider sarathi \
+        --replica_scheduler_max_batch_size 32 \
+        --sarathi_scheduler_chunk_size 512 \
+        --sarathi_scheduler_enable_dynamic_chunking_schedule false
+
+********************* Prefil + Decode Mistral-7b **********************************
+
+sudo env "PATH=$PATH" "HOME=$HOME" ncu \
+    --target-processes all \
+    --launch-skip 200 --launch-count 800 \
+    --metrics sm__throughput.avg.pct_of_peak_sustained_elapsed,gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed,dram__bytes_read.sum,dram__bytes_write.sum \
+    --csv --log-file prefill_decode_ratio/ncu_mixed_chunked_mistral.csv \
+    python sarathi/benchmark/main.py \
+        --model_name mistralai/Mistral-7B-Instruct-v0.3 \
+        --model_tensor_parallel_degree 1 --model_pipeline_parallel_degree 1 \
+        --model_max_model_len 1152 \
+        --synthetic_request_generator_length_provider fixed \
+        --synthetic_request_generator_interval_provider static \
+        --synthetic_request_generator_num_requests 32 \
+        --fixed_request_length_generator_prefill_tokens 1024 \
+        --fixed_request_length_generator_decode_tokens 64 \
+        --replica_scheduler_provider sarathi \
+        --replica_scheduler_max_batch_size 32 \
+        --sarathi_scheduler_chunk_size 512 \
+        --sarathi_scheduler_enable_dynamic_chunking_schedule false
+
+********************* Prefil + Decode Mixtral-7b **********************************
+
+sudo env "PATH=$PATH" "HOME=$HOME" ncu \
+    --target-processes all \
+    --launch-skip 200 --launch-count 800 \
+    --metrics sm__throughput.avg.pct_of_peak_sustained_elapsed,gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed,dram__bytes_read.sum,dram__bytes_write.sum \
+    --csv --log-file prefill_decode_ratio/ncu_mixed_chunked_mixtral.csv \
+    python sarathi/benchmark/main.py \
+        --model_name DiscoResearch/mixtral-7b-8expert \
+        --model_tensor_parallel_degree 1 --model_pipeline_parallel_degree 1 \
+        --model_max_model_len 1152 \
+        --synthetic_request_generator_length_provider fixed \
+        --synthetic_request_generator_interval_provider static \
+        --synthetic_request_generator_num_requests 32 \
+        --fixed_request_length_generator_prefill_tokens 1024 \
+        --fixed_request_length_generator_decode_tokens 64 \
+        --replica_scheduler_provider sarathi \
+        --replica_scheduler_max_batch_size 32 \
+        --sarathi_scheduler_chunk_size 512 \
+        --sarathi_scheduler_enable_dynamic_chunking_schedule false
+
+
+********************* Prefil + Decode Qwen-7b **********************************
+
+
+sudo env "PATH=$PATH" "HOME=$HOME" ncu \
+    --target-processes all \
+    --launch-skip 200 --launch-count 800 \
+    --metrics sm__throughput.avg.pct_of_peak_sustained_elapsed,gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed,dram__bytes_read.sum,dram__bytes_write.sum \
+    --csv --log-file prefill_decode_ratio/ncu_mixed_chunked_qwen.csv \
+    python sarathi/benchmark/main.py \
+        --model_name Qwen/Qwen-7B \
+        --model_tensor_parallel_degree 1 --model_pipeline_parallel_degree 1 \
+        --model_max_model_len 1152 \
+        --synthetic_request_generator_length_provider fixed \
+        --synthetic_request_generator_interval_provider static \
+        --synthetic_request_generator_num_requests 32 \
+        --fixed_request_length_generator_prefill_tokens 1024 \
+        --fixed_request_length_generator_decode_tokens 64 \
+        --replica_scheduler_provider sarathi \
+        --replica_scheduler_max_batch_size 32 \
+        --sarathi_scheduler_chunk_size 512 \
+        --sarathi_scheduler_enable_dynamic_chunking_schedule false
+
+********************* Prefil + Decode Yi-7b **********************************
+
+sudo env "PATH=$PATH" "HOME=$HOME" ncu \
+    --target-processes all \
+    --launch-skip 200 --launch-count 800 \
+    --metrics sm__throughput.avg.pct_of_peak_sustained_elapsed,gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed,dram__bytes_read.sum,dram__bytes_write.sum \
+    --csv --log-file prefill_decode_ratio/ncu_mixed_chunked_yi.csv \
+    python sarathi/benchmark/main.py \
+        --model_name 01-ai/Yi-6B \
         --model_tensor_parallel_degree 1 --model_pipeline_parallel_degree 1 \
         --model_max_model_len 1152 \
         --synthetic_request_generator_length_provider fixed \
