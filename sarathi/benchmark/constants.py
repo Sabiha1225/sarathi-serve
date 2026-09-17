@@ -1,7 +1,7 @@
 import os
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/default.yml"
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/default.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_sarathi.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/fig1a_gen_stall_sarathi.yml"
@@ -97,6 +97,15 @@ DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/default.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/arxiv_vllm_varied_chunk_size_varried_req_time.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/sharegpt_sarathi_varied_chunk_size_varried_req_time.yml"
 # DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/sharegpt_vllm_varied_chunk_size_varried_req_time.yml"
+
+
+# ********** Decode-Decode Interference ***********
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/decode_decode_interference_mixed_request_sarathi.yml"
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/decode_decode_interference_mixed_request_vllm.yml"
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/decode_decode_interference_mixed_request_short_sarathi.yml"
+DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/decode_decode_interference_mixed_request_short_vllm.yml"
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/decode_decode_interference_single_request_sarathi.yml"
+# DEFAULT_CONFIG_FILE = f"{ROOT_DIR}/config/decode_decode_interference_single_request_vllm.yml"
 
 LOGGER_FORMAT = (
     "[%(asctime)s][%(filename)s:%(lineno)d:%(funcName)s]" "[%(levelname)s] %(message)s"

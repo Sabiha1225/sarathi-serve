@@ -87,7 +87,7 @@ class TraceRequestLengthGenerator(BaseRequestLengthGenerator):
         )
 
         # randomly shuffle the df based on the seed
-        self._trace_df = self._trace_df.sample(frac=1, random_state=self._config.seed)
+        # self._trace_df = self._trace_df.sample(frac=1, random_state=self._config.seed)
         self._next_request_idx = 0
 
     def get_next_num_tokens(self) -> Tuple[float, float]:

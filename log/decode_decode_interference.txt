@@ -1,0 +1,225 @@
+
+model=llama scheduler=sarathi request_type=single rep=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.05 seconds 
+inference_time_sec=1.05 wall_time_sec=115 output=llama_single_req_1
+
+model=llama scheduler=sarathi request_type=single rep=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.12 seconds 
+inference_time_sec=1.12 wall_time_sec=115 output=llama_single_req_2
+
+model=llama scheduler=sarathi request_type=single rep=3
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.06 seconds 
+inference_time_sec=1.06 wall_time_sec=113 output=llama_single_req_3
+
+model=llama scheduler=sarathi request_type=single rep=4
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.04 seconds 
+inference_time_sec=1.04 wall_time_sec=110 output=llama_single_req_4
+
+model=llama scheduler=sarathi request_type=single rep=5
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.05 seconds 
+inference_time_sec=1.05 wall_time_sec=113 output=llama_single_req_5
+
+model=mistral scheduler=sarathi request_type=single rep=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.07 seconds 
+inference_time_sec=1.07 wall_time_sec=111 output=mistral_single_req_1
+
+model=mistral scheduler=sarathi request_type=single rep=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.07 seconds 
+inference_time_sec=1.07 wall_time_sec=113 output=mistral_single_req_2
+
+model=mistral scheduler=sarathi request_type=single rep=3
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.08 seconds 
+inference_time_sec=1.08 wall_time_sec=110 output=mistral_single_req_3
+
+model=mistral scheduler=sarathi request_type=single rep=4
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.07 seconds 
+inference_time_sec=1.07 wall_time_sec=109 output=mistral_single_req_4
+
+model=mistral scheduler=sarathi request_type=single rep=5
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.07 seconds 
+inference_time_sec=1.07 wall_time_sec=110 output=mistral_single_req_5
+
+model=mixtral scheduler=sarathi request_type=single rep=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 0.75 seconds 
+inference_time_sec=0.75 wall_time_sec=108 output=mixtral_single_req_1
+
+model=mixtral scheduler=sarathi request_type=single rep=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 0.75 seconds 
+inference_time_sec=0.75 wall_time_sec=107 output=mixtral_single_req_2
+
+model=mixtral scheduler=sarathi request_type=single rep=3
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 0.80 seconds 
+inference_time_sec=0.80 wall_time_sec=109 output=mixtral_single_req_3
+
+model=mixtral scheduler=sarathi request_type=single rep=4
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 0.76 seconds 
+inference_time_sec=0.76 wall_time_sec=107 output=mixtral_single_req_4
+
+model=mixtral scheduler=sarathi request_type=single rep=5
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 0.75 seconds 
+inference_time_sec=0.75 wall_time_sec=112 output=mixtral_single_req_5
+
+model=llama scheduler=vllm request_type=single rep=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.09 seconds 
+inference_time_sec=1.09 wall_time_sec=116 output=llama_single_req_1
+
+model=llama scheduler=vllm request_type=single rep=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.04 seconds 
+inference_time_sec=1.04 wall_time_sec=115 output=llama_single_req_2
+
+model=llama scheduler=vllm request_type=single rep=3
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.04 seconds 
+inference_time_sec=1.04 wall_time_sec=111 output=llama_single_req_3
+
+model=llama scheduler=vllm request_type=single rep=4
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.05 seconds 
+inference_time_sec=1.05 wall_time_sec=114 output=llama_single_req_4
+
+model=llama scheduler=vllm request_type=single rep=5
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.05 seconds 
+inference_time_sec=1.05 wall_time_sec=114 output=llama_single_req_5
+
+model=mistral scheduler=vllm request_type=single rep=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.07 seconds 
+inference_time_sec=1.07 wall_time_sec=113 output=mistral_single_req_1
+
+model=mistral scheduler=vllm request_type=single rep=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.07 seconds 
+inference_time_sec=1.07 wall_time_sec=114 output=mistral_single_req_2
+
+model=mistral scheduler=vllm request_type=single rep=3
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.06 seconds 
+inference_time_sec=1.06 wall_time_sec=111 output=mistral_single_req_3
+
+model=mistral scheduler=vllm request_type=single rep=4
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.15 seconds 
+inference_time_sec=1.15 wall_time_sec=113 output=mistral_single_req_4
+
+model=mistral scheduler=vllm request_type=single rep=5
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 1.08 seconds 
+inference_time_sec=1.08 wall_time_sec=112 output=mistral_single_req_5
+
+model=mixtral scheduler=vllm request_type=single rep=1
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 0.75 seconds 
+inference_time_sec=0.75 wall_time_sec=113 output=mixtral_single_req_1
+
+model=mixtral scheduler=vllm request_type=single rep=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 0.76 seconds 
+inference_time_sec=0.76 wall_time_sec=114 output=mixtral_single_req_2
+
+model=mixtral scheduler=vllm request_type=single rep=3
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 0.76 seconds 
+inference_time_sec=0.76 wall_time_sec=108 output=mixtral_single_req_3
+
+model=mixtral scheduler=vllm request_type=single rep=4
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 0.80 seconds 
+inference_time_sec=0.80 wall_time_sec=110 output=mixtral_single_req_4
+
+model=mixtral scheduler=vllm request_type=single rep=5
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 1 (42 iterations), Total time taken: 0.75 seconds 
+inference_time_sec=0.75 wall_time_sec=110 output=mixtral_single_req_5
+
+
+*******************************   Mixed *****************************************************
+
+model=llama scheduler=sarathi request_type=mixed
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (3357 iterations), Total time taken: 111.39 seconds 
+inference_time_sec=111.39 wall_time_sec=235 output=llama_mixed_req
+
+model=mistral scheduler=sarathi request_type=mixed
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (3357 iterations), Total time taken: 93.91 seconds 
+inference_time_sec=93.91 wall_time_sec=217 output=mistral_mixed_req
+
+model=mixtral scheduler=sarathi request_type=mixed
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (3357 iterations), Total time taken: 61.63 seconds 
+inference_time_sec=61.63 wall_time_sec=185 output=mixtral_mixed_req
+
+model=llama scheduler=vllm request_type=mixed
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (3335 iterations), Total time taken: 110.98 seconds 
+inference_time_sec=110.98 wall_time_sec=237 output=llama_mixed_req
+
+model=mistral scheduler=vllm request_type=mixed
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (3335 iterations), Total time taken: 94.89 seconds 
+inference_time_sec=94.89 wall_time_sec=223 output=mistral_mixed_req
+
+model=mixtral scheduler=vllm request_type=mixed
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (3335 iterations), Total time taken: 59.28 seconds 
+inference_time_sec=59.28 wall_time_sec=185 output=mixtral_mixed_req
+
+
+************************   Mixed Possion QPS 2   *************************************
+
+model=llama scheduler=sarathi request_type=mixed interval_provider=poisson qps=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (55666 iterations), Total time taken: 117.13 seconds 
+inference_time_sec=117.13 wall_time_sec=244 output=llama_mixed_req_poisson_qps2
+
+model=mistral scheduler=sarathi request_type=mixed interval_provider=poisson qps=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (55735 iterations), Total time taken: 97.93 seconds 
+inference_time_sec=97.93 wall_time_sec=228 output=mistral_mixed_req_poisson_qps2
+
+model=mixtral scheduler=sarathi request_type=mixed interval_provider=poisson qps=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (56999 iterations), Total time taken: 70.22 seconds 
+inference_time_sec=70.22 wall_time_sec=197 output=mixtral_mixed_req_poisson_qps2
+
+model=llama scheduler=vllm request_type=mixed interval_provider=poisson qps=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (55612 iterations), Total time taken: 119.56 seconds 
+inference_time_sec=119.56 wall_time_sec=250 output=llama_mixed_req_poisson_qps2
+
+model=mistral scheduler=vllm request_type=mixed interval_provider=poisson qps=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (56992 iterations), Total time taken: 97.46 seconds 
+inference_time_sec=97.46 wall_time_sec=224 output=mistral_mixed_req_poisson_qps2
+
+model=mixtral scheduler=vllm request_type=mixed interval_provider=poisson qps=2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (56955 iterations), Total time taken: 64.97 seconds 
+inference_time_sec=64.97 wall_time_sec=191 output=mixtral_mixed_req_poisson_qps2
+
+
+
+******************************************  Mixed Short Only *********************************************
+model=llama scheduler=sarathi request_type=mixed_short arrival_mode=static
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (519 iterations), Total time taken: 15.82 seconds 
+inference_time_sec=15.82 wall_time_sec=132 output=llama_mixed_req_short_static
+
+model=llama scheduler=sarathi request_type=mixed_short arrival_mode=poisson_qps2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (55213 iterations), Total time taken: 17.11 seconds 
+inference_time_sec=17.11 wall_time_sec=131 output=llama_mixed_req_short_poisson_qps2
+
+model=mistral scheduler=sarathi request_type=mixed_short arrival_mode=static
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (519 iterations), Total time taken: 13.53 seconds 
+inference_time_sec=13.53 wall_time_sec=130 output=mistral_mixed_req_short_static
+
+model=mistral scheduler=sarathi request_type=mixed_short arrival_mode=poisson_qps2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (55838 iterations), Total time taken: 17.13 seconds 
+inference_time_sec=17.13 wall_time_sec=132 output=mistral_mixed_req_short_poisson_qps2
+
+model=mixtral scheduler=sarathi request_type=mixed_short arrival_mode=static
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (519 iterations), Total time taken: 9.42 seconds 
+inference_time_sec=9.42 wall_time_sec=128 output=mixtral_mixed_req_short_static
+
+model=mixtral scheduler=sarathi request_type=mixed_short arrival_mode=poisson_qps2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (54681 iterations), Total time taken: 13.64 seconds 
+inference_time_sec=13.64 wall_time_sec=130 output=mixtral_mixed_req_short_poisson_qps2
+
+model=llama scheduler=vllm request_type=mixed_short arrival_mode=static
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (518 iterations), Total time taken: 13.55 seconds 
+inference_time_sec=13.55 wall_time_sec=131 output=llama_mixed_req_short_static
+
+model=llama scheduler=vllm request_type=mixed_short arrival_mode=poisson_qps2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (46163 iterations), Total time taken: 17.32 seconds 
+inference_time_sec=17.32 wall_time_sec=135 output=llama_mixed_req_short_poisson_qps2
+
+model=mistral scheduler=vllm request_type=mixed_short arrival_mode=static
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (518 iterations), Total time taken: 13.67 seconds 
+inference_time_sec=13.67 wall_time_sec=133 output=mistral_mixed_req_short_static
+
+model=mistral scheduler=vllm request_type=mixed_short arrival_mode=poisson_qps2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (55274 iterations), Total time taken: 17.24 seconds 
+inference_time_sec=17.24 wall_time_sec=136 output=mistral_mixed_req_short_poisson_qps2
+
+model=mixtral scheduler=vllm request_type=mixed_short arrival_mode=static
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (518 iterations), Total time taken: 9.22 seconds 
+inference_time_sec=9.22 wall_time_sec=124 output=mixtral_mixed_req_short_static
+
+model=mixtral scheduler=vllm request_type=mixed_short arrival_mode=poisson_qps2
+benchmark_runner.py# inside class BenchmarkRunner def _run Replica 0 exiting after processing 19 (56112 iterations), Total time taken: 13.12 seconds 
+inference_time_sec=13.12 wall_time_sec=130 output=mixtral_mixed_req_short_poisson_qps2
